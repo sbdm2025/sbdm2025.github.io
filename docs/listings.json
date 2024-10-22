@@ -2,9 +2,24 @@
   {
     "listing": "/speakers.html",
     "items": [
-      "/speakers/autoevaluationresearch/index.html",
-      "/speakers/biobank2022/index.html",
-      "/speakers/brainconspiracy/index.html"
+      "/speakers/AlizeeLopez/index.html",
+      "/speakers/AnnaBeyeler/index.html",
+      "/speakers/CaterineTallonBaudry/index.html",
+      "/speakers/CelineAmiez/index.html",
+      "/speakers/CharlieWilson/index.html",
+      "/speakers/ElsaFouragnan/index.html",
+      "/speakers/EranEldar/index.html",
+      "/speakers/GerhardJocham/index.html",
+      "/speakers/HilkePlassmann/index.html",
+      "/speakers/JacquelineScholl/index.html",
+      "/speakers/JuliaSliwa/index.html",
+      "/speakers/MarcoWittmann/index.html",
+      "/speakers/MariekeScholvinck/index.html",
+      "/speakers/MarthaNariHavenith/index.html",
+      "/speakers/MicahAllen/index.html",
+      "/speakers/PhilippeFaure/index.html",
+      "/speakers/SoyoungPark/index.html",
+      "/speakers/TorbenOtt/index.html"
     ]
   }
 ]
