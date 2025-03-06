@@ -280,7 +280,7 @@ ul.task-list li input[type="checkbox"] {
             radioPositionButton.checked = true;
         }
         //
-        const posterOptions = document.getElementsByName("formPresentS");
+        const posterOptions = document.getElementsByName("formPresents");
         const abstractPoster = document.getElementById("abstractPoster");
         const sessionPick = document.getElementById("sessionPick");
         const titlePoster = document.getElementById("titlePoster");
@@ -296,7 +296,22 @@ ul.task-list li input[type="checkbox"] {
         // Run the function once on page load in case of pre-selected value
         toggleAbstract();
         } else {
-          document.getElementById("formEmail").value = email;
+            document.getElementById("formEmail").value = email;
+            const posterOptions = document.getElementsByName("formPresents");
+            const abstractPoster = document.getElementById("abstractPoster");
+            const sessionPick = document.getElementById("sessionPick");
+            const titlePoster = document.getElementById("titlePoster");
+            function toggleAbstract() {
+                // Check if the "Yes" option is selected
+                const isPosterSelected = document.querySelector('input[name="formPresents"]:checked')?.value === "true";
+                abstractPoster.style.display = isPosterSelected ? "block" : "none";
+                sessionPick.style.display = isPosterSelected ? "block" : "none";
+                titlePoster.style.display = isPosterSelected ? "block" : "none";
+            }
+            // Add event listeners to both radio buttons
+            posterOptions.forEach(option => option.addEventListener("change", toggleAbstract));
+            // Run the function once on page load in case of pre-selected value
+            toggleAbstract();
         }
       } catch (error) {
         console.error("Error fetching user data:", error);
@@ -343,11 +358,12 @@ ul.task-list li input[type="checkbox"] {
       name: document.getElementById("formName").value,
       position: document.querySelector('input[name="formPosition"]:checked').value,
       affiliation: document.getElementById("formAffiliation").value,
-      foodrestriction: document.getElementById("formFood").value,
+      foodrestriction: document.querySelector('input[name="formFood"]:checked').value,
+      presents: document.querySelector('input[name="formPresents"]:checked').value,
       title: document.getElementById("formTitle").value,
       abstract: document.getElementById("formAbstract").value,
       session: document.querySelector('input[name="formSession"]:checked').value,
-      discountRequest: document.getElementById("formDiscount").value,
+      discountRequest: hiddenInput.value,
       email: user.email,
     };
     try {
@@ -484,7 +500,7 @@ ul.task-list li input[type="checkbox"] {
                 <div class="mb-3">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="formDiscount" name="formDiscount">
-                        <label class="form-check-label" for="formDiscount">If you are from a low-income country, you may request a discount on registration fee (not guaranteed) by ticking this box</label>
+                        <label class="form-check-label" for="formDiscount">Request a discount by ticking this box (low-income countries only)</label>
                     </div>
                 </div>
                 <div class="mb-3">
