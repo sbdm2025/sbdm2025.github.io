@@ -180,11 +180,6 @@ ul.task-list li input[type="checkbox"] {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       hashedPassword = await hashPassword(password);
-      if (!userCredential.user.emailVerified) {
-        alert("Please verify your email address before logging in.");
-        await signOut(auth);
-        return;
-      }
     } catch (error) {
       alert(error.message);
     }
