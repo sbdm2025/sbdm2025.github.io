@@ -174,7 +174,9 @@ Warning
 
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
 
-  import { getAnalytics,createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, signInWithPopup,GoogleAuthProvider, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+    import { getAnalytics, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
+    
 
   // TODO: Add SDKs for Firebase products that you want to use
 
@@ -212,17 +214,6 @@ Warning
 
   const auth = getAuth(app);
 
-    // Signup with Email/Password
-    document.getElementById("signup-btn").addEventListener("click", async () => {
-        const email = document.getElementById("signup-email").value;
-        const password = document.getElementById("signup-password").value;
-        try {
-            await createUserWithEmailAndPassword(auth, email, password);
-            alert("Signup Successful!");
-        } catch (error) {
-            alert(error.message);
-        }
-    });
     // Login with Email/Password
     document.getElementById("login-btn").addEventListener("click", async () => {
         const email = document.getElementById("email").value;
@@ -233,7 +224,17 @@ Warning
             alert(error.message);
         }
     });
-
+    // Sign Up with Email/Password
+    document.getElementById("signup-btn").addEventListener("click", async () => {
+        const email = document.getElementById("signup-email").value;
+        const password = document.getElementById("signup-password").value;
+        try {
+            await createUserWithEmailAndPassword(auth, email, password);
+            alert("Sign up successful!");
+        } catch (error) {
+            alert(error.message);
+        }
+    });
 
     // Logout
     document.getElementById("logout-btn").addEventListener("click", async () => {
@@ -261,19 +262,13 @@ Warning
     .hidden { display: none; }
 </style>
 <!-- Login Form -->
+<div id="signup-container">
+  <h2 class="anchored">Sign Up</h2>
+  <input type="email" id="signup-email" placeholder="Email">
+  <input type="password" id="signup-password" placeholder="Password">
+  <button id="signup-btn">Sign Up</button>
+</div>
 
-<div id="signup-container" class="container">
-    <h3 class="anchored">Sign Up</h3>
-    <input type="email" id="signup-email" placeholder="Email" required="">
-    <input type="password" id="signup-password" placeholder="Password" required="">
-    <button id="signup-btn">Sign Up</button>
-</div>
-<!-- User Info -->
-<div id="user-container" class="container hidden">
-    <h3 class="anchored">Welcome</h3>
-    <p id="user-email"></p>
-    <button id="logout-btn">Logout</button>
-</div>
 <h3 class="anchored">Login</h3>
 <input type="email" id="email" placeholder="Email" required="">
 <input type="password" id="password" placeholder="Password" required="">
