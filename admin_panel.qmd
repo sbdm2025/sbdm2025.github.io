@@ -225,7 +225,7 @@ This page is meant for SBDM organizers only.
                 <h2 style="margin-top:0px">Admin login</h2>
                 <input type="email" id="email" class="form-control" placeholder="Email" autocomplete="username">
                 <input type="password" id="password" class="form-control" placeholder="Password" autocomplete="current-password">
-                <button id="login-btn" class="btn btn-primary mt-2">Login</button>
+                <button type="submit" id="login-btn" class="btn btn-primary mt-2">Login</button>
             </div>
         </div>
     <div class="container mt-4" id="user-container">

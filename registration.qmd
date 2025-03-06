@@ -308,7 +308,7 @@ fields of your choice, and resubmit the form.
                 <h2 style="margin-top:0px">Login</h2>
                 <input type="email" id="email" class="form-control" placeholder="Email" autocomplete="username">
                 <input type="password" id="password" class="form-control" placeholder="Password" autocomplete="current-password">
-                <button id="login-btn" class="btn btn-primary mt-2">Login</button>
+                <button type="submit" id="login-btn" class="btn btn-primary mt-2">Login</button>
             </div>
         </div>
         <div style="width:45%">
@@ -316,7 +316,7 @@ fields of your choice, and resubmit the form.
                 <h2 style="margin-top:0px">Sign Up</h2>
                 <input type="email" id="signup-email" class="form-control" placeholder="Email" autocomplete="username">
                 <input type="password" id="signup-password" class="form-control" placeholder="Password" autocomplete="new-password">
-                <button id="signup-btn" class="btn btn-success mt-2">Sign Up</button>
+                <button type="submit" id="signup-btn" class="btn btn-success mt-2">Sign Up</button>
             </div>
         </div>
     </div>
