@@ -184,12 +184,12 @@ located in a low-income country (see the
     this.appendChild(hiddenInput);
     const formData = {
       name: document.getElementById("formName").value,
-      position: document.getElementById("formPosition").value,
+      position: document.querySelector('input[name="formPosition"]:checked').value,
       affiliation: document.getElementById("formAffiliation").value,
       foodrestriction: document.getElementById("formFood").value,
       title: document.getElementById("formTitle").value,
       abstract: document.getElementById("formAbstract").value,
-      session: document.getElementById("formSession").value,
+      session: document.querySelector('input[name="formSession"]:checked').value,
       discountRequest: document.getElementById("formDiscount").value,
       email: user.email,
     };
@@ -327,7 +327,7 @@ located in a low-income country (see the
                         <label class="form-check-label" for="optionposition1">Researcher, postdoc or permanent research staff</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="formPosition" id="optionposition2" value="Causal manipulations in decision making" required>
+                        <input class="form-check-input" type="radio" name="formPosition" id="optionposition2" value="Master or PhD student" required>
                         <label class="form-check-label" for="optionposition2">Master or PhD student</label>
                     </div>
                 </div>
@@ -340,7 +340,7 @@ located in a low-income country (see the
                 <div class="mb-3">
                     <label class="form-label">Will you present a poster at SBDM2025?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="formPresents" id="optionposter1" value="False" required>
+                        <input class="form-check-input" type="radio" name="formPresents" id="optionposter1" value="false" checked required>
                         <label class="form-check-label" for="optionposter1">No</label>
                     </div>
                     <div class="form-check">
