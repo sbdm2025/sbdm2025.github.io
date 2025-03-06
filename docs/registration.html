@@ -168,6 +168,109 @@ Warning
 <p>This page is under construction.</p>
 </div>
 </div>
+<!-- Login Form -->
+<div id="auth-container" class="container">
+<pre><code>&lt;h3&gt;Login&lt;/h3&gt;
+&lt;input type="email" id="email" placeholder="Email" required&gt;
+&lt;input type="password" id="password" placeholder="Password" required&gt;
+&lt;button id="login-btn"&gt;Login&lt;/button&gt;
+&lt;button id="google-login-btn" class="google-btn"&gt;Login with Google&lt;/button&gt;</code></pre>
+</div>
+<script type="module">
+
+  // Import the functions you need from the SDKs you need
+
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+
+  import { getAnalytics,signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+
+  // Your web app's Firebase configuration
+
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+  const firebaseConfig = {
+
+    apiKey: "AIzaSyCH3avPPXfXI49GTopvaFbeKrPtu8ufa2c",
+
+    authDomain: "sbdm2025.firebaseapp.com",
+
+    projectId: "sbdm2025",
+
+    storageBucket: "sbdm2025.firebasestorage.app",
+
+    messagingSenderId: "846447691095",
+
+    appId: "1:846447691095:web:e41322d89f69949469ea12",
+
+    measurementId: "G-G79REFBJ4H"
+
+  };
+
+
+  // Initialize Firebase
+
+  const app = initializeApp(firebaseConfig);
+
+  const analytics = getAnalytics(app);
+
+  const auth = getAuth(app);
+
+    // Login with Email/Password
+    document.getElementById("login-btn").addEventListener("click", async () => {
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        try {
+            await signInWithEmailAndPassword(auth, email, password);
+        } catch (error) {
+            alert(error.message);
+        }
+    });
+
+
+    // Logout
+    document.getElementById("logout-btn").addEventListener("click", async () => {
+        await signOut(auth);
+    });
+
+    // Listen for Auth State Changes
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            document.getElementById("auth-container").style.display = "none";
+            document.getElementById("user-container").style.display = "block";
+            document.getElementById("user-email").innerText = `Logged in as: ${user.email}`;
+        } else {
+            document.getElementById("auth-container").style.display = "block";
+            document.getElementById("user-container").style.display = "none";
+        }
+    });
+</script>
+<style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+    .container { max-width: 300px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+    input { width: 90%; padding: 10px; margin: 5px 0; }
+    button { width: 100%; padding: 10px; margin: 5px 0; background: blue; color: white; border: none; cursor: pointer; }
+    .google-btn { background: red; }
+    .hidden { display: none; }
+</style>
+<!-- Login Form -->
+<div id="auth-container" class="container">
+<pre><code>&lt;h3&gt;Login&lt;/h3&gt;
+&lt;input type="email" id="email" placeholder="Email" required&gt;
+&lt;input type="password" id="password" placeholder="Password" required&gt;
+&lt;button id="login-btn"&gt;Login&lt;/button&gt;
+&lt;button id="google-login-btn" class="google-btn"&gt;Login with Google&lt;/button&gt;</code></pre>
+</div>
+<!-- User Info -->
+<div id="user-container" class="container hidden">
+<pre><code>&lt;h3&gt;Welcome&lt;/h3&gt;
+&lt;p id="user-email"&gt;&lt;/p&gt;
+&lt;button id="logout-btn"&gt;Logout&lt;/button&gt;</code></pre>
+</div>
 
 
 
