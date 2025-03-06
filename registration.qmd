@@ -123,7 +123,7 @@ located in a low-income country (see the
             radioPositionButton.checked = true;
         }
         //
-        const posterOptions = document.getElementsByName("formPresentS");
+        const posterOptions = document.getElementsByName("formPresents");
         const abstractPoster = document.getElementById("abstractPoster");
         const sessionPick = document.getElementById("sessionPick");
         const titlePoster = document.getElementById("titlePoster");
@@ -139,7 +139,22 @@ located in a low-income country (see the
         // Run the function once on page load in case of pre-selected value
         toggleAbstract();
         } else {
-          document.getElementById("formEmail").value = email;
+            document.getElementById("formEmail").value = email;
+            const posterOptions = document.getElementsByName("formPresents");
+            const abstractPoster = document.getElementById("abstractPoster");
+            const sessionPick = document.getElementById("sessionPick");
+            const titlePoster = document.getElementById("titlePoster");
+            function toggleAbstract() {
+                // Check if the "Yes" option is selected
+                const isPosterSelected = document.querySelector('input[name="formPresents"]:checked')?.value === "true";
+                abstractPoster.style.display = isPosterSelected ? "block" : "none";
+                sessionPick.style.display = isPosterSelected ? "block" : "none";
+                titlePoster.style.display = isPosterSelected ? "block" : "none";
+            }
+            // Add event listeners to both radio buttons
+            posterOptions.forEach(option => option.addEventListener("change", toggleAbstract));
+            // Run the function once on page load in case of pre-selected value
+            toggleAbstract();
         }
       } catch (error) {
         console.error("Error fetching user data:", error);
@@ -187,6 +202,7 @@ located in a low-income country (see the
       position: document.querySelector('input[name="formPosition"]:checked').value,
       affiliation: document.getElementById("formAffiliation").value,
       foodrestriction: document.querySelector('input[name="formFood"]:checked').value,
+      presents: document.querySelector('input[name="formPresents"]:checked').value,
       title: document.getElementById("formTitle").value,
       abstract: document.getElementById("formAbstract").value,
       session: document.querySelector('input[name="formSession"]:checked').value,
