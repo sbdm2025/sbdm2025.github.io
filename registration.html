@@ -326,75 +326,84 @@ Warning
 
 </style>
 <!-- Login Form -->
-<div class="auth-container" id="auth-container">
-    <h2 class="anchored">Login</h2>
-    <input type="email" id="email" placeholder="Email">
-    <input type="password" id="password" placeholder="Password">
-    <button id="login-btn">Login</button>
-    <button id="logout-btn">Logout</button>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="auth-container text-center">
+                <h2 class="anchored">Login</h2>
+                <input type="email" id="email" class="form-control" placeholder="Email">
+                <input type="password" id="password" class="form-control" placeholder="Password">
+                <button id="login-btn" class="btn btn-primary mt-2">Login</button>
+                <button id="logout-btn" class="btn btn-secondary mt-2">Logout</button>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="signup-container text-center">
+                <h2 class="anchored">Sign Up</h2>
+                <input type="email" id="signup-email" class="form-control" placeholder="Email">
+                <input type="password" id="signup-password" class="form-control" placeholder="Password">
+                <button id="signup-btn" class="btn btn-success mt-2">Sign Up</button>
+            </div>
+        </div>
+        <div class="user-container" id="user-container">
+            <h5 id="user-email" class="anchored">Logged in as:</h5>
+
+            <div class="container mt-5">
+                <h3 class="anchored">Registration Form</h3>
+                <form id="registrationForm">
+                    <div class="mb-3">
+                        <label for="formName" class="form-label">First &amp; last name</label>
+                        <input type="text" class="form-control" id="formName" required="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formAffiliation" class="form-label">Affiliation</label>
+                        <input type="text" class="form-control" id="formAffiliation" required="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formEmail" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="formEmail" readonly="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formAbstract" class="form-label">Message</label>
+                        <textarea class="form-control" id="formAbstract" rows="8" required=""></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Select an Option:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="formSession" id="option1" value="Temporal Dynamics of decision making" required="">
+                            <label class="form-check-label" for="option1">Temporal Dynamics of decision making</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="formSession" id="option2" value="Causal manipulations in decision making" required="">
+                            <label class="form-check-label" for="option2">Causal manipulations in decision making</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="formSession" id="option3" value="Social cognition and decision making across species" required="">
+                            <label class="form-check-label" for="option3">Social cognition and decision making across species</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="formSession" id="option4" value="Naturalistic &amp; context-dependant decision making" required="">
+                            <label class="form-check-label" for="option4">Naturalistic &amp; context-dependant decision making</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="formSession" id="option5" value="Brain-body interaction and decision making" required="">
+                            <label class="form-check-label" for="option5">Brain-body interaction and decision making</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="formSession" id="option6" value="Comparative decision across agents" required="">
+                            <label class="form-check-label" for="option6">Comparative decision across agents</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <p id="responseMessage" class="mt-3"></p>
+            </div>
+
+        </div>
+    </div>
 </div>
 
-<div class="signup-container" id="signup-container">
-    <h2 class="anchored">Sign Up</h2>
-    <input type="email" id="signup-email" placeholder="Email">
-    <input type="password" id="signup-password" placeholder="Password">
-    <button id="signup-btn">Sign Up</button>
-</div>
-
-<div class="user-container" id="user-container">
-    <h2 id="user-email" class="anchored">Logged in as:</h2>
-</div>
-
-<div class="container mt-5">
-    <h2 class="anchored">Contact Form</h2>
-    <form id="registrationForm">
-        <div class="mb-3">
-            <label for="formName" class="form-label">First &amp; last name</label>
-            <input type="text" class="form-control" id="formName" required="">
-        </div>
-        <div class="mb-3">
-            <label for="formAffiliation" class="form-label">Affiliation</label>
-            <input type="text" class="form-control" id="formAffiliation" required="">
-        </div>
-        <div class="mb-3">
-            <label for="formEmail" class="form-label">Email</label>
-            <input type="text" class="form-control" id="formEmail" readonly="">
-        </div>
-        <div class="mb-3">
-            <label for="formAbstract" class="form-label">Message</label>
-            <textarea class="form-control" id="formAbstract" rows="8" required=""></textarea>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Select an Option:</label>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="formSession" id="option1" value="Temporal Dynamics of decision making" required="">
-                <label class="form-check-label" for="option1">Temporal Dynamics of decision making</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="formSession" id="option2" value="Causal manipulations in decision making" required="">
-                <label class="form-check-label" for="option2">Causal manipulations in decision making</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="formSession" id="option3" value="Social cognition and decision making across species" required="">
-                <label class="form-check-label" for="option3">Social cognition and decision making across species</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="formSession" id="option4" value="Naturalistic &amp; context-dependant decision making" required="">
-                <label class="form-check-label" for="option4">Naturalistic &amp; context-dependant decision making</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="formSession" id="option5" value="Brain-body interaction and decision making" required="">
-                <label class="form-check-label" for="option5">Brain-body interaction and decision making</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="formSession" id="option6" value="Comparative decision across agents" required="">
-                <label class="form-check-label" for="option6">Comparative decision across agents</label>
-            </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-    <p id="responseMessage" class="mt-3"></p>
-</div>
 
 
 
