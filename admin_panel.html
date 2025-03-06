@@ -177,9 +177,9 @@ ul.task-list li input[type="checkbox"] {
   document.getElementById("login-btn").addEventListener("click", async () => {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
+    hashedPassword = await hashPassword(password);
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
-      hashedPassword = await hashPassword(password);
     } catch (error) {
       alert(error.message);
     }
