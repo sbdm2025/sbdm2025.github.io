@@ -216,12 +216,18 @@ ul.task-list li input[type="checkbox"] {
     }
   });
 
-    function showAbstract(title, abstract, session) {
-        document.getElementById("modalTitle").textContent = title;
-        document.getElementById("modalAbstract").textContent = abstract;
-        $("#abstractModal").modal("show");
-    }
+    function showAbstract(title, abstract, session, authors, presenter) {
+        document.getElementById('modalTitle').textContent = title;
+        document.getElementById('modalSession').textContent = session;
+        document.getElementById('modalPresenter').textContent = presenter;
+        document.getElementById('modalAuthors').textContent = authors;
+        document.getElementById('modalAbstract').textContent = abstract;
 
+        // Show the modal
+        let modal = new bootstrap.Modal(document.getElementById('abstractModal'));
+        modal.show();
+    }
+    
 // Fetch data from backend API
     async function fetchAllData(hashedPassword) {
         const user = auth.currentUser;
@@ -248,7 +254,15 @@ ul.task-list li input[type="checkbox"] {
                             <option value="false" ${!entry.discountRequest ? "selected" : ""}>No</option>
                         </select>
                     </td>
-                    <td><button class="btn btn-primary btn-sm" onclick="showAbstract('${entry.title.replace(/'/g, "\\'")}','${entry.abstract.replace(/'/g, "\\'")}','${entry.session.replace(/'/g, "\\'")}')">View</button></td>
+                    <td>
+                        <button class="btn btn-primary btn-sm" onclick="showAbstract(
+                            '${encodeURIComponent(entry.title || "")}',
+                            '${encodeURIComponent(entry.abstract || "")}',
+                            '${encodeURIComponent(entry.session || "")}',
+                            '${encodeURIComponent(entry.authors || "")}',
+                            '${encodeURIComponent(entry.presenter || "")}'
+                        )">View</button>
+                    </td>
                     <td>
                         <select class="form-select editable" data-field="paid">
                             <option value="true" ${entry.paid ? "selected" : ""}>Yes</option>
@@ -358,7 +372,7 @@ ul.task-list li input[type="checkbox"] {
                 <h2 style="margin-top:0px" class="anchored">Admin login</h2>
                 <input type="email" id="email" class="form-control" placeholder="Email" autocomplete="username">
                 <input type="password" id="password" class="form-control" placeholder="Password" autocomplete="current-password">
-                <button id="login-btn" class="btn btn-primary mt-2">Login</button>
+                <button type="submit" id="login-btn" class="btn btn-primary mt-2">Login</button>
             </div>
         </div>
     <div class="container mt-4" id="user-container">
@@ -387,17 +401,20 @@ ul.task-list li input[type="checkbox"] {
 
     <!-- Abstract Modal -->
     <div class="modal fade" id="abstractModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg"> <!-- Enlarged modal for better readability -->
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title anchored" id="modalLabel">Abstract</h5>
+                    <h5 class="modal-title anchored" id="modalLabel">Presentation Details</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body" id="modalTitle">
-                    <!-- Abstract content will be injected here -->
-                </div>
-                <div class="modal-body" id="modalAbstract">
-                    <!-- Abstract content will be injected here -->
+                <div class="modal-body">
+                    <h4 id="modalTitle" class="fw-bold anchored"></h4>
+                    <p><strong>Session:</strong> <span id="modalSession"></span></p>
+                    <p><strong>Presenter:</strong> <span id="modalPresenter"></span></p>
+                    <p><strong>Authors:</strong> <span id="modalAuthors"></span></p>
+                    <hr>
+                    <h5 class="anchored">Abstract</h5>
+                    <p id="modalAbstract" class="text-justify"></p>
                 </div>
             </div>
         </div>
