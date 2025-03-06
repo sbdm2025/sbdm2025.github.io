@@ -153,21 +153,43 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Registration is not open yet.</p>
-<p>We are still in the process of securing funding to make registration as affordable as possible, especially for students and postdocs.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This page is under construction.</p>
-</div>
-</div>
+<p>Registration for SBDM2025 is open!</p>
+<section id="how-to-proceed" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-proceed">How to proceed</h3>
+<p>Sign-up with a valid email address. A confirmation email will be sent to this address.</p>
+<p>You will then be able to complete the registration form, and submit your abstract.</p>
+<p>Note that you may edit your registration form until the <strong>1st of May 2025</strong>. To do so, simply log in again with your credentials, update the fields of your choice, and resubmit the form.</p>
+</section>
+<section id="registration-fees" class="level3">
+<h3 class="anchored">Registration fees</h3>
+<p>Registration fees include attendance to the entire meeting, coffee breaks, lunchs, dinners and social events. Register until the <strong>18th of April</strong> to benefit from a discount.</p>
+<table class="table">
+<colgroup>
+<col style="width: 41%">
+<col style="width: 29%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;">Early registration (until 18/04)</th>
+<th style="text-align: center;">Late registration (after 18/04)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Researchers, postdocs and permanent staff</td>
+<td style="text-align: center;">290€</td>
+<td style="text-align: center;">340€</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Masters and doctoral students</td>
+<td style="text-align: center;">190€</td>
+<td style="text-align: center;">240€</td>
+</tr>
+</tbody>
+</table>
+<p>Note that you may benefit from a discount if you work in an institution located in a low-income country (see the <a href="&quot;files/List of low-income countries.pdf&quot;" target="_blank">list</a>)</p>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
   import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, sendEmailVerification } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
@@ -398,7 +420,7 @@ Warning
     <div class="d-flex row justify-content-between flex-wrap" style="width:80%">
         <div style="width:45%">
             <div class="auth-container text-center" id="auth-container">
-                <h2 style="margin-top:0px" class="anchored">Login</h2>
+                <h2 style="margin-top:0px" class="anchored" data-anchor-id="registration-fees">Login</h2>
                 <input type="email" id="email" class="form-control" placeholder="Email">
                 <input type="password" id="password" class="form-control" placeholder="Password">
                 <button id="login-btn" class="btn btn-primary mt-2">Login</button>
@@ -519,7 +541,7 @@ Warning
 </div>
 
 
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

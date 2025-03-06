@@ -2,14 +2,30 @@
 title: "Registration"
 ---
 
-Registration is not open yet.
+Registration for SBDM2025 is open!
 
-We are still in the process of securing funding to make registration as
-affordable as possible, especially for students and postdocs.
+### How to proceed
 
-::: callout-warning
-This page is under construction.
-:::
+Sign-up with a valid email address. A confirmation email will be sent to this address.
+
+You will then be able to complete the registration form, and submit your abstract. 
+
+Note that you may edit your registration form until the **1st of May 2025**. To do so, simply log in again with your credentials, update the fields of your choice, and resubmit the form.
+
+### Registration fees
+
+Registration fees include attendance to the entire meeting, coffee
+breaks, lunchs, dinners and social events. Register until the **18th of
+April** to benefit from a discount.
+
+|                                           | Early registration (until 18/04) | Late registration (after 18/04) |
+|:----------------------------:|:-------------------:|:-------------------:|
+| Researchers, postdocs and permanent staff |               290€               |              340€               |
+|       Masters and doctoral students       |               190€               |              240€               |
+
+Note that you may benefit from a discount if you work in an institution
+located in a low-income country (see the
+[list]("files/List of low-income countries.pdf"){target="_blank"})
 
 ```{=html}
 <script type="module">
@@ -368,5 +384,4 @@ This page is under construction.
         </div>
     </div>
 </div>
-
 ```
