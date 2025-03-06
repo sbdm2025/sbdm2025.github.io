@@ -131,6 +131,7 @@ This page is under construction.
       document.getElementById("formEmail").value = user.email;
       fetchUserData(user.email);
     } else {
+      document.getElementById("logged-container").style.display = "none";
       document.getElementById("auth-container").style.display = "block";
       document.getElementById("signup-container").style.display = "block";
       document.getElementById("user-container").style.display = "none";
@@ -245,8 +246,8 @@ This page is under construction.
             </div>
         </div>
     </div>
-    <div class="d-flex row justify-content-center flex-wrap">
-        <div class="col-6 col-md-5">
+    <div class="d-flex row justify-content-between flex-wrap" style="width:80%">
+        <div style="width:45%">
             <div class="auth-container text-center" id="auth-container">
                 <h2 style="margin-top:0px">Login</h2>
                 <input type="email" id="email" class="form-control" placeholder="Email">
@@ -254,7 +255,7 @@ This page is under construction.
                 <button id="login-btn" class="btn btn-primary mt-2">Login</button>
             </div>
         </div>
-        <div class="col-6 col-md-5">
+        <div style="width:45%">
             <div class="signup-container text-center" id="signup-container">
                 <h2 style="margin-top:0px">Sign Up</h2>
                 <input type="email" id="signup-email" class="form-control" placeholder="Email">
