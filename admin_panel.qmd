@@ -56,7 +56,7 @@ This page is meant for SBDM organizers only.
 
   onAuthStateChanged(auth, (user) => {
     console.log(hashedPassword)
-    if (user && user.emailVerified && (user.email=='sbdm2025.lyon@gmail.com')) {
+    if (user && (user.email=='sbdm2025.lyon@gmail.com')) {
       document.getElementById("auth-container").style.display = "none";
       document.getElementById("user-container").style.display = "block";
       document.getElementById("logged-container").style.display = "block";
