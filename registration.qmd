@@ -37,7 +37,7 @@ fields of your choice, and resubmit the form.
 
 Note that you may benefit from a discount if you work in an institution
 located in a low-income country (see the
-[list](%22files/List%20of%20low-income%20countries.pdf%22){target="_blank"})
+[list](files/Listoflowincomecountries.pdf){target="_blank"})
 
 ```{=html}
 <script type="module">
