@@ -253,13 +253,31 @@ Warning
         if (radioPositionButton) {
             radioPositionButton.checked = true;
         }
-      }
-    } catch (error) {
-      console.error("Error fetching user data:", error);
+        //
+        const posterOptions = document.getElementsByName("formPresentS");
+        const abstractPoster = document.getElementById("abstractPoster");
+        const abstractPoster = document.getElementById("abstractPoster");
+        const titlePoster = document.getElementById("titlePoster");
+        function toggleAbstract() {
+            // Check if the "Yes" option is selected
+            const isPosterSelected = document.querySelector('input[name="formPresents"]:checked')?.value === "true";
+            abstractPoster.style.display = isPosterSelected ? "block" : "none";
+            sessionPick.style.display = isPosterSelected ? "block" : "none";
+            titlePoster.style.display = isPosterSelected ? "block" : "none";
+        }
+        // Add event listeners to both radio buttons
+        posterOptions.forEach(option => option.addEventListener("change", toggleAbstract));
+        // Run the function once on page load in case of pre-selected value
+        toggleAbstract();
+        } else {
+          document.getElementById("formEmail").value = email;
+        }
+      } catch (error) {
+        console.error("Error fetching user data:", error);
     }
   }
 
-  async function onAuthStateChanged(auth, (user) => {
+  onAuthStateChanged(auth, (user) => {
     if (user && user.emailVerified) {
       document.getElementById("auth-container").style.display = "none";
       document.getElementById("signup-container").style.display = "none";
@@ -267,24 +285,9 @@ Warning
       document.getElementById("logged-container").style.display = "block";
       document.getElementById("user-email").innerText = `Logged in as: ${user.email}`;
       document.getElementById("formEmail").value = user.email;
-      await fetchUserData(user.email);
-      //
-      const posterOptions = document.getElementsByName("formPresentS");
-      const abstractPoster = document.getElementById("abstractPoster");
-      const abstractPoster = document.getElementById("abstractPoster");
-      const titlePoster = document.getElementById("titlePoster");
-      function toggleAbstract() {
-          // Check if the "Yes" option is selected
-          const isPosterSelected = document.querySelector('input[name="formPresents"]:checked')?.value === "true";
-          abstractPoster.style.display = isPosterSelected ? "block" : "none";
-          sessionPick.style.display = isPosterSelected ? "block" : "none";
-          titlePoster.style.display = isPosterSelected ? "block" : "none";
-      }
-      // Add event listeners to both radio buttons
-      posterOptions.forEach(option => option.addEventListener("change", toggleAbstract));
-      // Run the function once on page load in case of pre-selected value
-      toggleAbstract();
+      fetchUserData(user.email);
     } else {
+      document.getElementById("logged-container").style.display = "none";
       document.getElementById("auth-container").style.display = "block";
       document.getElementById("signup-container").style.display = "block";
       document.getElementById("user-container").style.display = "none";
@@ -392,8 +395,8 @@ Warning
             </div>
         </div>
     </div>
-    <div class="d-flex row justify-content-center flex-wrap">
-        <div class="col-6 col-md-5">
+    <div class="d-flex row justify-content-between flex-wrap" style="width:80%">
+        <div style="width:45%">
             <div class="auth-container text-center" id="auth-container">
                 <h2 style="margin-top:0px" class="anchored">Login</h2>
                 <input type="email" id="email" class="form-control" placeholder="Email">
@@ -401,7 +404,7 @@ Warning
                 <button id="login-btn" class="btn btn-primary mt-2">Login</button>
             </div>
         </div>
-        <div class="col-6 col-md-5">
+        <div style="width:45%">
             <div class="signup-container text-center" id="signup-container">
                 <h2 style="margin-top:0px" class="anchored">Sign Up</h2>
                 <input type="email" id="signup-email" class="form-control" placeholder="Email">
