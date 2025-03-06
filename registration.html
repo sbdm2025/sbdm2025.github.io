@@ -262,6 +262,7 @@ Warning
   async function onAuthStateChanged(auth, (user) => {
     if (user && user.emailVerified) {
       document.getElementById("auth-container").style.display = "none";
+      document.getElementById("signup-container").style.display = "none";
       document.getElementById("user-container").style.display = "block";
       document.getElementById("logged-container").style.display = "block";
       document.getElementById("user-email").innerText = `Logged in as: ${user.email}`;
@@ -285,6 +286,7 @@ Warning
       toggleAbstract();
     } else {
       document.getElementById("auth-container").style.display = "block";
+      document.getElementById("signup-container").style.display = "block";
       document.getElementById("user-container").style.display = "none";
       document.getElementById("logged-container").style.display = "none";
     }
@@ -390,8 +392,8 @@ Warning
             </div>
         </div>
     </div>
-    <div class="row justify-content-center">
-        <div class="col-md-5">
+    <div class="d-flex row justify-content-center flex-wrap">
+        <div class="col-6 col-md-5">
             <div class="auth-container text-center" id="auth-container">
                 <h2 style="margin-top:0px" class="anchored">Login</h2>
                 <input type="email" id="email" class="form-control" placeholder="Email">
@@ -399,7 +401,7 @@ Warning
                 <button id="login-btn" class="btn btn-primary mt-2">Login</button>
             </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-6 col-md-5">
             <div class="signup-container text-center" id="signup-container">
                 <h2 style="margin-top:0px" class="anchored">Sign Up</h2>
                 <input type="email" id="signup-email" class="form-control" placeholder="Email">
@@ -409,9 +411,9 @@ Warning
         </div>
     </div>
     <div class="user-container row justify-content-center" id="user-container">
-        <div class="container mt-5">
+        <div class="container mt-5" style="text-align:left">
             <h3 class="anchored">Registration Form</h3>
-            <form id="registrationForm" style="text-align:left">
+            <form id="registrationForm">
                 <div class="mb-3">
                     <label for="formName" class="form-label">First &amp; last name</label>
                     <input type="text" class="form-control" id="formName" required="">
