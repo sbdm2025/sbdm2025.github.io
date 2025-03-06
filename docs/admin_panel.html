@@ -178,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
     const password = document.getElementById("password").value;
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
-      hashedPassword=await hashPassword(user.password);
+      hashedPassword = await hashPassword(password);
       if (!userCredential.user.emailVerified) {
         alert("Please verify your email address before logging in.");
         await signOut(auth);
@@ -198,18 +198,6 @@ ul.task-list li input[type="checkbox"] {
             .join("");
     }
 
-  document.getElementById("signup-btn").addEventListener("click", async () => {
-    const email = document.getElementById("signup-email").value;
-    const password = document.getElementById("signup-password").value;
-    try {
-      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      await sendEmailVerification(userCredential.user);
-      alert("Verification email sent. Please check your inbox.");
-    } catch (error) {
-      alert(error.message);
-    }
-  });
-
   document.getElementById("logout-btn").addEventListener("click", async () => {
     await signOut(auth);
   });
@@ -220,7 +208,7 @@ ul.task-list li input[type="checkbox"] {
       document.getElementById("auth-container").style.display = "none";
       document.getElementById("user-container").style.display = "block";
       document.getElementById("logged-container").style.display = "block";
-      fetchAllData(user.password)
+      fetchAllData()
     } else {
       document.getElementById("logged-container").style.display = "none";
       document.getElementById("auth-container").style.display = "block";
@@ -269,10 +257,10 @@ ul.task-list li input[type="checkbox"] {
     };
 
     function showAbstract(abstract) {
-        $("#modalBody").text(abstract);
+        document.getElementById("modalBody").textContent = abstract;
         $("#abstractModal").modal("show");
     }
-
+    
     // Inline edit event
     $(document).on("blur", ".editable", function () {
         let row = $(this).closest("tr");
