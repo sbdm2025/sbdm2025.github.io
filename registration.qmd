@@ -203,7 +203,7 @@ fields of your choice, and resubmit the form.
     let wordCount = abstractText.split(/\s+/).filter(word => word.length > 0).length;
     if (wordCount > 200) {
         alert("Abstract cannot exceed 200 words.");
-        event.preventDefault(); // Stop form submission
+        return // Stop form submission
     }
     this.appendChild(hiddenInput);
     const formData = {
@@ -229,6 +229,9 @@ fields of your choice, and resubmit the form.
       });
       const result = await response.json();
       document.getElementById("responseMessage").innerText = result.message;
+        setTimeout(() => {
+            window.location.reload();
+        }, 1500); // Wait for 2 seconds before refreshing (optional)
     } catch (error) {
       document.getElementById("responseMessage").innerText = "Error submitting the form.";
     }
