@@ -100,14 +100,12 @@ This page is under construction.
     if (user && user.emailVerified) {
       document.getElementById("auth-container").style.display = "none";
       document.getElementById("user-container").style.display = "block";
-      document.getElementById("registrationForm").style.display = "block";
       document.getElementById("logged-container").style.display = "block";
       document.getElementById("user-email").innerText = `Logged in as: ${user.email}`;
       fetchUserData(user.email);
     } else {
       document.getElementById("auth-container").style.display = "block";
       document.getElementById("user-container").style.display = "none";
-      document.getElementById("registrationForm").style.display = "none";
       document.getElementById("logged-container").style.display = "none";
     }
   });
@@ -208,15 +206,17 @@ This page is under construction.
 ```{=html}
 
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="logged-container row justify-content-center" id="logged-container">
         <div class="col-md-5">
-            <div class="logged-container d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center">
                 <h5 id="user-email" class="mb-0">Logged in as:</h5>
-                <button id="logout-btn" class="btn btn-secondary">Logout</button>
+                <button id="logout-btn" class="btn btn-secondary" style="max-width:10%">Logout</button>
             </div>
         </div>
+    </div>
+    <div class="row justify-content-center">
         <div class="col-md-5">
-            <div class="auth-container text-center">
+            <div class="auth-container text-center" id="auth-container">
                 <h2>Login</h2>
                 <input type="email" id="email" class="form-control" placeholder="Email">
                 <input type="password" id="password" class="form-control" placeholder="Password">
@@ -231,90 +231,89 @@ This page is under construction.
                 <button id="signup-btn" class="btn btn-success mt-2">Sign Up</button>
             </div>
         </div>
-        <div class="user-container" id="user-container">
-            <div class="container mt-5">
-                <h3>Registration Form</h3>
-                <form id="registrationForm">
-                    <div class="mb-3">
-                        <label for="formName" class="form-label">First & last name</label>
-                        <input type="text" class="form-control" id="formName" required>
+    </div>
+    <div class="user-container row justify-content-center" id="user-container">
+        <div class="container mt-5">
+            <h3>Registration Form</h3>
+            <form id="registrationForm">
+                <div class="mb-3">
+                    <label for="formName" class="form-label">First & last name</label>
+                    <input type="text" class="form-control" id="formName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="formEmail" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="formEmail" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="formAffiliation" class="form-label">Affiliation</label>
+                    <input type="text" class="form-control" id="formAffiliation" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Do you have food restrictions?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formFood" id="foodoption1" value="No" checked required>
+                        <label class="form-check-label" for="foodoption1">No</label>
                     </div>
-                    <div class="mb-3">
-                        <label for="formEmail" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="formEmail" readonly>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formFood" id="foodoption2" value="Vegetarian" required>
+                        <label class="form-check-label" for="foodoption2">Vegetarian</label>
                     </div>
-                    <div class="mb-3">
-                        <label for="formAffiliation" class="form-label">Affiliation</label>
-                        <input type="text" class="form-control" id="formAffiliation" required>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formFood" id="foodoption3" value="Vegan" required>
+                        <label class="form-check-label" for="foodoption3">Vegan</label>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">Do you have food restrictions?</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="formFood" id="foodoption1" value="No" checked required>
-                            <label class="form-check-label" for="foodoption1">No</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="formFood" id="foodoption2" value="Vegetarian" required>
-                            <label class="form-check-label" for="foodoption2">Vegetarian</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="formFood" id="foodoption3" value="Vegan" required>
-                            <label class="form-check-label" for="foodoption3">Vegan</label>
-                        </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">What is your position?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formPosition" id="optionposition1" value="Researcher, postdoc or permanent staff" required>
+                        <label class="form-check-label" for="optionposition1">Researcher, postdoc or permanent research staff</label>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">What is your position?</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="formPosition" id="optionposition1" value="Researcher, postdoc or permanent staff" required>
-                            <label class="form-check-label" for="optionposition1">Researcher, postdoc or permanent research staff</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="formPosition" id="optionposition2" value="Causal manipulations in decision making" required>
-                            <label class="form-check-label" for="optionposition2">Master or PhD student</label>
-                        </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formPosition" id="optionposition2" value="Causal manipulations in decision making" required>
+                        <label class="form-check-label" for="optionposition2">Master or PhD student</label>
                     </div>
-                    <div class="mb-3">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="formDiscount" name="formDiscount">
-                            <label class="form-check-label" for="formDiscount">Apply for discount</label>
-                        </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="formDiscount" name="formDiscount">
+                        <label class="form-check-label" for="formDiscount">Apply for discount</label>
                     </div>
-                    <div class="mb-3">
-                        <label for="formAbstract" class="form-label">Abstract</label>
-                        <textarea class="form-control" id="formAbstract" rows="8" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="formAbstract" class="form-label">Abstract</label>
+                    <textarea class="form-control" id="formAbstract" rows="8" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">The session that corresponds best to your abstract.</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formSession" id="option1" value="Temporal Dynamics of decision making" required>
+                        <label class="form-check-label" for="option1">Temporal Dynamics of decision making</label>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">The session that corresponds best to your abstract.</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="formSession" id="option1" value="Temporal Dynamics of decision making" required>
-                            <label class="form-check-label" for="option1">Temporal Dynamics of decision making</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="formSession" id="option2" value="Causal manipulations in decision making" required>
-                            <label class="form-check-label" for="option2">Causal manipulations in decision making</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="formSession" id="option3" value="Social cognition and decision making across species" required>
-                            <label class="form-check-label" for="option3">Social cognition and decision making across species</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="formSession" id="option4" value="Naturalistic & context-dependant decision making" required>
-                            <label class="form-check-label" for="option4">Naturalistic & context-dependant decision making</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="formSession" id="option5" value="Brain-body interaction and decision making" required>
-                            <label class="form-check-label" for="option5">Brain-body interaction and decision making</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="formSession" id="option6" value="Comparative decision across agents" required>
-                            <label class="form-check-label" for="option6">Comparative decision across agents</label>
-                        </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formSession" id="option2" value="Causal manipulations in decision making" required>
+                        <label class="form-check-label" for="option2">Causal manipulations in decision making</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-                <p id="responseMessage" class="mt-3"></p>
-            </div>
-
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formSession" id="option3" value="Social cognition and decision making across species" required>
+                        <label class="form-check-label" for="option3">Social cognition and decision making across species</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formSession" id="option4" value="Naturalistic & context-dependant decision making" required>
+                        <label class="form-check-label" for="option4">Naturalistic & context-dependant decision making</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formSession" id="option5" value="Brain-body interaction and decision making" required>
+                        <label class="form-check-label" for="option5">Brain-body interaction and decision making</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formSession" id="option6" value="Comparative decision across agents" required>
+                        <label class="form-check-label" for="option6">Comparative decision across agents</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <p id="responseMessage" class="mt-3"></p>
         </div>
     </div>
 </div>
