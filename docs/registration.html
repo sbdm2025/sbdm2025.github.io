@@ -260,7 +260,7 @@ Warning
         // Load the Google Form
         document.getElementById("google-form-container").style.display = "block";
         document.getElementById("google-form-container").innerHTML = `
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWF9cXG9kIy_PeChCBGnfY-f7oAuvOjayS2HLwUYlqgtngiA/viewform?entry.emailAddress=${encodeURIComponent(userEmail)}&embedded=true" width="640" height="403" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWF9cXG9kIy_PeChCBGnfY-f7oAuvOjayS2HLwUYlqgtngiA/viewform?entry.emailAddress=${encodeURIComponent(user.email)}&embedded=true" width="640" height="403" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         `;
     } else if (user && !user.emailVerified) {
         alert("Please verify your email address to access the form.");
