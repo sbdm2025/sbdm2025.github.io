@@ -6,11 +6,15 @@ Registration for SBDM2025 is open!
 
 ### How to proceed
 
-Sign-up with a valid email address. A confirmation email will be sent to this address.
+Sign-up with a valid email address. A confirmation email will be sent to
+this address.
 
-You will then be able to complete the registration form, and submit your abstract. 
+You will then be able to complete the registration form, and submit your
+abstract.
 
-Note that you may edit your registration form until the **1st of May 2025**. To do so, simply log in again with your credentials, update the fields of your choice, and resubmit the form.
+Note that you may edit your registration form until the **1st of May
+2025**. To do so, simply log in again with your credentials, update the
+fields of your choice, and resubmit the form.
 
 ### Registration fees
 
@@ -18,14 +22,19 @@ Registration fees include attendance to the entire meeting, coffee
 breaks, lunchs, dinners and social events. Register until the **18th of
 April** to benefit from a discount.
 
+
+::: {.container-lg}
+::: {.justify-content-center .w-75}
 |                                           | Early registration (until 18/04) | Late registration (after 18/04) |
 |:----------------------------:|:-------------------:|:-------------------:|
 | Researchers, postdocs and permanent staff |               290€               |              340€               |
 |       Masters and doctoral students       |               190€               |              240€               |
+:::
+:::
 
 Note that you may benefit from a discount if you work in an institution
 located in a low-income country (see the
-[list]("files/List of low-income countries.pdf"){target="_blank"})
+[list](%22files/List%20of%20low-income%20countries.pdf%22){target="_blank"})
 
 ```{=html}
 <script type="module">
@@ -116,7 +125,7 @@ located in a low-income country (see the
         //
         const posterOptions = document.getElementsByName("formPresentS");
         const abstractPoster = document.getElementById("abstractPoster");
-        const abstractPoster = document.getElementById("abstractPoster");
+        const sessionPick = document.getElementById("sessionPick");
         const titlePoster = document.getElementById("titlePoster");
         function toggleAbstract() {
             // Check if the "Yes" option is selected
@@ -262,7 +271,7 @@ located in a low-income country (see the
             </div>
         </div>
     </div>
-    <div class="d-flex row justify-content-between flex-wrap" style="width:80%">
+    <div class="d-flex row justify-content-between flex-wrap" style="width:100%">
         <div style="width:45%">
             <div class="auth-container text-center" id="auth-container">
                 <h2 style="margin-top:0px">Login</h2>
