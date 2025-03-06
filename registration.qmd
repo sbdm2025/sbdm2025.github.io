@@ -78,6 +78,7 @@ fields of your choice, and resubmit the form.
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       await sendEmailVerification(userCredential.user);
+      document.getElementById("signup-password").setAttribute("autocomplete", "on");
       alert("Verification email sent. Please check your inbox.");
     } catch (error) {
       alert(error.message);
@@ -114,7 +115,7 @@ fields of your choice, and resubmit the form.
         }
         // Prepopulate the radio button based on formSession
         const presentsValue = result.data.presents; // Assuming this matches the radio values
-        const radioPresentsButton = document.querySelector(`input[name="formPoster"][value="${sessionValue}"]`);
+        const radioPresentsButton = document.querySelector(`input[name="formPoster"][value="${presentsValue}"]`);
         if (radioPresentsButton) {
             radioPresentsButton.checked = true;
         }
@@ -124,7 +125,7 @@ fields of your choice, and resubmit the form.
             radioFoodButton.checked = true;
         }
         const positionValue = result.data.position; // Assuming this matches the radio values
-        const radioPositionButton = document.querySelector(`input[name="formPosition"][value="${foodValue}"]`);
+        const radioPositionButton = document.querySelector(`input[name="formPosition"][value="${positionValue}"]`);
         if (radioPositionButton) {
             radioPositionButton.checked = true;
         }
@@ -163,7 +164,7 @@ fields of your choice, and resubmit the form.
                 formPresenter.value = formName.value;
             }
         });
-        
+
       } catch (error) {
         console.error("Error fetching user data:", error);
     }
@@ -310,8 +311,8 @@ fields of your choice, and resubmit the form.
         <div style="width:45%">
             <div class="signup-container text-center" id="signup-container">
                 <h2 style="margin-top:0px">Sign Up</h2>
-                <input type="email" id="signup-email" class="form-control" placeholder="Email">
-                <input type="password" id="signup-password" class="form-control" placeholder="Password">
+                <input type="email" id="signup-email" class="form-control" placeholder="Email" autocomplete="username">
+                <input type="password" id="signup-password" class="form-control" placeholder="Password" autocomplete="new-password">
                 <button id="signup-btn" class="btn btn-success mt-2">Sign Up</button>
             </div>
         </div>
@@ -327,7 +328,7 @@ fields of your choice, and resubmit the form.
                 </div>
                 <div class="mb-3">
                     <label for="formEmail" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="formEmail" readonly>
+                    <input type="text" class="form-control text-muted" id="formEmail" readonly>
                 </div>
                 <div class="mb-3">
                     <label for="formAffiliation" class="form-label">Affiliation</label>
