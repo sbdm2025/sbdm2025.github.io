@@ -105,6 +105,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./program.html"> 
 <span class="menu-text">Program</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./registration.html" aria-current="page"> 
+<span class="menu-text">Registration</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -157,29 +161,6 @@ ul.task-list li input[type="checkbox"] {
 <section id="fees" class="level3">
 <h3 class="anchored" data-anchor-id="fees">Fees</h3>
 <p>Registration fees include attendance to the entire meeting, coffee breaks, lunchs, dinners and social events. Register until the <strong>18th of April</strong> to benefit from a discount.</p>
-</section>
-<section id="how-to-proceed" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-proceed">How to proceed</h3>
-<ol type="1">
-<li><p>Sign-up with a valid email address: a confirmation email will be sent to this address.</p></li>
-<li><p>Complete the registration form. You may submit a title and an abstract if you wish present a poster.</p></li>
-</ol>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You may edit your registration form until the <strong>1st of May 2025</strong>. To do so, simply log in again with your credentials, update the fields of your choice, and resubmit the form.</p>
-</div>
-</div>
-</section>
-<section id="registration" class="level3">
-<h3 class="anchored">Registration</h3>
 <div class="container-lg justify-content-center">
 <div class="justify-content-center w-75">
 <table class="table">
@@ -211,6 +192,29 @@ Tip
 </div>
 </div>
 <p>Note that you may benefit from a discount if you work in an institution located in a low-income country (see the <a href="files/Listoflowincomecountries.pdf" target="_blank">list</a>)</p>
+</section>
+<section id="how-to-proceed" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-proceed">How to proceed</h3>
+<ol type="1">
+<li><p>Sign-up with a valid email address: a confirmation email will be sent to this address.</p></li>
+<li><p>Complete the registration form. You may submit a title and an abstract if you wish present a poster.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You may edit your registration form until the <strong>1st of May 2025</strong>. To do so, simply log in again with your credentials, update the fields of your choice, and resubmit the form.</p>
+</div>
+</div>
+</section>
+<section id="registration" class="level3">
+<h3 class="anchored">Registration</h3>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
   import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, sendEmailVerification } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
@@ -283,9 +287,9 @@ Tip
         }
         // Prepopulate the radio button based on formSession
         const presentsValue = result.data.presents; // Assuming this matches the radio values
-        const radioPresentsButton = document.querySelector(`input[name="formPresents"][value="${sessionValue}"]`);
-        if (radioSessionButton) {
-            radioSessionButton.checked = true;
+        const radioPresentsButton = document.querySelector(`input[name="formPoster"][value="${sessionValue}"]`);
+        if (radioPresentsButton) {
+            radioPresentsButton.checked = true;
         }
         const foodValue = result.data.foodrestriction; // Assuming this matches the radio values
         const radioFoodButton = document.querySelector(`input[name="formFood"][value="${foodValue}"]`);
@@ -298,16 +302,20 @@ Tip
             radioPositionButton.checked = true;
         }
         //
-        const posterOptions = document.getElementsByName("formPresents");
+        const posterOptions = document.getElementsByName("formPoster");
         const abstractPoster = document.getElementById("abstractPoster");
         const sessionPick = document.getElementById("sessionPick");
         const titlePoster = document.getElementById("titlePoster");
+        const authorsPoster = document.getElementById("authorsPoster");
+        const presenterPoster = document.getElementById("presenterPoster");
         function toggleAbstract() {
             // Check if the "Yes" option is selected
-            const isPosterSelected = document.querySelector('input[name="formPresents"]:checked')?.value === "true";
+            const isPosterSelected = document.querySelector('input[name="formPoster"]:checked')?.value === "true";
             abstractPoster.style.display = isPosterSelected ? "block" : "none";
             sessionPick.style.display = isPosterSelected ? "block" : "none";
             titlePoster.style.display = isPosterSelected ? "block" : "none";
+            presenterPoster.style.display = isPosterSelected ? "block" : "none";
+            authorsPoster.style.display = isPosterSelected ? "block" : "none";
         }
         // Add event listeners to both radio buttons
         posterOptions.forEach(option => option.addEventListener("change", toggleAbstract));
@@ -315,16 +323,20 @@ Tip
         toggleAbstract();
         } else {
             document.getElementById("formEmail").value = email;
-            const posterOptions = document.getElementsByName("formPresents");
+            const posterOptions = document.getElementsByName("formPoster");
             const abstractPoster = document.getElementById("abstractPoster");
             const sessionPick = document.getElementById("sessionPick");
             const titlePoster = document.getElementById("titlePoster");
+            const authorsPoster = document.getElementById("authorsPoster");
+            const presenterPoster = document.getElementById("presenterPoster");
             function toggleAbstract() {
                 // Check if the "Yes" option is selected
-                const isPosterSelected = document.querySelector('input[name="formPresents"]:checked')?.value === "true";
+                const isPosterSelected = document.querySelector('input[name="formPoster"]:checked')?.value === "true";
                 abstractPoster.style.display = isPosterSelected ? "block" : "none";
                 sessionPick.style.display = isPosterSelected ? "block" : "none";
                 titlePoster.style.display = isPosterSelected ? "block" : "none";
+                presenterPoster.style.display = isPosterSelected ? "block" : "none";
+                authorsPoster.style.display = isPosterSelected ? "block" : "none";
             }
             // Add event listeners to both radio buttons
             posterOptions.forEach(option => option.addEventListener("change", toggleAbstract));
@@ -378,8 +390,10 @@ Tip
       position: document.querySelector('input[name="formPosition"]:checked').value,
       affiliation: document.getElementById("formAffiliation").value,
       foodrestriction: document.querySelector('input[name="formFood"]:checked').value,
-      presents: document.querySelector('input[name="formPresents"]:checked').value,
+      poster: document.querySelector('input[name="formPoster"]:checked').value,
       title: document.getElementById("formTitle").value,
+      authors: document.getElementById("formAuthors").value,
+      presenter: document.getElementById("formPresenter").value,
       abstract: document.getElementById("formAbstract").value,
       session: document.querySelector('input[name="formSession"]:checked').value,
       discountRequest: hiddenInput.value,
@@ -526,17 +540,25 @@ Tip
                 <div class="mb-3">
                     <label class="form-label">Will you present a poster at SBDM2025?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="formPresents" id="optionposter1" value="false" checked="" required="">
+                        <input class="form-check-input" type="radio" name="formPoster" id="optionposter1" value="false" checked="" required="">
                         <label class="form-check-label" for="optionposter1">No</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="formPresents" id="optionposter2" value="true" required="">
+                        <input class="form-check-input" type="radio" name="formPoster" id="optionposter2" value="true" required="">
                         <label class="form-check-label" for="optionposter2">Yes</label>
                     </div>
                 </div>
                 <div class="mb-3" id="titlePoster">
                     <label for="formAbstract" class="form-label">Poster title</label>
                     <input type="text" class="form-control" id="formTitle" required="">
+                </div>
+                <div class="mb-3" id="authorsPoster">
+                    <label for="formAuthors" class="form-label">Authors</label>
+                    <input type="text" class="form-control" id="formAuthors" required="">
+                </div>
+                <div class="mb-3" id="presenterPoster">
+                    <label for="formPresenter" class="form-label">Presenter</label>
+                    <input type="text" class="form-control" id="formPresenter" required="">
                 </div>
                 <div class="mb-3" id="abstractPoster">
                     <label for="formAbstract" class="form-label">Poster abstract (max. 200 words)</label>
