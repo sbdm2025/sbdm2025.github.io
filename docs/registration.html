@@ -253,15 +253,21 @@ Warning
 
     // Listen for Auth State Changes
     onAuthStateChanged(auth, (user) => {
-        if (user) {
-            document.getElementById("auth-container").style.display = "none";
-            document.getElementById("user-container").style.display = "block";
-            document.getElementById("user-email").innerText = `Logged in as: ${user.email}`;
-            displayGoogleForm(user.email);
-        } else {
+        if (!user.emailVerified) {
+            alert("Please verify your email address to access the form.");
+            signOut(auth); // Sign the user out
             document.getElementById("auth-container").style.display = "block";
             document.getElementById("user-container").style.display = "none";
+            document.getElementById("google-form-container").innerHTML = ""; // Clear form
+            return; // Stop further execution
         }
+
+        document.getElementById("auth-container").style.display = "none";
+        document.getElementById("user-container").style.display = "block";
+        document.getElementById("user-email").innerText = `Logged in as: ${user.email}`;
+
+        // Display Google Form
+        displayGoogleForm(user.email);
     });
 
     function displayGoogleForm(userEmail) {
