@@ -210,33 +210,19 @@ ul.task-list li input[type="checkbox"] {
     await signOut(auth);
   });
 
-
-  async function fetchUserData(email) {
-    try {
-      const response = await fetch(`https://misc.robustcircuit.eu/user/${email}`);
-      const result = await response.json();
-      console.log(result.data)
-      if (result.success) {
-        document.getElementById("formName").value = result.data.name;
-        document.getElementById("formEmail").value = email;
-        document.getElementById("formAffiliation").value = result.data.affiliation;
-        document.getElementById("formAbstract").value = result.data.abstract;
-        // Prepopulate the radio button based on formSession
-        const sessionValue = result.data.session; // Assuming this matches the radio values
-        const radioButton = document.querySelector(`input[name="formSession"][value="${sessionValue}"]`);
-        if (radioButton) {
-            radioButton.checked = true;
-        }
-      }
-    } catch (error) {
-      console.error("Error fetching user data:", error);
-    }
-
-  }
-
   onAuthStateChanged(auth, (user) => {
+    const hashedPassword = await hashPassword(user.password);
+    console.log(hashedPassword)
     if (user && user.emailVerified && (user.email=='sbdm2025.lyon@gmail.com')) {
+      document.getElementById("auth-container").style.display = "none";
+      document.getElementById("signup-container").style.display = "none";
+      document.getElementById("user-container").style.display = "block";
+      document.getElementById("logged-container").style.display = "block";
       fetchAllData(user.password)
+    } else {
+      document.getElementById("logged-container").style.display = "none";
+      document.getElementById("auth-container").style.display = "block";
+      document.getElementById("user-container").style.display = "none";
     }
   });
 
@@ -247,7 +233,7 @@ ul.task-list li input[type="checkbox"] {
         const response = await fetch(`https://misc.robustcircuit.eu/all?hash=${hashedPassword}`);
         const result = await response.json();
         let tableBody = "";
-        data.forEach(entry => {
+        result.forEach(entry => {
             tableBody += `
                 <tr data-id="${entry._id}">
                     <td contenteditable="true" class="editable" data-field="name">${entry.name}</td>
@@ -256,10 +242,23 @@ ul.task-list li input[type="checkbox"] {
                     <td contenteditable="true" class="editable" data-field="affiliation">${entry.affiliation}</td>
                     <td contenteditable="true" class="editable" data-field="session">${entry.session}</td>
                     <td contenteditable="true" class="editable" data-field="foodrestriction">${entry.foodrestriction}</td>
+                    <td contenteditable="true" class="editable" data-field="position">${entry.position}</td>
                     <td>
                         <select class="form-select editable" data-field="paid">
                             <option value="true" ${entry.paid ? "selected" : ""}>Yes</option>
                             <option value="false" ${!entry.paid ? "selected" : ""}>No</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="form-select editable" data-field="presents">
+                            <option value="true" ${entry.presents ? "selected" : ""}>Yes</option>
+                            <option value="false" ${!entry.presents ? "selected" : ""}>No</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="form-select editable" data-field="discountRequest">
+                            <option value="true" ${entry.discountRequest ? "selected" : ""}>Yes</option>
+                            <option value="false" ${!entry.discountRequest ? "selected" : ""}>No</option>
                         </select>
                     </td>
                     <td><button class="btn btn-primary btn-sm" onclick="showAbstract('${entry.abstract.replace(/'/g, "&apos;")}')">View</button></td>
@@ -332,18 +331,72 @@ ul.task-list li input[type="checkbox"] {
   
 </script>
 
+<style>
+
+    .auth-container, .user-container {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    input[type="email"], input[type="password"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .user-container {
+        display: none; /* Hidden by default */
+    }
+
+    .form-check-label{
+      margin-left: 10px;
+    }
+
+</style>
 <p>:::</p>
-    <div class="container mt-4">
+<div class="container-lg">
+    <div class="logged-container row justify-content-center" id="logged-container">
         <div class="col-md-5">
-            <div class="auth-container text-center">
-                <h2 class="anchored">Login</h2>
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 id="user-email" class="mb-0 anchored">Logged in as:</h5>
+                <button id="logout-btn" class="btn btn-secondary" style="max-width:15%">Logout</button>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex row justify-content-between flex-wrap" style="width:100%">
+        <div style="width:45%">
+            <div class="auth-container text-center" id="auth-container">
+                <h2 style="margin-top:0px" class="anchored">Admin login</h2>
                 <input type="email" id="email" class="form-control" placeholder="Email">
                 <input type="password" id="password" class="form-control" placeholder="Password">
                 <button id="login-btn" class="btn btn-primary mt-2">Login</button>
-                <button id="logout-btn" class="btn btn-secondary mt-2">Logout</button>
             </div>
         </div>
-        <h2 class="mb-3 anchored">Form Data Entries</h2>
+    <div class="container mt-4" id="user-container">
+        <h2 class="mb-3 anchored">Registrations</h2>
         <input type="text" id="search" class="form-control mb-3" placeholder="Search...">
         
 <table class="table table-bordered table-striped" data-quarto-postprocess="true">
@@ -355,7 +408,10 @@ ul.task-list li input[type="checkbox"] {
 <th data-quarto-table-cell-role="th">Affiliation</th>
 <th data-quarto-table-cell-role="th">Session</th>
 <th data-quarto-table-cell-role="th">Food Restriction</th>
+<th data-quarto-table-cell-role="th">Position</th>
 <th data-quarto-table-cell-role="th">Paid</th>
+<th data-quarto-table-cell-role="th">Presents</th>
+<th data-quarto-table-cell-role="th">Discount Request</th>
 <th data-quarto-table-cell-role="th">Abstract</th>
 </tr>
 </thead>
@@ -379,12 +435,14 @@ ul.task-list li input[type="checkbox"] {
             </div>
         </div>
     </div>
+</div>
+
 
 <p>:::</p>
 
 
 
-</main> <!-- /main -->
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
