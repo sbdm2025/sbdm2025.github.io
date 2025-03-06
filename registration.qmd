@@ -94,12 +94,14 @@ fields of your choice, and resubmit the form.
       const result = await response.json();
       console.log(result.data)
       if (result.success) {
-        result.data._id
+        document.getElementById("formId").value = result.data.form_id;
         document.getElementById("formName").value = result.data.name;
         document.getElementById("formEmail").value = email;
         document.getElementById("formAffiliation").value = result.data.affiliation;
         document.getElementById("formTitle").value = result.data.title;
         document.getElementById("formAbstract").value = result.data.abstract;
+        document.getElementById("formPresenter").value = result.data.presenter;
+        document.getElementById("formAuthors").value = result.data.authors;
         document.getElementById("formFood").value = result.data.foodrestriction;
         if (result.data.discountRequest=="true"){
             document.getElementById("formDiscount").checked = true;
@@ -126,7 +128,8 @@ fields of your choice, and resubmit the form.
         if (radioPositionButton) {
             radioPositionButton.checked = true;
         }
-        //
+        }
+        document.getElementById("formEmail").value = email;
         const posterOptions = document.getElementsByName("formPoster");
         const abstractPoster = document.getElementById("abstractPoster");
         const sessionPick = document.getElementById("sessionPick");
@@ -146,28 +149,21 @@ fields of your choice, and resubmit the form.
         posterOptions.forEach(option => option.addEventListener("change", toggleAbstract));
         // Run the function once on page load in case of pre-selected value
         toggleAbstract();
-        } else {
-            document.getElementById("formEmail").value = email;
-            const posterOptions = document.getElementsByName("formPoster");
-            const abstractPoster = document.getElementById("abstractPoster");
-            const sessionPick = document.getElementById("sessionPick");
-            const titlePoster = document.getElementById("titlePoster");
-            const authorsPoster = document.getElementById("authorsPoster");
-            const presenterPoster = document.getElementById("presenterPoster");
-            function toggleAbstract() {
-                // Check if the "Yes" option is selected
-                const isPosterSelected = document.querySelector('input[name="formPoster"]:checked')?.value === "true";
-                abstractPoster.style.display = isPosterSelected ? "block" : "none";
-                sessionPick.style.display = isPosterSelected ? "block" : "none";
-                titlePoster.style.display = isPosterSelected ? "block" : "none";
-                presenterPoster.style.display = isPosterSelected ? "block" : "none";
-                authorsPoster.style.display = isPosterSelected ? "block" : "none";
+
+        // link formName and formPresenter
+        const formName = document.getElementById("formName");
+        const formPresenter = document.getElementById("formPresenter");
+        // Track whether the user has manually changed the formPresenter field
+        let presenterEdited = false;
+        formPresenter.addEventListener("input", function () {
+            presenterEdited = true; // Mark as manually edited
+        });
+        formName.addEventListener("input", function () {
+            if (!presenterEdited) {
+                formPresenter.value = formName.value;
             }
-            // Add event listeners to both radio buttons
-            posterOptions.forEach(option => option.addEventListener("change", toggleAbstract));
-            // Run the function once on page load in case of pre-selected value
-            toggleAbstract();
-        }
+        });
+        
       } catch (error) {
         console.error("Error fetching user data:", error);
     }
