@@ -22,12 +22,15 @@ title: "Admin panel"
 
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
+  let hashedPassword
+
 
   document.getElementById("login-btn").addEventListener("click", async () => {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      hashedPassword=await hashPassword(user.password);
       if (!userCredential.user.emailVerified) {
         alert("Please verify your email address before logging in.");
         await signOut(auth);
@@ -64,7 +67,6 @@ title: "Admin panel"
   });
 
   onAuthStateChanged(auth, (user) => {
-    const hashedPassword = await hashPassword(user.password);
     console.log(hashedPassword)
     if (user && user.emailVerified && (user.email=='sbdm2025.lyon@gmail.com')) {
       document.getElementById("auth-container").style.display = "none";
@@ -82,7 +84,6 @@ title: "Admin panel"
 // Fetch data from backend API
     async function fetchAllData() {
         const user = auth.currentUser;
-        const hashedPassword = await hashPassword(user.password);
         const response = await fetch(`https://misc.robustcircuit.eu/all?hash=${hashedPassword}`);
         const result = await response.json();
         let tableBody = "";
