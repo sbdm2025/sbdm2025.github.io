@@ -55,7 +55,7 @@ This page is meant for SBDM organizers only.
       document.getElementById("auth-container").style.display = "none";
       document.getElementById("user-container").style.display = "block";
       document.getElementById("logged-container").style.display = "block";
-      fetchAllData()
+      fetchAllData(hashedPassword)
     } else {
       document.getElementById("logged-container").style.display = "none";
       document.getElementById("auth-container").style.display = "block";
@@ -64,7 +64,7 @@ This page is meant for SBDM organizers only.
   });
 
 // Fetch data from backend API
-    async function fetchAllData() {
+    async function fetchAllData(hashedPassword) {
         const user = auth.currentUser;
         const response = await fetch(`https://misc.robustcircuit.eu/all?hash=${hashedPassword}`);
         const result = await response.json();
