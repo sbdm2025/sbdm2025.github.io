@@ -265,6 +265,7 @@ Tip
       const result = await response.json();
       console.log(result.data)
       if (result.success) {
+        result.data._id
         document.getElementById("formName").value = result.data.name;
         document.getElementById("formEmail").value = email;
         document.getElementById("formAffiliation").value = result.data.affiliation;
@@ -372,6 +373,7 @@ Tip
     }
     this.appendChild(hiddenInput);
     const formData = {
+      form_id: document.getElementById("formId").value,
       name: document.getElementById("formName").value,
       position: document.querySelector('input[name="formPosition"]:checked').value,
       affiliation: document.getElementById("formAffiliation").value,
@@ -450,7 +452,7 @@ Tip
         <div class="col-md-5">
             <div class="d-flex justify-content-between align-items-center">
                 <h5 id="user-email" class="mb-0 anchored">Logged in as:</h5>
-                <button id="logout-btn" class="btn btn-secondary" style="max-width:15%">Logout</button>
+                <button id="logout-btn" class="btn btn-primary" style="max-width:15%">Logout</button>
             </div>
         </div>
     </div>
@@ -476,6 +478,7 @@ Tip
         <div class="container mt-5" style="text-align:left">
             <h3 class="anchored">Registration Form</h3>
             <form id="registrationForm">
+                <input type="hidden" id="formId" name="formId" value="noId">
                 <div class="mb-3">
                     <label for="formName" class="form-label">First &amp; last name</label>
                     <input type="text" class="form-control" id="formName" required="">
@@ -506,11 +509,11 @@ Tip
                 <div class="mb-3">
                     <label class="form-label">What is your position?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="formPosition" id="optionposition1" value="Researcher, postdoc or permanent staff" required="">
+                        <input class="form-check-input" type="radio" name="formPosition" id="optionposition1" value="Researcher" required="">
                         <label class="form-check-label" for="optionposition1">Researcher, postdoc or permanent research staff</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="formPosition" id="optionposition2" value="Master or PhD student" required="">
+                        <input class="form-check-input" type="radio" name="formPosition" id="optionposition2" value="Student" required="">
                         <label class="form-check-label" for="optionposition2">Master or PhD student</label>
                     </div>
                 </div>
