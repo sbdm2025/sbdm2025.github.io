@@ -222,9 +222,16 @@ Warning
       const result = await response.json();
       console.log(result.data)
       if (result.success) {
-        document.getElementById("name").value = result.data.name;
-        document.getElementById("email").value = result.data.email;
-        document.getElementById("message").value = result.data.message;
+        document.getElementById("formName").value = result.data.name;
+        document.getElementById("formEmail").value = email;
+        document.getElementById("formAffiliation").value = result.data.affiliation;
+        document.getElementById("formAbstract").value = result.data.abstract;
+        // Prepopulate the radio button based on formSession
+        const sessionValue = result.data.session; // Assuming this matches the radio values
+        const radioButton = document.querySelector(`input[name="formSession"][value="${sessionValue}"]`);
+        if (radioButton) {
+            radioButton.checked = true;
+        }
       }
     } catch (error) {
       console.error("Error fetching user data:", error);
@@ -342,16 +349,47 @@ Warning
     <h2 class="anchored">Contact Form</h2>
     <form id="registrationForm">
         <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" required="">
+            <label for="formName" class="form-label">First &amp; last name</label>
+            <input type="text" class="form-control" id="formName" required="">
         </div>
         <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required="">
+            <label for="formAffiliation" class="form-label">Affiliation</label>
+            <input type="text" class="form-control" id="formAffiliation" required="">
         </div>
         <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="3" required=""></textarea>
+            <label for="formEmail" class="form-label">Email</label>
+            <input type="text" class="form-control" id="formEmail" readonly="">
+        </div>
+        <div class="mb-3">
+            <label for="formAbstract" class="form-label">Message</label>
+            <textarea class="form-control" id="formAbstract" rows="8" required=""></textarea>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Select an Option:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="formOption" id="option1" value="Temporal Dynamics of decision making" required="">
+                <label class="form-check-label" for="option1">Temporal Dynamics of decision making</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="formOption" id="option2" value="Causal manipulations in decision making" required="">
+                <label class="form-check-label" for="option2">Causal manipulations in decision making</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="formOption" id="option3" value="Social cognition and decision making across species" required="">
+                <label class="form-check-label" for="option3">Social cognition and decision making across species</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="formOption" id="option4" value="Naturalistic &amp; context-dependant decision making" required="">
+                <label class="form-check-label" for="option4">Naturalistic &amp; context-dependant decision making</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="formOption" id="option5" value="Brain-body interaction and decision making" required="">
+                <label class="form-check-label" for="option5">Brain-body interaction and decision making</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="formOption" id="option6" value="Comparative decision across agents" required="">
+                <label class="form-check-label" for="option6">Comparative decision across agents</label>
+            </div>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
