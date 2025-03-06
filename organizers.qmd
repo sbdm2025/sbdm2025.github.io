@@ -2,10 +2,11 @@
 title: "Organizers"
 ---
 
-This will be the 12th edition of SBDM. In 2025, the conference is mainly organized by researchers from 
-three main neuroscience institutes of Lyon ([SBRI](https://sbri.fr/),
-[ISC-MJ](http://www.isc.cnrs.fr/),
-[CRNL](https://www.crnl.fr/en?language=en)) and a economics lab ([GATE](https://www.gate.cnrs.fr/en/)).
+This will be the 12th edition of SBDM. In 2025, the conference is mainly
+organized by researchers from three main neuroscience institutes of Lyon
+([SBRI](https://sbri.fr/), [ISC-MJ](http://www.isc.cnrs.fr/),
+[CRNL](https://www.crnl.fr/en?language=en)) and a economics lab
+([GATE](https://www.gate.cnrs.fr/en/)).
 
 ### Local Organizing Committee
 

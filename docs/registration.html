@@ -304,22 +304,13 @@ Warning
   
 </script>
 <style>
-    body {
-        font-family: sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
-        background-color: #f4f4f4;
-    }
 
     .auth-container, .signup-container, .user-container {
         background-color: #fff;
-        padding: 20px;
+        padding: 10px;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        width: 300px;
+        width: 100%;
         text-align: center;
         margin: 10px;
     }
@@ -355,19 +346,19 @@ Warning
 </style>
 <!-- Login Form -->
 
-<div class="container">
+<div class="container-lg">
     <div class="logged-container row justify-content-center" id="logged-container">
         <div class="col-md-5">
             <div class="d-flex justify-content-between align-items-center">
                 <h5 id="user-email" class="mb-0 anchored">Logged in as:</h5>
-                <button id="logout-btn" class="btn btn-secondary" style="max-width:10%">Logout</button>
+                <button id="logout-btn" class="btn btn-secondary" style="max-width:15%">Logout</button>
             </div>
         </div>
     </div>
     <div class="row justify-content-center">
         <div class="col-md-5">
             <div class="auth-container text-center" id="auth-container">
-                <h2 class="anchored">Login</h2>
+                <h2 style="margin-top:0px" class="anchored">Login</h2>
                 <input type="email" id="email" class="form-control" placeholder="Email">
                 <input type="password" id="password" class="form-control" placeholder="Password">
                 <button id="login-btn" class="btn btn-primary mt-2">Login</button>
@@ -375,7 +366,7 @@ Warning
         </div>
         <div class="col-md-5">
             <div class="signup-container text-center">
-                <h2 class="anchored">Sign Up</h2>
+                <h2 "margin-top:0px"="" class="anchored">Sign Up</h2>
                 <input type="email" id="signup-email" class="form-control" placeholder="Email">
                 <input type="password" id="signup-password" class="form-control" placeholder="Password">
                 <button id="signup-btn" class="btn btn-success mt-2">Sign Up</button>
@@ -467,7 +458,6 @@ Warning
         </div>
     </div>
 </div>
-
 
 
 
