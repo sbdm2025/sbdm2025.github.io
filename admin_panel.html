@@ -215,7 +215,7 @@ ul.task-list li input[type="checkbox"] {
 // Fetch data from backend API
     async function fetchAllData(hashedPassword) {
         const user = auth.currentUser;
-        const response = await fetch(`https://misc.robustcircuit.eu/all?hash=${hashedPassword}`);
+        const response = await fetch(`https://misc.robustcircuit.eu/all/${hashedPassword}`);
         const result = await response.json();
         let tableBody = "";
         result.forEach(entry => {
@@ -223,7 +223,6 @@ ul.task-list li input[type="checkbox"] {
                 <tr data-id="${entry._id}">
                     <td contenteditable="true" class="editable" data-field="name">${entry.name}</td>
                     <td contenteditable="true" class="editable" data-field="email">${entry.email}</td>
-                    <td contenteditable="true" class="editable" data-field="title">${entry.title}</td>
                     <td contenteditable="true" class="editable" data-field="affiliation">${entry.affiliation}</td>
                     <td contenteditable="true" class="editable" data-field="session">${entry.session}</td>
                     <td contenteditable="true" class="editable" data-field="foodrestriction">${entry.foodrestriction}</td>
@@ -240,6 +239,7 @@ ul.task-list li input[type="checkbox"] {
                             <option value="false" ${!entry.discountRequest ? "selected" : ""}>No</option>
                         </select>
                     </td>
+                    <td contenteditable="true" class="editable" data-field="title">${entry.title}</td>
                     <td><button class="btn btn-primary btn-sm" onclick="showAbstract('${entry.abstract.replace(/'/g, "&apos;")}')">View</button></td>
                     <td>
                         <select class="form-select editable" data-field="paid">
@@ -278,7 +278,7 @@ ul.task-list li input[type="checkbox"] {
     function updateEntry(id, field, value, password) {display
         const user = auth.currentUser;
         $.ajax({
-            url: `https://misc.robustcircuit.eu/edit?hash=${hashedPassword}&id=${id}`,
+            url: `https://misc.robustcircuit.eu/edit/${hashedPassword}/${id}`,
             type: "PUT",
             contentType: "application/json",
             data: JSON.stringify({ [field]: value }),
@@ -366,13 +366,13 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Name</th>
 <th data-quarto-table-cell-role="th">Email</th>
-<th data-quarto-table-cell-role="th">Title</th>
 <th data-quarto-table-cell-role="th">Affiliation</th>
 <th data-quarto-table-cell-role="th">Session</th>
 <th data-quarto-table-cell-role="th">Food</th>
 <th data-quarto-table-cell-role="th">Position</th>
 <th data-quarto-table-cell-role="th">Presenting</th>
 <th data-quarto-table-cell-role="th">Discount</th>
+<th data-quarto-table-cell-role="th">Title</th>
 <th data-quarto-table-cell-role="th">Abstract</th>
 <th data-quarto-table-cell-role="th">Paid</th>
 </tr>
