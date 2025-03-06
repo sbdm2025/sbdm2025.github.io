@@ -99,19 +99,14 @@ This page is under construction.
 ```
 
 <!-- Login Form -->
-
-{{< <h3>Login</h3>
+```{=html}
+<h3>Login</h3>
 <input type="email" id="email" placeholder="Email" required>
 <input type="password" id="password" placeholder="Password" required>
 <button id="login-btn">Login</button>
-<button id="google-login-btn" class="google-btn">Login with Google</button> >}}
+<button id="google-login-btn" class="google-btn">Login with Google</button>
 
-<!-- User Info -->
-
-::: {#user-container .container .hidden}
-```         
-{{< <h3>Welcome</h3>
+<h3>Welcome</h3>
 <p id="user-email"></p>
-<button id="logout-btn">Logout</button> >}}
+<button id="logout-btn">Logout</button>
 ```
-:::

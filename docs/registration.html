@@ -69,11 +69,11 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="Registration">
-<meta property="og:description" content="Registration is not open yet.">
+<meta property="og:description" content="SBDM-2025">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="SBDM 2025">
 <meta name="twitter:title" content="Registration">
-<meta name="twitter:description" content="Registration is not open yet.">
+<meta name="twitter:description" content="SBDM-2025">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -250,6 +250,17 @@ Warning
     .hidden { display: none; }
 </style>
 <!-- Login Form -->
+<h3 class="anchored">Login</h3>
+<input type="email" id="email" placeholder="Email" required="">
+<input type="password" id="password" placeholder="Password" required="">
+<button id="login-btn">Login</button>
+<button id="google-login-btn" class="google-btn">Login with Google</button>
+
+<h3 class="anchored">Welcome</h3>
+<p id="user-email"></p>
+<button id="logout-btn">Logout</button>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -649,8 +660,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-      <div class="footer-contents">Developed for SBDM 2025 by Romain Ligneul</div>  
-    </div>
+<p>Developed for SBDM 2025 by Romain Ligneul</p>
+</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
