@@ -24,6 +24,7 @@ website:
       - href: speakers.qmd
       - href: venue.qmd
       - href: program.qmd
+      - href: registration.qmd
     right:
       - href: previous.qmd
       - href: organizers.qmd

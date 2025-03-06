@@ -11,6 +11,19 @@ Registration fees include attendance to the entire meeting, coffee
 breaks, lunchs, dinners and social events. Register until the **18th of
 April** to benefit from a discount.
 
+::: {.container-lg .justify-content-center}
+::: {.justify-content-center .w-75}
+|                                           | Early registration (until 18/04) | Late registration (after 18/04) |
+|:----------------------------:|:-------------------:|:-------------------:|
+| Researchers, postdocs and permanent staff |               290€               |              340€               |
+|       Masters and doctoral students       |               190€               |              240€               |
+:::
+:::
+
+Note that you may benefit from a discount if you work in an institution
+located in a low-income country (see the
+[list](files/Listoflowincomecountries.pdf){target="_blank"})
+
 ### How to proceed
 
 1. Sign-up with a valid email address: a confirmation email will be sent to
@@ -25,19 +38,6 @@ fields of your choice, and resubmit the form.
 :::
 
 ### Registration
-
-::: {.container-lg .justify-content-center}
-::: {.justify-content-center .w-75}
-|                                           | Early registration (until 18/04) | Late registration (after 18/04) |
-|:----------------------------:|:-------------------:|:-------------------:|
-| Researchers, postdocs and permanent staff |               290€               |              340€               |
-|       Masters and doctoral students       |               190€               |              240€               |
-:::
-:::
-
-Note that you may benefit from a discount if you work in an institution
-located in a low-income country (see the
-[list](files/Listoflowincomecountries.pdf){target="_blank"})
 
 ```{=html}
 <script type="module">
@@ -112,9 +112,9 @@ located in a low-income country (see the
         }
         // Prepopulate the radio button based on formSession
         const presentsValue = result.data.presents; // Assuming this matches the radio values
-        const radioPresentsButton = document.querySelector(`input[name="formPresents"][value="${sessionValue}"]`);
-        if (radioSessionButton) {
-            radioSessionButton.checked = true;
+        const radioPresentsButton = document.querySelector(`input[name="formPoster"][value="${sessionValue}"]`);
+        if (radioPresentsButton) {
+            radioPresentsButton.checked = true;
         }
         const foodValue = result.data.foodrestriction; // Assuming this matches the radio values
         const radioFoodButton = document.querySelector(`input[name="formFood"][value="${foodValue}"]`);
@@ -127,16 +127,20 @@ located in a low-income country (see the
             radioPositionButton.checked = true;
         }
         //
-        const posterOptions = document.getElementsByName("formPresents");
+        const posterOptions = document.getElementsByName("formPoster");
         const abstractPoster = document.getElementById("abstractPoster");
         const sessionPick = document.getElementById("sessionPick");
         const titlePoster = document.getElementById("titlePoster");
+        const authorsPoster = document.getElementById("authorsPoster");
+        const presenterPoster = document.getElementById("presenterPoster");
         function toggleAbstract() {
             // Check if the "Yes" option is selected
-            const isPosterSelected = document.querySelector('input[name="formPresents"]:checked')?.value === "true";
+            const isPosterSelected = document.querySelector('input[name="formPoster"]:checked')?.value === "true";
             abstractPoster.style.display = isPosterSelected ? "block" : "none";
             sessionPick.style.display = isPosterSelected ? "block" : "none";
             titlePoster.style.display = isPosterSelected ? "block" : "none";
+            presenterPoster.style.display = isPosterSelected ? "block" : "none";
+            authorsPoster.style.display = isPosterSelected ? "block" : "none";
         }
         // Add event listeners to both radio buttons
         posterOptions.forEach(option => option.addEventListener("change", toggleAbstract));
@@ -144,16 +148,20 @@ located in a low-income country (see the
         toggleAbstract();
         } else {
             document.getElementById("formEmail").value = email;
-            const posterOptions = document.getElementsByName("formPresents");
+            const posterOptions = document.getElementsByName("formPoster");
             const abstractPoster = document.getElementById("abstractPoster");
             const sessionPick = document.getElementById("sessionPick");
             const titlePoster = document.getElementById("titlePoster");
+            const authorsPoster = document.getElementById("authorsPoster");
+            const presenterPoster = document.getElementById("presenterPoster");
             function toggleAbstract() {
                 // Check if the "Yes" option is selected
-                const isPosterSelected = document.querySelector('input[name="formPresents"]:checked')?.value === "true";
+                const isPosterSelected = document.querySelector('input[name="formPoster"]:checked')?.value === "true";
                 abstractPoster.style.display = isPosterSelected ? "block" : "none";
                 sessionPick.style.display = isPosterSelected ? "block" : "none";
                 titlePoster.style.display = isPosterSelected ? "block" : "none";
+                presenterPoster.style.display = isPosterSelected ? "block" : "none";
+                authorsPoster.style.display = isPosterSelected ? "block" : "none";
             }
             // Add event listeners to both radio buttons
             posterOptions.forEach(option => option.addEventListener("change", toggleAbstract));
@@ -207,8 +215,10 @@ located in a low-income country (see the
       position: document.querySelector('input[name="formPosition"]:checked').value,
       affiliation: document.getElementById("formAffiliation").value,
       foodrestriction: document.querySelector('input[name="formFood"]:checked').value,
-      presents: document.querySelector('input[name="formPresents"]:checked').value,
+      poster: document.querySelector('input[name="formPoster"]:checked').value,
       title: document.getElementById("formTitle").value,
+      authors: document.getElementById("formAuthors").value,
+      presenter: document.getElementById("formPresenter").value,
       abstract: document.getElementById("formAbstract").value,
       session: document.querySelector('input[name="formSession"]:checked').value,
       discountRequest: hiddenInput.value,
@@ -362,17 +372,25 @@ located in a low-income country (see the
                 <div class="mb-3">
                     <label class="form-label">Will you present a poster at SBDM2025?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="formPresents" id="optionposter1" value="false" checked required>
+                        <input class="form-check-input" type="radio" name="formPoster" id="optionposter1" value="false" checked required>
                         <label class="form-check-label" for="optionposter1">No</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="formPresents" id="optionposter2" value="true" required>
+                        <input class="form-check-input" type="radio" name="formPoster" id="optionposter2" value="true" required>
                         <label class="form-check-label" for="optionposter2">Yes</label>
                     </div>
                 </div>
                 <div class="mb-3" id="titlePoster">
                     <label for="formAbstract" class="form-label">Poster title</label>
                     <input type="text" class="form-control" id="formTitle" required>
+                </div>
+                <div class="mb-3" id="authorsPoster">
+                    <label for="formAuthors" class="form-label">Authors</label>
+                    <input type="text" class="form-control" id="formAuthors" required>
+                </div>
+                <div class="mb-3" id="presenterPoster">
+                    <label for="formPresenter" class="form-label">Presenter</label>
+                    <input type="text" class="form-control" id="formPresenter" required>
                 </div>
                 <div class="mb-3" id="abstractPoster">
                     <label for="formAbstract" class="form-label">Poster abstract (max. 200 words)</label>
