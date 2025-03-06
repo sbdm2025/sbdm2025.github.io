@@ -176,19 +176,27 @@ This page is under construction.
 
 <!-- Login Form -->
 ```{=html}
-<div class="auth-container" id="auth-container">
-    <h2>Login</h2>
-    <input type="email" id="email" placeholder="Email">
-    <input type="password" id="password" placeholder="Password">
-    <button id="login-btn">Login</button>
-    <button id="logout-btn">Logout</button>
-</div>
 
-<div class="signup-container" id="signup-container">
-    <h2>Sign Up</h2>
-    <input type="email" id="signup-email" placeholder="Email">
-    <input type="password" id="signup-password" placeholder="Password">
-    <button id="signup-btn">Sign Up</button>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="auth-container text-center">
+                <h2>Login</h2>
+                <input type="email" id="email" class="form-control" placeholder="Email">
+                <input type="password" id="password" class="form-control" placeholder="Password">
+                <button id="login-btn" class="btn btn-primary mt-2">Login</button>
+                <button id="logout-btn" class="btn btn-secondary mt-2">Logout</button>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="signup-container text-center">
+                <h2>Sign Up</h2>
+                <input type="email" id="signup-email" class="form-control" placeholder="Email">
+                <input type="password" id="signup-password" class="form-control" placeholder="Password">
+                <button id="signup-btn" class="btn btn-success mt-2">Sign Up</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="user-container" id="user-container">
