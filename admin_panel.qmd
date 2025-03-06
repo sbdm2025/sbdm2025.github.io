@@ -146,7 +146,6 @@ title: "Admin panel"
 
     function updateEntry(id, field, value, password) {
         const user = auth.currentUser;
-        const hashedPassword = await hashPassword(user.password);
         $.ajax({
             url: `https://misc.robustcircuit.eu/edit?hash=${hashedPassword}&id=${id}`,
             type: "PUT",
