@@ -153,6 +153,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>This page is meant for SBDM organizers only.</p>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
   import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, sendEmailVerification } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
@@ -217,14 +218,13 @@ ul.task-list li input[type="checkbox"] {
     console.log(hashedPassword)
     if (user && user.emailVerified && (user.email=='sbdm2025.lyon@gmail.com')) {
       document.getElementById("auth-container").style.display = "none";
-      document.getElementById("signup-container").style.display = "none";
       document.getElementById("user-container").style.display = "block";
       document.getElementById("logged-container").style.display = "block";
       fetchAllData(user.password)
     } else {
       document.getElementById("logged-container").style.display = "none";
       document.getElementById("auth-container").style.display = "block";
-      document.getElementById("user-container").style.display = "none";
+      document.getElementById("user-container").style. = "none";
     }
   });
 
@@ -245,12 +245,6 @@ ul.task-list li input[type="checkbox"] {
                     <td contenteditable="true" class="editable" data-field="foodrestriction">${entry.foodrestriction}</td>
                     <td contenteditable="true" class="editable" data-field="position">${entry.position}</td>
                     <td>
-                        <select class="form-select editable" data-field="paid">
-                            <option value="true" ${entry.paid ? "selected" : ""}>Yes</option>
-                            <option value="false" ${!entry.paid ? "selected" : ""}>No</option>
-                        </select>
-                    </td>
-                    <td>
                         <select class="form-select editable" data-field="presents">
                             <option value="true" ${entry.presents ? "selected" : ""}>Yes</option>
                             <option value="false" ${!entry.presents ? "selected" : ""}>No</option>
@@ -263,6 +257,12 @@ ul.task-list li input[type="checkbox"] {
                         </select>
                     </td>
                     <td><button class="btn btn-primary btn-sm" onclick="showAbstract('${entry.abstract.replace(/'/g, "&apos;")}')">View</button></td>
+                    <td>
+                        <select class="form-select editable" data-field="paid">
+                            <option value="true" ${entry.paid ? "selected" : ""}>Yes</option>
+                            <option value="false" ${!entry.paid ? "selected" : ""}>No</option>
+                        </select>
+                    </td>
                 </tr>`;
         });
         $("#tableBody").html(tableBody);
@@ -291,9 +291,8 @@ ul.task-list li input[type="checkbox"] {
         });
     });
 
-    function updateEntry(id, field, value, password) {
+    function updateEntry(id, field, value, password) {display
         const user = auth.currentUser;
-        const hashedPassword = await hashPassword(user.password);
         $.ajax({
             url: `https://misc.robustcircuit.eu/edit?hash=${hashedPassword}&id=${id}`,
             type: "PUT",
@@ -377,7 +376,6 @@ ul.task-list li input[type="checkbox"] {
     }
 
 </style>
-<p>:::</p>
 <div class="container-lg">
     <div class="logged-container row justify-content-center" id="logged-container">
         <div class="col-md-5">
@@ -387,7 +385,7 @@ ul.task-list li input[type="checkbox"] {
             </div>
         </div>
     </div>
-    <div class="d-flex row justify-content-between flex-wrap" style="width:100%">
+    <div class="d-flex row justify-content-center flex-wrap" style="width:100%">
         <div style="width:45%">
             <div class="auth-container text-center" id="auth-container">
                 <h2 style="margin-top:0px" class="anchored">Admin login</h2>
@@ -408,12 +406,12 @@ ul.task-list li input[type="checkbox"] {
 <th data-quarto-table-cell-role="th">Title</th>
 <th data-quarto-table-cell-role="th">Affiliation</th>
 <th data-quarto-table-cell-role="th">Session</th>
-<th data-quarto-table-cell-role="th">Food Restriction</th>
+<th data-quarto-table-cell-role="th">Food</th>
 <th data-quarto-table-cell-role="th">Position</th>
-<th data-quarto-table-cell-role="th">Paid</th>
-<th data-quarto-table-cell-role="th">Presents</th>
-<th data-quarto-table-cell-role="th">Discount Request</th>
+<th data-quarto-table-cell-role="th">Presenting</th>
+<th data-quarto-table-cell-role="th">Discount</th>
 <th data-quarto-table-cell-role="th">Abstract</th>
+<th data-quarto-table-cell-role="th">Paid</th>
 </tr>
 </thead>
 <tbody id="tableBody">
@@ -439,7 +437,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
-<p>:::</p>
 
 
 
