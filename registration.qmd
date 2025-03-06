@@ -64,9 +64,9 @@ This page is under construction.
         const password = document.getElementById("password").value;
         try {
             const userCredential = await signInWithEmailAndPassword(auth, email, password);
-            const user = userCredential.user;
+            //const user = userCredential.user;
 
-            if (!user.emailVerified) {
+            if (!userCredential.user.emailVerified) {
                 alert("Please verify your email address before logging in.");
                 await signOut(auth); // Sign out the user if email is not verified
                 return;
@@ -116,7 +116,7 @@ This page is under construction.
 
     function displayGoogleForm(userEmail) {
         // Replace 'YOUR_GOOGLE_FORM_EMBED_URL' with your actual Google Form embed URL
-        const googleFormEmbedUrl = `https://docs.google.com/forms/d/e/1FAIpQLScWF9cXG9kIy_PeChCBGnfY-f7oAuvOjayS2HLwUYlqgtngiA/viewform?entry.emailAddress=${encodeURIComponent(userEmail)}`;
+        const googleFormEmbedUrl = `https://docs.google.com/forms/d/e/1FAIpQLScWF9cXG9kIy_PeChCBGnfY-f7oAuvOjayS2HLwUYlqgtngiA?entry.emailAddress=${encodeURIComponent(userEmail)}`;
 
         // Create an iframe to embed the Google Form
         const iframe = document.createElement("iframe");
