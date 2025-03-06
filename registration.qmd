@@ -217,27 +217,27 @@ This page is under construction.
         <div class="mb-3">
             <label class="form-label">Select an Option:</label>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="formOption" id="option1" value="Temporal Dynamics of decision making" required>
+                <input class="form-check-input" type="radio" name="formSession" id="option1" value="Temporal Dynamics of decision making" required>
                 <label class="form-check-label" for="option1">Temporal Dynamics of decision making</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="formOption" id="option2" value="Causal manipulations in decision making" required>
+                <input class="form-check-input" type="radio" name="formSession" id="option2" value="Causal manipulations in decision making" required>
                 <label class="form-check-label" for="option2">Causal manipulations in decision making</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="formOption" id="option3" value="Social cognition and decision making across species" required>
+                <input class="form-check-input" type="radio" name="formSession" id="option3" value="Social cognition and decision making across species" required>
                 <label class="form-check-label" for="option3">Social cognition and decision making across species</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="formOption" id="option4" value="Naturalistic & context-dependant decision making" required>
+                <input class="form-check-input" type="radio" name="formSession" id="option4" value="Naturalistic & context-dependant decision making" required>
                 <label class="form-check-label" for="option4">Naturalistic & context-dependant decision making</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="formOption" id="option5" value="Brain-body interaction and decision making" required>
+                <input class="form-check-input" type="radio" name="formSession" id="option5" value="Brain-body interaction and decision making" required>
                 <label class="form-check-label" for="option5">Brain-body interaction and decision making</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="formOption" id="option6" value="Comparative decision across agents" required>
+                <input class="form-check-input" type="radio" name="formSession" id="option6" value="Comparative decision across agents" required>
                 <label class="form-check-label" for="option6">Comparative decision across agents</label>
             </div>
         </div>
