@@ -2,8 +2,7 @@
 title: "Admin panel"
 ---
 
-
-
+This page is meant for SBDM organizers only.
 
 ```{=html}
 <script type="module">
@@ -233,7 +232,6 @@ title: "Admin panel"
 </style>
 ```
 
-:::
 ```{=html}
 <div class="container-lg">
     <div class="logged-container row justify-content-center" id="logged-container">
@@ -296,4 +294,3 @@ title: "Admin panel"
 
 
 ```
-:::
