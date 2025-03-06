@@ -1,0 +1,46 @@
+---
+title: "12th Symposium on Biology of Decision Making 2025 - Lyon"
+about:
+  template: marquee
+  image: images/palais_hirsh.jpg
+site-url: https://sbdm-2025.github.io/
+aliases:
+  - /
+---
+
+The objective of this two-day symposium is to gather people from
+different research fields with different approaches (economics,
+ethology, psychiatry, robotics, neural and computational approaches) to
+decision making.
+
+The event will take place for 3 days from the **16th to 18th** of June
+2025 in Lyon at the [Palais Hirsch Amphitheatre](venue). Note that SBDM dates have been updated to avoid conflict with the RLDM conference.
+
+Each session of the conference will be dedicated to one of the core
+themes, ensuring a focused exploration of topics and in-depth
+discussions.
+
+You can find a preliminary list of confirmed speakers [here](speakers).
+
+| Themes                                              | Chair |
+|-----------------------------------------------------|-------|
+| Brain-body interaction and decision making          | TBA   |
+| Comparative decision across agents                  | TBA   |
+| Causal manipulations in decision making             | TBA   |
+| Social cognition and decision making across species | TBA   |
+| Naturalistic & context-dependent decision making    | TBA   |
+| Temporal dynamics of decision making                | TBA   |
+
+Talks are scheduled to be 30 minutes overall with \~25 minute long talks
+followed by Q and A. Each session will end with a longer general
+discussion about the general theme, actively guided by the theme chair.
+The conference is 3 full days with 6 key themes.
+
+### Registration
+
+Registration is not yet open.
+
+::: callout-warning
+This page is under construction. More information will come soon, stay
+tuned.
+:::

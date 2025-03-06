@@ -1,0 +1,13 @@
+---
+title: "Philippe Faure"
+author: "SBDM2025"
+categories: ["Naturalistic & context-dependent decision-making"]
+image: https://faurelab.cnrs.fr/wp-content/uploads/2015/06/2013_10_04_labo_philippe_0470-5.jpg
+description: "Neurophysiology and Behavior, ESPCI-PSL (Paris)" 
+---
+
+Session: Naturalistic & context-dependent decision-making
+Date & time: TBA
+Title: TBA
+
+Website: [https://faurelab.cnrs.fr/](https://faurelab.cnrs.fr/)

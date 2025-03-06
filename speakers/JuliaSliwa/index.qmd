@@ -1,0 +1,13 @@
+---
+title: "Julia Sliwa"
+author: "SBDM2025"
+categories: ["Social cognition and decision making across species"]
+image: https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyUFJwwz0sXIDx8R69bB4yehryzbZNtQ5Vfj7-J4CEiheixFQV
+description: "Neurophysiology of Social Cognition, Paris Brain Institute (France)" 
+---
+
+Session: Social cognition and decision making across species
+Date & time: TBA
+Title: TBA
+
+Website: [https://www.sliwalab.org/](https://www.sliwalab.org/)

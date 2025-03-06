@@ -1,0 +1,13 @@
+---
+title: "Julien Bastin"
+author: "SBDM2025"
+categories: ["Temporal dynamics of decision making"]
+image: https://neurosciences.univ-grenoble-alpes.fr/sites/default/files/styles/photo_user/public/pictures/2024-05/Julien_photo_travail.png
+description: "Brain, Behavior and Neuromodulation, University of Grenoble (Grenoble, France)" 
+---
+
+Session: Temporal dynamics of decision making
+Date & time: TBA
+Title: TBA
+
+Website: [https://neurosciences.univ-grenoble-alpes.fr/fr/recherche-au-gin/equipes-recherche/equipe-cerveau-comportement-et-neuromodulation](https://neurosciences.univ-grenoble-alpes.fr/fr/recherche-au-gin/equipes-recherche/equipe-cerveau-comportement-et-neuromodulation)

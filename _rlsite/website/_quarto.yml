@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: ./docs
+
+website:
+  site-url: https://romainligneul.github.io
+  google-analytics: 
+    anonymize-ip: true
+    tracking-id: "G-CFSZ45W5CV"
+    storage: none
+  cookie-consent: false
+  description: "Romain Ligneul"
+  twitter-card: true
+  open-graph:
+    site-name: Romain Ligneul
+    locale: en_US
+  favicon: favicon.ico
+execute:
+  freeze: auto
+
+profile:
+  default: french
+  group: [english, french]

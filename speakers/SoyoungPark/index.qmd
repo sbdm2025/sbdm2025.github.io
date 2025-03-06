@@ -1,0 +1,13 @@
+---
+title: "Soyoung Park"
+author: "SBDM2025"
+categories: ["Brain-body interaction and decision making"]
+image: https://mentalhealth.charite.de/fileadmin/user_upload/microsites/m_cc15/mentalhealth/grafiken/Prof.Park_297X337.jpg
+description: "Department of Decision Neuroscience and Nutrition, Charité Mental Health (Berlin, Gerrmany)" 
+---
+
+Session: Brain-body interaction and decision making
+Date & time: TBA
+Title: TBA
+
+Website: [https://www.dife.de/en/research/departments-and-labs/decision-neuroscience-and-nutrition/](https://www.dife.de/en/research/departments-and-labs/decision-neuroscience-and-nutrition/)

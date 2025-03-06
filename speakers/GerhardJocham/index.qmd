@@ -1,0 +1,13 @@
+---
+title: "Gerhard Jocham"
+author: "SBDM2025"
+categories: ["Causal manipulations in decision making"]
+image: https://pbs.twimg.com/profile_images/1096588208312385536/3Al1ahgb_400x400.png
+description: "Biological psychology of decision-making, Heinrich-Heine-Universität Düsseldorf (Germany)"
+---
+
+Session: Causal manipulations in decision making
+Date & time: TBA
+Title: TBA
+
+Website: [https://www.psychologie.hhu.de/en/research-teams/biological-psychology-of-decision-making](https://www.psychologie.hhu.de/en/research-teams/biological-psychology-of-decision-making)

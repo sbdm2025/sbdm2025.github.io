@@ -1,0 +1,13 @@
+---
+title: "Theresa Desrochers"
+author: "SBDM2025"
+categories: ["Temporal dynamics of decision making"]
+image: https://vivo.brown.edu/profile-images/619/a04/26a/b94/49e/9a3/f51/bcf/256/548/65/tdesroch_photo_.jpg
+description: "Department of Neuroscience, Brown University (USA)" 
+---
+
+Session: Temporal dynamics of decision making
+Date & time: TBA
+Title: TBA
+
+Website: [https://vivo.brown.edu/display/tdesroch](https://vivo.brown.edu/display/tdesroch)

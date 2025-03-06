@@ -1,0 +1,13 @@
+---
+title: "Torben Ott"
+author: "SBDM2025"
+categories: ["Temporal dynamics of decision making"]
+image: https://torbenottlab.org/wp-content/uploads/2020/11/Torben-2020-1024x1024.jpg
+description: "Decision circuits, Bernstein Center for Computational Neuroscience (Berlin, Germany)" 
+---
+
+Session: Temporal dynamics of decision making
+Date & time: TBA
+Title: TBA
+
+Website: [https://torbenottlab.org/](https://torbenottlab.org/)

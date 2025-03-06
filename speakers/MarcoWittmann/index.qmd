@@ -1,0 +1,13 @@
+---
+title: "Marco Wittmann"
+author: "SBDM2025"
+categories: ["Social cognition and decision making across species"]
+image: https://images.squarespace-cdn.com/content/v1/6613b934be78ab70ec7ffb8c/033d9ba4-44c1-4fea-b00d-6285c42c910b/Marco%2B-%2B3.jpg?format=750w
+description: "Social Computational Neuroscience Lab, University College of London (UK)" 
+---
+
+Session: Social cognition and decision making across species
+Date & time: TBA
+Title: TBA
+
+Website: [https://www.wittmann-lab.com/](https://www.wittmann-lab.com/)

@@ -1,0 +1,13 @@
+---
+title: "Marieke Schölvinck"
+author: "SBDM2025"
+categories: ["Comparative decision across agents"]
+image: https://www.esi-frankfurt.de/img/people/MariekeScholvinck.jpg
+description: "Havenith & Schölvinck Lab, Ernst Struengmann Institute for Neuroscience (Frankfurt, Germany)" 
+---
+
+Session: Comparative decision across agents
+Date & time: TBA
+Title: TBA
+
+Website: [https://www.esi-frankfurt.de/research/havenith-scholvinck-lab/](https://www.esi-frankfurt.de/research/havenith-scholvinck-lab/)

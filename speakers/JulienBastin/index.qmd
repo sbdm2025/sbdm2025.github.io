@@ -1,0 +1,13 @@
+---
+title: "David Redish"
+author: "SBDM2025"
+categories: ["Temporal dynamics of decision making"]
+image: https://med.umn.edu/sites/med.umn.edu/files/styles/bio_photo/public/web_profiles/2023-01/Redish%2C%20David.jpg
+description: "Redish lab, University of Minnesota (Minneapolis, US)" 
+---
+
+Session: Temporal dynamics of decision making
+Date & time: TBA
+Title: TBA
+
+Website: [https://redishlab.umn.edu/](https://redishlab.umn.edu/)

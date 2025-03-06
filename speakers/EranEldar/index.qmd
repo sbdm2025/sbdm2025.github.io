@@ -1,0 +1,13 @@
+---
+title: "Eran Eldar"
+author: "SBDM2025"
+categories: ["Naturalistic & context-dependent decision-making"]
+image: https://scholar.googleusercontent.com/citations?view_op=view_photo&user=e90V0RMAAAAJ&citpid=12
+description: "Computational Cognition Lab, Hebrew University of Jerusalem (Israel)" 
+---
+
+Session: Naturalistic & context-dependent decision-making
+Date & time: TBA
+Title: TBA
+
+Website: [https://sites.google.com/site/eldareran/](https://sites.google.com/site/eldareran/)

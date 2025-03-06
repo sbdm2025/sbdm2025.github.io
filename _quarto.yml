@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: docs
+
+format:
+  html:
+    theme: [minty, custom.scss]
+    grid:
+      body-width: 1920px
+
+website:
+  site-url: https://sbdm-2025.github.io
+  cookie-consent: false
+  description: "SBDM-2025"
+  twitter-card: true
+  open-graph:
+    site-name: SBDM 2025
+    locale: en_US
+  favicon: favicon.ico
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: speakers.qmd
+      - href: venue.qmd
+      - href: program.qmd
+    right:
+      - href: previous.qmd
+      - href: organizers.qmd
+      - href: contact.qmd
+  page-footer:
+    center: Developed for SBDM 2025 by Romain Ligneul
+    background: light
+    
+execute:
+  freeze: auto

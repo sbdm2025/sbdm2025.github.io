@@ -1,0 +1,13 @@
+---
+title: "Anna Beyeler"
+author: "SBDM2025"
+categories: ["Causal manipulations in decision making"]
+image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWFgbXQNhlZyYSJ3ZftaMc2mcgyhHHjHiVdA&s
+description: "Neural Circuits of Anxiety, Neurocentre Magendie (Bordeaux, France)"
+---
+
+Session: Causal manipulations in decision making
+Date & time: TBA
+Title: TBA
+
+Website: [https://neurocentre-magendie.fr/recherche/Beyeler/descriptionTeam.php](https://neurocentre-magendie.fr/recherche/Beyeler/descriptionTeam.php)

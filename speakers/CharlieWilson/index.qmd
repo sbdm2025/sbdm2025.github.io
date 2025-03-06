@@ -1,0 +1,13 @@
+---
+title: "Charlie Wilson"
+author: "SBDM2025"
+categories: ["Causal manipulations in decision making"]
+image: https://sbri.fr/wp-content/uploads/mugshot_pro_2-300x300.jpeg
+description: "Neurobiology of executive functions, Stem-cell & Brain Research Institute (Lyon, France)" 
+---
+
+Session: Causal manipulations in decision making
+Date & time: TBA
+Title: TBA
+
+Website: [https://sbri.fr/public-profile/105/single-member/](https://sbri.fr/public-profile/105/single-member/)

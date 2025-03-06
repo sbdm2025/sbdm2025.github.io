@@ -1,0 +1,13 @@
+---
+title: "Micah Allen"
+author: "SBDM2025"
+categories: ["Brain-body interaction and decision making"]
+image: https://static.wixstatic.com/media/9983a2_b00e2693dddf432cbfe030e35c83e0d2~mv2.png/v1/fill/w_371,h_227,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/micahallen01.png
+description: "Computational Psychiatry, Institute of Clinical Medicine, Aarhus University (Germany)" 
+---
+
+Session: Brain-body interaction and decision making
+Date & time: TBA
+Title: TBA
+
+Website: [https://www.the-ecg.org/](https://www.the-ecg.org/)

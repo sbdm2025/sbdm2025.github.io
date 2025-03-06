@@ -1,0 +1,68 @@
+project:
+  title: "RL  "
+  output-dir: ./docs/
+  render:
+  - "./fr/"
+  - "!./www/*"
+  - "!*.py"
+  pre-render: pre_render.py
+  post-render: post_render.py
+
+website:
+  favicon: favicon.ico
+  twitter-card: true
+  open-graph:
+    site-name: Romain Ligneul
+    locale: fr_FR
+  site-url: "https://romainligneul.github.io"
+  google-analytics: 
+    anonymize-ip: true
+    tracking-id: "G-CFSZ45W5CV"
+    storage: none
+  navbar:
+    tools:
+      - icon: github
+        href: https://github.com/romainligneul
+      - icon: twitter 
+        menu:
+          - text: (EN, recherche)
+            href:  https://twitter.com/causalself
+          - text: (FR, société)
+            href:  https://twitter.com/nerfsocial
+        href: https://twitter.com/nerfsocial
+      - icon: linkedin 
+        href: https://www.linkedin.com/in/romain-ligneul-b63b46192/
+      - icon: lightbulb 
+        href: https://www.adaptivecontrol.org
+    left:
+      - href: fr/index.qmd
+        text: Accueil
+      - href: fr/blog/
+        text: Blog
+      - href: fr/recherche.qmd
+        text: Recherche
+      - href: fr/robustcircuit.qmd
+        text: Startup
+      - text: Science citoyenne
+        menu:
+          - text: "Quiz électoraux (2022)"
+            file: fr/sciencecitoyenne/quiz_elections.qmd
+          - text: "Biais réseaux sociaux (2017)"
+            file: fr/sciencecitoyenne/biais_reseaux.qmd
+    right:
+      - href: ./
+        text: "{{< iconify emojione flag-for-us-outlying-islands >}}"
+      - href: ./fr
+        text: "{{< iconify emojione flag-for-france >}}"
+      - icon: rss
+        href: ./fr/blog/index.xml
+
+  page-footer: 
+    left: "Copyright 2024, Romain Ligneul" 
+
+format:
+  html:
+    theme: 
+      - cerulean
+      - ../../custom.scss
+    toc: true

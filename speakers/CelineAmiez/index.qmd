@@ -1,0 +1,13 @@
+---
+title: "Céline Amiez"
+author: "SBDM2025"
+categories: ["Comparative decision across agents"]
+image: https://sbri.fr/wp-content/uploads/amiez-300x300.jpg
+description: "Neurobiology of executive functions, Stem-cell & Brain Research Institute (Lyon, France)" 
+---
+
+Session: Comparative decision across agents
+Date & time: TBA
+Title: TBA
+
+Website: [https://sbri.fr/public-profile/23/single-member/](https://sbri.fr/public-profile/23/single-member/)

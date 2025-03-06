@@ -1,0 +1,56 @@
+project:
+  title: "RL  "
+  output-dir: ./docs/
+  render:
+  - "./*"
+  - "!./fr/*"
+  - "!./www/*"
+
+website:
+  favicon: favicon.ico
+  twitter-card: true
+  open-graph:
+    site-name: Romain Ligneul
+    locale: en_US
+  site-url: "https://romainligneul.github.io"
+  google-analytics: 
+    anonymize-ip: true
+    tracking-id: "G-CFSZ45W5CV"
+    storage: none
+  navbar:
+    tools:
+      - icon: github
+        href: https://github.com/romainligneul
+      - icon: twitter 
+        menu:
+          - text: (EN, research)
+            href:  https://twitter.com/causalself
+          - text: (FR, society)
+            href:  https://twitter.com/nerfsocial
+      - icon: linkedin 
+        href: https://www.linkedin.com/in/romain-ligneul-b63b46192/
+      - icon: lightbulb 
+        href: https://www.adaptivecontrol.org
+    left:
+      - href: index.qmd
+        text: Home
+      - href: blog_en/
+        text: Blog
+      - href: codes.qmd
+        text: Code
+    right:
+      - href: ./
+        text: "{{< iconify emojione flag-for-us-outlying-islands >}}"
+      - href: ./fr
+        text: "{{< iconify emojione flag-for-france >}}"
+
+  page-footer:
+    left: "Copyright 2024, Romain Ligneul" 
+
+        
+format:
+  html:
+    theme: 
+      - cerulean
+      - ../custom.scss
+    toc: true

@@ -1,0 +1,25 @@
+---
+title: "Blog"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  feed: true
+page-layout: full
+title-block-banner: "banner_blog.png"
+image: "/blog_en/banner_blog_card.png"
+description: "Science & society"
+include-in-header:
+  - text: |
+      <style>
+      .quarto-title-block .quarto-title-banner {
+        background-position-y: center;
+        height: 400px;
+      }
+      </style>
+---
+
+A selection of science-society and science popularization blog posts that may interest non-French readers, as well as some reading notes and comments on original research papers.

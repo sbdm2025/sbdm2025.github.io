@@ -1,0 +1,32 @@
+---
+title: "Previous meetings"
+---
+
+
+```{=html}
+<ul style="list-style-type: circle;">
+
+<li><a target="_blank" href="https://sbdm2023.sciencesconf.org/">SBDM 2023 (Paris, France)</a></li>
+
+<li><a target="_blank" href="https://sbdm2021.sciencesconf.org/">SBDM 2021 (Paris, France)</a></li>
+
+<li><a target="_blank" href="http://sbdm2019.isir.upmc.fr/">SBDM 2019 (Oxford, UK)</a></li>
+
+<li><a target="_blank" href="http://sbdm2018.isir.upmc.fr/">SBDM 2018 (Paris, France)</a></li>
+
+<li><a target="_blank" href="http://sbdm2017.isir.upmc.fr/">SBDM 2017 (Bordeaux, France)</a></li>
+
+<li><a target="_blank" href="http://sbdm2016.isir.upmc.fr/">SBDM 2016 (Paris, France)</a></li>
+
+<li><a target="_blank" href="http://sbdm2015.isir.upmc.fr/">SBDM 2015 (Paris, France)</a></li>
+
+<li><a target="_blank" href="http://sbdm2014.isir.upmc.fr/">SBDM 2014 (Paris, France)</a></li>
+
+<li><a target="_blank" href="http://sbdm2013.isir.upmc.fr/">SBDM 2013 (Paris, France)</a></li>
+
+<li><a target="_blank" href="http://sbdm2012.isir.upmc.fr/">SBDM 2012 (Paris, France)</a></li>
+
+<li><a target="_blank" href="http://www.inb.u-bordeaux2.fr/siteneuro2/pages/Symposia/DecisionMaking/Abstract.php">SBDM 2009 (Bordeaux, France)</a></li>
+
+</ul>
+```

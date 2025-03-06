@@ -1,0 +1,13 @@
+---
+title: "Pier Francesco Ferrari"
+author: "SBDM2025"
+categories: ["Social cognition and decision making across species"]
+image: https://i1.rgstatic.net/ii/profile.image/279171445084160-1443571067027_Q512/Pier-Ferrari.jpg
+description: "Social neuroscience and comparative development lab, Institut des Sciences Cognitives Marc Jeannerod (Lyon, France)" 
+---
+
+Session: Social cognition and decision making across species
+Date & time: TBA
+Title: TBA
+
+Website: [http://www.isc.cnrs.fr/index.rvt?teamid=4&team=research](http://www.isc.cnrs.fr/index.rvt?teamid=4&team=research)
