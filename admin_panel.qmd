@@ -81,7 +81,6 @@ This page is meant for SBDM organizers only.
                     <td contenteditable="true" class="editable" data-field="name">${entry.name}</td>
                     <td contenteditable="true" class="editable" data-field="email">${entry.email}</td>
                     <td contenteditable="true" class="editable" data-field="affiliation">${entry.affiliation}</td>
-                    <td contenteditable="true" class="editable" data-field="session">${entry.session}</td>
                     <td contenteditable="true" class="editable" data-field="foodrestriction">${entry.foodrestriction}</td>
                     <td contenteditable="true" class="editable" data-field="position">${entry.position}</td>
                     <td>
@@ -224,12 +223,10 @@ This page is meant for SBDM organizers only.
                     <th>Name</th>
                     <th>Email</th>
                     <th>Affiliation</th>
-                    <th>Session</th>
                     <th>Food</th>
                     <th>Position</th>
                     <th>Presents</th>
                     <th>Discount</th>
-                    <th>Title</th>
                     <th>Abstract</th>
                     <th>Paid</th>
                 </tr>
