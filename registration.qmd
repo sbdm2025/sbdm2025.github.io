@@ -4,21 +4,14 @@ title: "Registration"
 
 Registration is not open yet.
 
-We are still in the process of securing funding to make registration as affordable as possible, especially for students and postdocs.
+We are still in the process of securing funding to make registration as
+affordable as possible, especially for students and postdocs.
 
-::: {.callout-warning}
+::: callout-warning
 This page is under construction.
 :::
 
-<!-- Login Form -->
-<div id="auth-container" class="container">
-    <h3>Login</h3>
-    <input type="email" id="email" placeholder="Email" required>
-    <input type="password" id="password" placeholder="Password" required>
-    <button id="login-btn">Login</button>
-    <button id="google-login-btn" class="google-btn">Login with Google</button>
-</div>
-
+```{=html}
 <script type="module">
 
   // Import the functions you need from the SDKs you need
@@ -92,7 +85,9 @@ This page is under construction.
         }
     });
 </script>
+```
 
+```{=html}
 <style>
     body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
     .container { max-width: 300px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
@@ -101,19 +96,22 @@ This page is under construction.
     .google-btn { background: red; }
     .hidden { display: none; }
 </style>
+```
 
 <!-- Login Form -->
-<div id="auth-container" class="container">
-    <h3>Login</h3>
-    <input type="email" id="email" placeholder="Email" required>
-    <input type="password" id="password" placeholder="Password" required>
-    <button id="login-btn">Login</button>
-    <button id="google-login-btn" class="google-btn">Login with Google</button>
-</div>
+
+{{< <h3>Login</h3>
+<input type="email" id="email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button id="login-btn">Login</button>
+<button id="google-login-btn" class="google-btn">Login with Google</button> >}}
 
 <!-- User Info -->
-<div id="user-container" class="container hidden">
-    <h3>Welcome</h3>
-    <p id="user-email"></p>
-    <button id="logout-btn">Logout</button>
-</div>
+
+::: {#user-container .container .hidden}
+```         
+{{< <h3>Welcome</h3>
+<p id="user-email"></p>
+<button id="logout-btn">Logout</button> >}}
+```
+:::
