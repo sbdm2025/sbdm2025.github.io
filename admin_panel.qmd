@@ -63,7 +63,7 @@ This page is meant for SBDM organizers only.
     }
   });
 
-    function showAbstract(title, abstract, session,presents) {
+    function showAbstract(title, abstract, session) {
         document.getElementById("modalTitle").textContent = title;
         document.getElementById("modalAbstract").textContent = abstract;
         $("#abstractModal").modal("show");
@@ -95,7 +95,7 @@ This page is meant for SBDM organizers only.
                             <option value="false" ${!entry.discountRequest ? "selected" : ""}>No</option>
                         </select>
                     </td>
-                    <td><button class="btn btn-primary btn-sm" onclick="showAbstract(${entry.title},${entry.abstract},${entry.session},${entry.presents})">View</button></td>
+                    <td><button class="btn btn-primary btn-sm" onclick="showAbstract('${entry.title.replace(/'/g, "\\'")}','${entry.abstract.replace(/'/g, "\\'")}','${entry.session.replace(/'/g, "\\'")}')">View</button></td>
                     <td>
                         <select class="form-select editable" data-field="paid">
                             <option value="true" ${entry.paid ? "selected" : ""}>Yes</option>
