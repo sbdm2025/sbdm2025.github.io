@@ -212,6 +212,12 @@ ul.task-list li input[type="checkbox"] {
     }
   });
 
+    function showAbstract(title, abstract, session,presents) {
+        document.getElementById("modalTitle").textContent = title;
+        document.getElementById("modalAbstract").textContent = abstract;
+        $("#abstractModal").modal("show");
+    }
+
 // Fetch data from backend API
     async function fetchAllData(hashedPassword) {
         const user = auth.currentUser;
@@ -224,7 +230,6 @@ ul.task-list li input[type="checkbox"] {
                     <td contenteditable="true" class="editable" data-field="name">${entry.name}</td>
                     <td contenteditable="true" class="editable" data-field="email">${entry.email}</td>
                     <td contenteditable="true" class="editable" data-field="affiliation">${entry.affiliation}</td>
-                    <td contenteditable="true" class="editable" data-field="session">${entry.session}</td>
                     <td contenteditable="true" class="editable" data-field="foodrestriction">${entry.foodrestriction}</td>
                     <td contenteditable="true" class="editable" data-field="position">${entry.position}</td>
                     <td>
@@ -239,8 +244,7 @@ ul.task-list li input[type="checkbox"] {
                             <option value="false" ${!entry.discountRequest ? "selected" : ""}>No</option>
                         </select>
                     </td>
-                    <td contenteditable="true" class="editable" data-field="title">${entry.title}</td>
-                    <td><button class="btn btn-primary btn-sm" onclick="showAbstract('${entry.abstract.replace(/'/g, "&apos;")}')">View</button></td>
+                    <td><button class="btn btn-primary btn-sm" onclick="showAbstract(${entry.title},${entry.abstract},${entry.session},${entry.presents})">View</button></td>
                     <td>
                         <select class="form-select editable" data-field="paid">
                             <option value="true" ${entry.paid ? "selected" : ""}>Yes</option>
@@ -252,10 +256,6 @@ ul.task-list li input[type="checkbox"] {
         $("#tableBody").html(tableBody);
     };
 
-    function showAbstract(abstract) {
-        document.getElementById("modalBody").textContent = abstract;
-        $("#abstractModal").modal("show");
-    }
 
     // Inline edit event
     $(document).on("blur", ".editable", function () {
@@ -275,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
         });
     });
 
-    function updateEntry(id, field, value, password) {display
+    function updateEntry(id, field, value, password) {
         const user = auth.currentUser;
         $.ajax({
             url: `https://misc.robustcircuit.eu/edit/${hashedPassword}/${id}`,
@@ -352,8 +352,8 @@ ul.task-list li input[type="checkbox"] {
         <div style="width:45%">
             <div class="auth-container text-center" id="auth-container">
                 <h2 style="margin-top:0px" class="anchored">Admin login</h2>
-                <input type="email" id="email" class="form-control" placeholder="Email">
-                <input type="password" id="password" class="form-control" placeholder="Password">
+                <input type="email" id="email" class="form-control" placeholder="Email" autocomplete="username">
+                <input type="password" id="password" class="form-control" placeholder="Password" autocomplete="current-password">
                 <button id="login-btn" class="btn btn-primary mt-2">Login</button>
             </div>
         </div>
@@ -367,12 +367,10 @@ ul.task-list li input[type="checkbox"] {
 <th data-quarto-table-cell-role="th">Name</th>
 <th data-quarto-table-cell-role="th">Email</th>
 <th data-quarto-table-cell-role="th">Affiliation</th>
-<th data-quarto-table-cell-role="th">Session</th>
 <th data-quarto-table-cell-role="th">Food</th>
 <th data-quarto-table-cell-role="th">Position</th>
-<th data-quarto-table-cell-role="th">Presenting</th>
+<th data-quarto-table-cell-role="th">Presents</th>
 <th data-quarto-table-cell-role="th">Discount</th>
-<th data-quarto-table-cell-role="th">Title</th>
 <th data-quarto-table-cell-role="th">Abstract</th>
 <th data-quarto-table-cell-role="th">Paid</th>
 </tr>
@@ -391,7 +389,10 @@ ul.task-list li input[type="checkbox"] {
                     <h5 class="modal-title anchored" id="modalLabel">Abstract</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body" id="modalBody">
+                <div class="modal-body" id="modalTitle">
+                    <!-- Abstract content will be injected here -->
+                </div>
+                <div class="modal-body" id="modalAbstract">
                     <!-- Abstract content will be injected here -->
                 </div>
             </div>

@@ -130,7 +130,7 @@
     "href": "admin_panel.html",
     "title": "Admin panel",
     "section": "",
-    "text": "This page is meant for SBDM organizers only.\n\n\n\n\n\n    \n        \n            \n                Logged in as:\n                Logout\n            \n        \n    \n    \n        \n            \n                Admin login\n                \n                \n                Login\n            \n        \n    \n        Registrations\n        \n        \n\n\n\nName\nEmail\nAffiliation\nSession\nFood\nPosition\nPresenting\nDiscount\nTitle\nAbstract\nPaid\n\n\n\n\n\n\n    \n\n    \n    \n        \n            \n                \n                    Abstract"
+    "text": "This page is meant for SBDM organizers only.\n\n\n\n\n\n    \n        \n            \n                Logged in as:\n                Logout\n            \n        \n    \n    \n        \n            \n                Admin login\n                \n                \n                Login\n            \n        \n    \n        Registrations\n        \n        \n\n\n\nName\nEmail\nAffiliation\nFood\nPosition\nPresents\nDiscount\nAbstract\nPaid\n\n\n\n\n\n\n    \n\n    \n    \n        \n            \n                \n                    Abstract"
   },
   {
     "objectID": "index.html",
