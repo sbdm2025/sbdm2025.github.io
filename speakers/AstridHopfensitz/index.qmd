@@ -2,7 +2,7 @@
 title: "Astrid Hopfensitz"
 author: "SBDM2025"
 categories: ["Social cognition and decision making across species"]
-image: AstridHopfensitz.jpgdescription: "FrontLab, CreaTeam, Paris Brain Institute (Paris, France)"
+image: AstridHopfensitz.jpg
 ---
 
 Session: Social cognition and decision making across species
