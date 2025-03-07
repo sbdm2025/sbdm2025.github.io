@@ -12,7 +12,7 @@ breaks, lunchs, dinners and social events. Register until the **18th of
 April** to benefit from a discount.
 
 ::: {.container-lg .justify-content-center .w-100}
-::: {.justify-content-center .w-75}
+::: {.justify-content-center}
 |                                           | Early registration (until 18/04) | Late registration (after 18/04) |
 |:----------------------------:|:-------------------:|:-------------------:|
 | Researchers, postdocs and permanent staff |               290€               |              340€               |
@@ -103,7 +103,6 @@ fields of your choice, and resubmit the form.
         document.getElementById("formAbstract").value = result.data.abstract;
         document.getElementById("formPresenter").value = result.data.presenter;
         document.getElementById("formAuthors").value = result.data.authors;
-        document.getElementById("formFood").value = result.data.foodrestriction;
         if (result.data.discountRequest=="true"){
             document.getElementById("formDiscount").checked = true;
         }

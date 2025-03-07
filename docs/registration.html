@@ -162,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="fees">Fees</h3>
 <p>Registration fees include attendance to the entire meeting, coffee breaks, lunchs, dinners and social events. Register until the <strong>18th of April</strong> to benefit from a discount.</p>
 <div class="container-lg justify-content-center w-100">
-<div class="justify-content-center w-75">
+<div class="justify-content-center">
 <table class="table">
 <colgroup>
 <col style="width: 41%">
@@ -278,7 +278,6 @@ Tip
         document.getElementById("formAbstract").value = result.data.abstract;
         document.getElementById("formPresenter").value = result.data.presenter;
         document.getElementById("formAuthors").value = result.data.authors;
-        document.getElementById("formFood").value = result.data.foodrestriction;
         if (result.data.discountRequest=="true"){
             document.getElementById("formDiscount").checked = true;
         }
