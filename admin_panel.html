@@ -177,7 +177,6 @@ ul.task-list li input[type="checkbox"] {
   const auth = getAuth(app);
   let hashedPassword
 
-
     document.getElementById("login-form").addEventListener("submit", async (event) => {
         event.preventDefault(); // Prevent form submission
 
@@ -216,18 +215,20 @@ ul.task-list li input[type="checkbox"] {
                 return value;
             }
         }
-        return null; // Cookie not found
+        return "nothing"; // Cookie not found
     }
 
   onAuthStateChanged(auth, (user) => {
-    if ((hashedPassword!==null) && (hashedPassword!==undefined)){
+    console.log(hashedPassword)
+    if (hashedPassword){
         document.cookie = `sbdmH=${hashedPassword}; path=/`;
     } else {
         const readCookie=getCookie("sbdmH")
-        if (readCookie!==null){
-            hashedPassword = `sbdmH=${hashedPassword}; path=/`;
+        if (readCookie!=="nothing"){
+            hashedPassword = readCookie;
         }
     }
+    
     if (user && (user.email=='sbdm2025.lyon@gmail.com') && hashedPassword) {
       document.getElementById("auth-container").style.display = "none";
       document.getElementById("user-container").style.display = "block";
