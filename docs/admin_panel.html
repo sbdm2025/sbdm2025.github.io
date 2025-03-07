@@ -269,7 +269,7 @@ async function fetchAllData(hashedPassword) {
             <tr data-id="${entry._id}" style="vertical-align:middle">
                 <td contenteditable="false" data-field="name"><div>${entry.name}</div></td>
                 <td contenteditable="false" data-field="email"><div>${entry.email}</td>
-                <td contenteditable="true" class="editable" data-field="affiliation" style="color: ${entry.discountRequest ? 'inherit' : 'red'};"><div>${entry.affiliation}</div></td>
+                <td contenteditable="true" class="editable" data-field="affiliation" style="color: ${entry.discountRequest ? 'red': 'inherit'};"><div>${entry.affiliation}</div></td>
                 <td contenteditable="true" class="editable" data-field="position"><div>${entry.position}</div></td>
                 <td contenteditable="false" data-field="foodrestriction"><div>${entry.foodrestriction}</div></td>
                 <td><div>
