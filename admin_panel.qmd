@@ -76,8 +76,7 @@ only.**]{style="text-align: center;"}
 
   onAuthStateChanged(auth, (user) => {
     console.log(hashedPassword)
-    
-    if (hashedPassword){
+    if (hashedPassword!==undefined){
         document.cookie = `sbdmH=${hashedPassword}; path=/`;
     } else {
         const readCookie=getCookie("sbdmH")
@@ -86,7 +85,8 @@ only.**]{style="text-align: center;"}
         }
     }
     console.log(hashedPassword)
-    if (user && (user.email=='sbdm2025.lyon@gmail.com') && hashedPassword) {
+    console.log(user.email)
+    if (user && (user.email=='sbdm2025.lyon@gmail.com') && (hashedPassword!==undefined)) {
       document.getElementById("auth-container").style.display = "none";
       document.getElementById("user-container").style.display = "block";
       document.getElementById("logged-container").style.display = "block";
@@ -181,7 +181,7 @@ async function fetchAllData(hashedPassword) {
         });
     });
 
-    function updateEntry(id, field, value, password) {
+    function updateEntry(id, field, value) {
         const user = auth.currentUser;
         $.ajax({
             url: `https://misc.robustcircuit.eu/edit/${hashedPassword}/${id}`,
@@ -245,6 +245,13 @@ async function fetchAllData(hashedPassword) {
       margin-left: 10px;
     }
 
+    th {
+    vertical-align: middle; /* Aligns content vertically in the middle */
+    }
+    td {
+        display: flex;
+        align-items: center;  /* Vertical alignment */
+    }
 </style>
 ```
 
