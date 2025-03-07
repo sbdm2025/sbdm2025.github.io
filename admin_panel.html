@@ -266,10 +266,10 @@ async function fetchAllData(hashedPassword) {
     let tableBody = "";
     result.forEach(entry => {
         tableBody += `
-            <tr data-id="${entry._id}">
+            <tr data-id="${entry._id}" style="vertical-align:middle">
                 <td contenteditable="false" data-field="name"><div>${entry.name}</div></td>
                 <td contenteditable="false" data-field="email"><div>${entry.email}</td>
-                <td contenteditable="true" class="editable" data-field="affiliation"><div>${entry.affiliation}</div></td>
+                <td contenteditable="true" class="editable" data-field="affiliation" style="color: ${entry.discountRequest ? 'inherit' : 'red'};"><div>${entry.affiliation}</div></td>
                 <td contenteditable="true" class="editable" data-field="position"><div>${entry.position}</div></td>
                 <td contenteditable="false" data-field="foodrestriction"><div>${entry.foodrestriction}</div></td>
                 <td><div>
@@ -279,14 +279,13 @@ async function fetchAllData(hashedPassword) {
                     </select>
                 </div></td>
                 <td><div>
-                    <button class="btn btn-primary btn-sm show-abstract-btn"
+                    <button class="btn btn-primary btn-sm show-abstract-btn" style="margin:0px;"
                         data-title="${encodeURIComponent(entry.title || "")}"
                         data-abstract="${encodeURIComponent(entry.abstract || "")}"
                         data-session="${encodeURIComponent(entry.session || "")}"
                         data-authors="${encodeURIComponent(entry.authors || "")}"
                         data-presenter="${encodeURIComponent(entry.presenter || "")}">View</button>
                 </div></td>
-                <td contenteditable="false" data-field="discountRequest"><div>${entry.discountRequest}</div></td>
                 <td><div>
                     <select class="form-select editable" data-field="paid">
                         <option value="true" ${entry.paid ? "selected" : ""}>Yes</option>
