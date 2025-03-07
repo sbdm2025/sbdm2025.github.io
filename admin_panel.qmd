@@ -2,7 +2,10 @@
 title: "Admin panel"
 ---
 
-This page is meant for SBDM organizers only.
+::: {style="text-align: center;"}
+[**This page is meant for SBDM organizers
+only.**]{style="text-align: center;"}
+:::
 
 ```{=html}
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -179,7 +182,6 @@ async function fetchAllData(hashedPassword) {
 
   
 </script>
-
 ```
 
 ```{=html}
@@ -254,23 +256,23 @@ async function fetchAllData(hashedPassword) {
         <h2 class="mb-3">Registrations</h2>
         <input type="text" id="search" class="form-control mb-3" placeholder="Search...">
         <table class="table table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Affiliation</th>
-                    <th>Food</th>
-                    <th>Position</th>
-                    <th>Presents</th>
-                    <th>Discount</th>
-                    <th>Abstract</th>
-                    <th>Paid</th>
-                </tr>
-            </thead>
-            <tbody id="tableBody">
-                <!-- Data will be inserted here dynamically -->
-            </tbody>
-        </table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Affiliation</th>
+            <th>Food</th>
+            <th>Position</th>
+            <th>Presents</th>
+            <th>Discount</th>
+            <th>Abstract</th>
+            <th>Paid</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+        <!-- Data will be inserted here dynamically -->
+    </tbody>
+</table>
     </div>
 
     <!-- Abstract Modal -->
@@ -294,6 +296,5 @@ async function fetchAllData(hashedPassword) {
         </div>
     </div>
 </div>
-
 
 ```

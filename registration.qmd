@@ -6,6 +6,7 @@ Registration for SBDM2025 is open until the **1st of May 2025**.
 
 ### Fees {style="text-align: center;"}
 
+::: {style="text-align: left;"}
 Registration fees include attendance to the entire meeting, coffee
 breaks, lunchs, dinners and social events. Register until the **18th of
 April** to benefit from a discount.
@@ -22,9 +23,11 @@ April** to benefit from a discount.
 Note that you may benefit from a discount if you work in an institution
 located in a low-income country (see the
 [list](files/Listoflowincomecountries.pdf){target="_blank"})
+:::
 
 ### How to proceed {style="text-align: center;"}
 
+::: {style="text-align: left;"}
 1.  Sign-up with a valid email address: a confirmation email will be
     sent to this address.
 
@@ -35,6 +38,7 @@ located in a low-income country (see the
 You may edit your registration form until the **1st of May 2025**. To do
 so, simply log in again with your credentials, update the fields of your
 choice, and resubmit the form.
+:::
 :::
 
 ### Registration form {style="text-align: center"}
@@ -296,7 +300,7 @@ choice, and resubmit the form.
         <div class="col-md-5">
             <div class="d-flex justify-content-between align-items-center">
                 <h5 id="user-email" class="mb-0">Logged in as:</h5>
-                <button id="logout-btn" class="btn btn-primary" style="max-width:15%">Logout</button>
+                <button id="logout-btn" class="btn btn-danger" style="max-width:15%">Logout</button>
             </div>
         </div>
     </div>
@@ -307,7 +311,7 @@ choice, and resubmit the form.
                 <form id="login-form">
                 <input type="email" id="email" class="form-control" name="username" placeholder="Email" autocomplete="username">
                 <input type="password" id="password" class="form-control" name="password" placeholder="Password" autocomplete="current-password">
-                <button type="submit" id="login-btn" class="btn btn-danger mt-2 w-75">Login</button>
+                <button type="submit" id="login-btn" class="btn-primary mt-2 w-75">Login</button>
                 </form>
             </div>
         </div>
