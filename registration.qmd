@@ -2,17 +2,16 @@
 title: "Registration"
 ---
 
-Registration for SBDM2025 is open until the **1st of May
-2025**.
+Registration for SBDM2025 is open until the **1st of May 2025**.
 
-### Fees
+### Fees {style="text-align: center;"}
 
 Registration fees include attendance to the entire meeting, coffee
 breaks, lunchs, dinners and social events. Register until the **18th of
 April** to benefit from a discount.
 
 ::: {.container-lg .justify-content-center .w-100}
-::: {.justify-content-center}
+::: justify-content-center
 |                                           | Early registration (until 18/04) | Late registration (after 18/04) |
 |:----------------------------:|:-------------------:|:-------------------:|
 | Researchers, postdocs and permanent staff |               290€               |              340€               |
@@ -24,20 +23,21 @@ Note that you may benefit from a discount if you work in an institution
 located in a low-income country (see the
 [list](files/Listoflowincomecountries.pdf){target="_blank"})
 
-### How to proceed
+### How to proceed {style="text-align: center;"}
 
-1. Sign-up with a valid email address: a confirmation email will be sent to
-this address.
+1.  Sign-up with a valid email address: a confirmation email will be
+    sent to this address.
 
-1. Complete the registration form. You may submit a title and an abstract if you wish present a poster.
+2.  Complete the registration form. You may submit a title and an
+    abstract if you wish present a poster.
 
-::: {.callout-tip}
-You may edit your registration form until the **1st of May
-2025**. To do so, simply log in again with your credentials, update the
-fields of your choice, and resubmit the form.
+::: callout-tip
+You may edit your registration form until the **1st of May 2025**. To do
+so, simply log in again with your credentials, update the fields of your
+choice, and resubmit the form.
 :::
 
-### Registration
+### Registration form {style="text-align: center"}
 
 ```{=html}
 <script type="module">
