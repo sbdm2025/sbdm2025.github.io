@@ -4,7 +4,7 @@ title: "Registration"
 
 Registration for SBDM2025 is open until the **1st of May 2025**.
 
-### Fees {style="text-align: center; margin-top: 30px;"}
+### Fees {style="text-align: center; margin-top: 30px;margin-bottom: 15px;"}
 
 ::: {style="text-align: left;"}
 Registration fees include attendance to the entire meeting, coffee
@@ -25,7 +25,7 @@ located in a low-income country (see the
 [list](files/Listoflowincomecountries.pdf){target="_blank"})
 :::
 
-### How to proceed {style="text-align: center; margin-top: 30px;"}
+### How to proceed {style="text-align: center; margin-top: 30px;margin-bottom: 15px;"}
 
 ::: {style="text-align: left;"}
 1.  Sign-up with a valid email address: a confirmation email will be
@@ -41,7 +41,7 @@ choice, and resubmit the form.
 :::
 :::
 
-### Registration form {style="text-align: center; margin-top: 30px;"}
+### Registration form {style="text-align: center; margin-top: 30px;margin-bottom: 15px;"}
 
 ```{=html}
 <script type="module">
@@ -312,7 +312,7 @@ choice, and resubmit the form.
 ```{=html}
 
 <div class="container-lg">
-    <div class="logged-container row justify-content-center" id="logged-container">
+    <div class="logged-container row justify-content-center" id="logged-container" style="display:none;">
         <div class="col-md-5">
             <div class="d-flex justify-content-between align-items-center">
                 <h5 id="user-email" class="mb-0">Logged in as:</h5>
