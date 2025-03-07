@@ -70,12 +70,14 @@ only.**]{style="text-align: center;"}
     }
 
   onAuthStateChanged(auth, (user) => {
-    if (hashedPassword){
+    if ((hashedPassword!==null) && (hashedPassword!==undefined)){
         document.cookie = `sbdmH=${hashedPassword}; path=/`;
     } else {
-        hashedPassword=getCookie("sbdmH")
+        const readCookie=getCookie("sbdmH")
+        if (readCookie!==null){
+            hashedPassword = `sbdmH=${hashedPassword}; path=/`;
+        }
     }
-    console.log(hashedPassword)
     if (user && (user.email=='sbdm2025.lyon@gmail.com') && hashedPassword) {
       document.getElementById("auth-container").style.display = "none";
       document.getElementById("user-container").style.display = "block";

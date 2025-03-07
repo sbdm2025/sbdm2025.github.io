@@ -2,8 +2,4 @@
 title: "Contact"
 ---
 
-For any request or question, you may write to [sbdm2025.lyon@gmail.com](mailto:sbdm2025.lyon@gmail.com)
-
-::: {.callout-warning}
-This page is under construction.
-:::
+For any request or question, you may write to any of the organizers or to [sbdm2025.lyon@gmail.com](mailto:sbdm2025.lyon@gmail.com)
