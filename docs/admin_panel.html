@@ -216,65 +216,71 @@ ul.task-list li input[type="checkbox"] {
     }
   });
 
-    function showAbstract(title, abstract, session, authors, presenter) {
-        document.getElementById('modalTitle').textContent = title;
-        document.getElementById('modalSession').textContent = session;
-        document.getElementById('modalPresenter').textContent = presenter;
-        document.getElementById('modalAuthors').textContent = authors;
-        document.getElementById('modalAbstract').textContent = abstract;
+function showAbstract(title, abstract, session, authors, presenter) {
+    document.getElementById('modalTitle').textContent = decodeURIComponent(title);
+    document.getElementById('modalSession').textContent = decodeURIComponent(session);
+    document.getElementById('modalPresenter').textContent = decodeURIComponent(presenter);
+    document.getElementById('modalAuthors').textContent = decodeURIComponent(authors);
+    document.getElementById('modalAbstract').textContent = decodeURIComponent(abstract);
 
-        // Show the modal
-        let modal = new bootstrap.Modal(document.getElementById('abstractModal'));
-        modal.show();
-    }
+    let modal = new bootstrap.Modal(document.getElementById('abstractModal'));
+    modal.show();
+}
     
-// Fetch data from backend API
-    async function fetchAllData(hashedPassword) {
-        const user = auth.currentUser;
-        const response = await fetch(`https://misc.robustcircuit.eu/all/${hashedPassword}`);
-        const result = await response.json();
-        let tableBody = "";
-        result.forEach(entry => {
-            tableBody += `
-                <tr data-id="${entry._id}">
-                    <td contenteditable="true" class="editable" data-field="name">${entry.name}</td>
-                    <td contenteditable="true" class="editable" data-field="email">${entry.email}</td>
-                    <td contenteditable="true" class="editable" data-field="affiliation">${entry.affiliation}</td>
-                    <td contenteditable="true" class="editable" data-field="foodrestriction">${entry.foodrestriction}</td>
-                    <td contenteditable="true" class="editable" data-field="position">${entry.position}</td>
-                    <td>
-                        <select class="form-select editable" data-field="presents">
-                            <option value="true" ${entry.presents ? "selected" : ""}>Yes</option>
-                            <option value="false" ${!entry.presents ? "selected" : ""}>No</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select class="form-select editable" data-field="discountRequest">
-                            <option value="true" ${entry.discountRequest ? "selected" : ""}>Yes</option>
-                            <option value="false" ${!entry.discountRequest ? "selected" : ""}>No</option>
-                        </select>
-                    </td>
-                    <td>
-                        <button class="btn btn-primary btn-sm" onclick="showAbstract(
-                            '${encodeURIComponent(entry.title || "")}',
-                            '${encodeURIComponent(entry.abstract || "")}',
-                            '${encodeURIComponent(entry.session || "")}',
-                            '${encodeURIComponent(entry.authors || "")}',
-                            '${encodeURIComponent(entry.presenter || "")}'
-                        )">View</button>
-                    </td>
-                    <td>
-                        <select class="form-select editable" data-field="paid">
-                            <option value="true" ${entry.paid ? "selected" : ""}>Yes</option>
-                            <option value="false" ${!entry.paid ? "selected" : ""}>No</option>
-                        </select>
-                    </td>
-                </tr>`;
-        });
-        $("#tableBody").html(tableBody);
-    };
+async function fetchAllData(hashedPassword) {
+    const user = auth.currentUser;
+    const response = await fetch(`https://misc.robustcircuit.eu/all/${hashedPassword}`);
+    const result = await response.json();
+    let tableBody = "";
+    result.forEach(entry => {
+        tableBody += `
+            <tr data-id="${entry._id}">
+                <td contenteditable="true" class="editable" data-field="name">${entry.name}</td>
+                <td contenteditable="true" class="editable" data-field="email">${entry.email}</td>
+                <td contenteditable="true" class="editable" data-field="affiliation">${entry.affiliation}</td>
+                <td contenteditable="true" class="editable" data-field="foodrestriction">${entry.foodrestriction}</td>
+                <td contenteditable="true" class="editable" data-field="position">${entry.position}</td>
+                <td>
+                    <select class="form-select editable" data-field="presents">
+                        <option value="true" ${entry.presents ? "selected" : ""}>Yes</option>
+                        <option value="false" ${!entry.presents ? "selected" : ""}>No</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="form-select editable" data-field="discountRequest">
+                        <option value="true" ${entry.discountRequest ? "selected" : ""}>Yes</option>
+                        <option value="false" ${!entry.discountRequest ? "selected" : ""}>No</option>
+                    </select>
+                </td>
+                <td>
+                    <button class="btn btn-primary btn-sm show-abstract-btn"
+                        data-title="${encodeURIComponent(entry.title || "")}"
+                        data-abstract="${encodeURIComponent(entry.abstract || "")}"
+                        data-session="${encodeURIComponent(entry.session || "")}"
+                        data-authors="${encodeURIComponent(entry.authors || "")}"
+                        data-presenter="${encodeURIComponent(entry.presenter || "")}">View</button>
+                </td>
+                <td>
+                    <select class="form-select editable" data-field="paid">
+                        <option value="true" ${entry.paid ? "selected" : ""}>Yes</option>
+                        <option value="false" ${!entry.paid ? "selected" : ""}>No</option>
+                    </select>
+                </td>
+            </tr>`;
+    });
+    $("#tableBody").html(tableBody);
 
-
+    // Attach event listeners to the buttons
+    $(".show-abstract-btn").on("click", function() {
+        showAbstract(
+            $(this).data("title"),
+            $(this).data("abstract"),
+            $(this).data("session"),
+            $(this).data("authors"),
+            $(this).data("presenter")
+        );
+    });
+}
     // Inline edit event
     $(document).on("blur", ".editable", function () {
         let row = $(this).closest("tr");
@@ -370,9 +376,11 @@ ul.task-list li input[type="checkbox"] {
         <div style="width:45%">
             <div class="auth-container text-center" id="auth-container">
                 <h2 style="margin-top:0px" class="anchored">Admin login</h2>
+                <form id="login-form">
                 <input type="email" id="email" class="form-control" name="username" placeholder="Email" autocomplete="username">
                 <input type="password" id="password" class="form-control" name="password" placeholder="Password" autocomplete="current-password">
                 <button type="submit" id="login-btn" class="btn btn-primary mt-2">Login</button>
+                </form>
             </div>
         </div>
     <div class="container mt-4" id="user-container">
