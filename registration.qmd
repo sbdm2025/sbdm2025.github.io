@@ -254,7 +254,6 @@ fields of your choice, and resubmit the form.
     }
 
     input[type="email"], input[type="password"] {
-        width: calc(100% - 22px);
         padding: 10px;
         margin: 8px 0;
         border: 1px solid #ddd;
@@ -308,7 +307,7 @@ fields of your choice, and resubmit the form.
                 <form id="login-form">
                 <input type="email" id="email" class="form-control" name="username" placeholder="Email" autocomplete="username">
                 <input type="password" id="password" class="form-control" name="password" placeholder="Password" autocomplete="current-password">
-                <button type="submit" id="login-btn" class="btn btn-primary mt-2">Login</button>
+                <button type="submit" id="login-btn" class="btn btn-danger mt-2 w-75">Login</button>
                 </form>
             </div>
         </div>
@@ -318,7 +317,7 @@ fields of your choice, and resubmit the form.
                 <form id="signin-form">
                 <input type="email" id="signup-email" name="username" class="form-control" placeholder="Email" autocomplete="username">
                 <input type="password" id="signup-password" name="password" class="form-control" placeholder="Password" autocomplete="new-password">
-                <button type="submit" id="signup-btn" class="btn btn-success mt-2">Sign Up</button>
+                <button type="submit" id="signup-btn" class="btn btn-success mt-2 w-75">Sign Up</button>
                 </form>
             </div>
         </div>

@@ -49,8 +49,23 @@ This page is meant for SBDM organizers only.
     await signOut(auth);
   });
 
+    function getCookie(name) {
+        let cookies = document.cookie.split('; ');
+        for (let cookie of cookies) {
+            let [key, value] = cookie.split('=');
+            if (key === name) {
+                return value;
+            }
+        }
+        return null; // Cookie not found
+    }
+
   onAuthStateChanged(auth, (user) => {
-    console.log(hashedPassword)
+    if (hashedPassword){
+        `sbdmH=${hashedPassword}; path=/`;
+    } else {
+        hashedPassword=getCookie("sbdmH")
+    }
     if (user && (user.email=='sbdm2025.lyon@gmail.com') && hashedPassword) {
       document.getElementById("auth-container").style.display = "none";
       document.getElementById("user-container").style.display = "block";
@@ -181,7 +196,6 @@ async function fetchAllData(hashedPassword) {
     }
 
     input[type="email"], input[type="password"] {
-        width: calc(100% - 22px);
         padding: 10px;
         margin: 8px 0;
         border: 1px solid #ddd;
@@ -232,7 +246,7 @@ async function fetchAllData(hashedPassword) {
                 <form id="login-form">
                 <input type="email" id="email" class="form-control" name="username" placeholder="Email" autocomplete="username">
                 <input type="password" id="password" class="form-control" name="password" placeholder="Password" autocomplete="current-password">
-                <button type="submit" id="login-btn" class="btn btn-primary mt-2">Login</button>
+                <button type="submit" id="login-btn" class="btn btn-primary mt-2 w-75">Login</button>
                 </form>
             </div>
         </div>

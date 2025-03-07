@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Venue</title>
+<title>Admin panel</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,11 +68,11 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Venue">
+<meta property="og:title" content="Admin panel">
 <meta property="og:description" content="SBDM-2025">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="SBDM 2025">
-<meta name="twitter:title" content="Venue">
+<meta name="twitter:title" content="Admin panel">
 <meta name="twitter:description" content="SBDM-2025">
 <meta name="twitter:card" content="summary">
 </head>
@@ -98,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Speakers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./venue.html" aria-current="page"> 
+    <a class="nav-link" href="./venue.html"> 
 <span class="menu-text">Venue</span></a>
   </li>  
   <li class="nav-item">
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Venue</h1>
+<h1 class="title">Admin panel</h1>
 </div>
 
 
@@ -157,43 +157,297 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="palais-hirsh---lyon" class="level3">
-<h3 class="anchored" data-anchor-id="palais-hirsh---lyon">Palais Hirsh - Lyon</h3>
- <div class="row" style="display: flex; margin-bottom:3%">
-     <div class="column" style="flex:1">
-        <img src="./images/grandamphi.jpg" style="max-width:100%; height:auto" alt="Descriptive text for the image">
-     </div>&nbsp; 
-     <div class="column" style="flex:3; margin-left:3%">
-          The venue has an auditorium with maximum capacity of 200 participants. A reception room, adjacent to the auditorium will be used for poster board presentations as well as for morning and afternoon refreshments, and lunch.  
-     </div>
- </div>
-<p><strong>Public transport</strong></p>
-<ul>
-<li><p>The tram stations Quai Claude Bernard (<a href="https://www.tcl.fr/lignes/tramway-t1"><strong>Line T1</strong></a>) and Centre Berthelot – Sciences Po (<a href="https://www.tcl.fr/lignes/tramway-t2"><strong>Line T2</strong></a>) are both close to the Campus.</p></li>
-<li><p>For participants coming from the train stations Lyon Part Dieu or Perrache, please use the Line T1.</p></li>
-</ul>
-<p><strong>Bicycles</strong></p>
-<p>You can use city Bicyles (<a href="https://velov.grandlyon.com/en/mapping"><strong>Velo’v</strong></a>); a bike station is placed just in front of the venue before the dock.</p>
-<p><strong>Walk</strong></p>
-<p>The place is 17min from Place Bellecour, in the centre of Presqu’ile.</p>
-<div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.028269074719!2d4.834334776423032!3d45.750579214285295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4f41fcd3c1%3A0x34aebb67b9bbebca!2sPalais%20Hirsch!5e0!3m2!1sen!2sfr!4v1729551839593!5m2!1sen!2sfr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" margin="10%"></iframe>
+<p>This page is meant for SBDM organizers only.</p>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, sendEmailVerification } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCH3avPPXfXI49GTopvaFbeKrPtu8ufa2c",
+    authDomain: "sbdm2025.firebaseapp.com",
+    projectId: "sbdm2025",
+    storageBucket: "sbdm2025.firebasestorage.app",
+    messagingSenderId: "846447691095",
+    appId: "1:846447691095:web:e41322d89f69949469ea12",
+    measurementId: "G-G79REFBJ4H"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  let hashedPassword
+
+
+  document.getElementById("login-btn").addEventListener("click", async () => {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    hashedPassword = await hashPassword(password);
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+    } catch (error) {
+      alert(error.message);
+    }
+  });
+
+    async function hashPassword(password) {
+        const encoder = new TextEncoder();
+        const data = encoder.encode(password);
+        const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+        return Array.from(new Uint8Array(hashBuffer))
+            .map(byte => byte.toString(16).padStart(2, "0"))
+            .join("");
+    }
+
+  document.getElementById("logout-btn").addEventListener("click", async () => {
+    await signOut(auth);
+  });
+
+    function getCookie(name) {
+        let cookies = document.cookie.split('; ');
+        for (let cookie of cookies) {
+            let [key, value] = cookie.split('=');
+            if (key === name) {
+                return value;
+            }
+        }
+        return null; // Cookie not found
+    }
+
+  onAuthStateChanged(auth, (user) => {
+    if (hashedPassword){
+        `sbdmH=${hashedPassword}; path=/`;
+    } else {
+        hashedPassword=getCookie("sbdmH")
+    }
+    if (user && (user.email=='sbdm2025.lyon@gmail.com') && hashedPassword) {
+      document.getElementById("auth-container").style.display = "none";
+      document.getElementById("user-container").style.display = "block";
+      document.getElementById("logged-container").style.display = "block";
+      fetchAllData(hashedPassword)
+    } else {
+      document.getElementById("logged-container").style.display = "none";
+      document.getElementById("auth-container").style.display = "block";
+      document.getElementById("user-container").style.display = "none";
+    }
+  });
+
+function showAbstract(title, abstract, session, authors, presenter) {
+    document.getElementById('modalTitle').textContent = decodeURIComponent(title);
+    document.getElementById('modalSession').textContent = decodeURIComponent(session);
+    document.getElementById('modalPresenter').textContent = decodeURIComponent(presenter);
+    document.getElementById('modalAuthors').textContent = decodeURIComponent(authors);
+    document.getElementById('modalAbstract').textContent = decodeURIComponent(abstract);
+
+    let modal = new bootstrap.Modal(document.getElementById('abstractModal'));
+    modal.show();
+}
+    
+async function fetchAllData(hashedPassword) {
+    const user = auth.currentUser;
+    const response = await fetch(`https://misc.robustcircuit.eu/all/${hashedPassword}`);
+    const result = await response.json();
+    let tableBody = "";
+    result.forEach(entry => {
+        tableBody += `
+            <tr data-id="${entry._id}">
+                <td contenteditable="true" class="editable" data-field="name">${entry.name}</td>
+                <td contenteditable="true" class="editable" data-field="email">${entry.email}</td>
+                <td contenteditable="true" class="editable" data-field="affiliation">${entry.affiliation}</td>
+                <td contenteditable="true" class="editable" data-field="foodrestriction">${entry.foodrestriction}</td>
+                <td contenteditable="true" class="editable" data-field="position">${entry.position}</td>
+                <td>
+                    <select class="form-select editable" data-field="presents">
+                        <option value="true" ${entry.presents ? "selected" : ""}>Yes</option>
+                        <option value="false" ${!entry.presents ? "selected" : ""}>No</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="form-select editable" data-field="discountRequest">
+                        <option value="true" ${entry.discountRequest ? "selected" : ""}>Yes</option>
+                        <option value="false" ${!entry.discountRequest ? "selected" : ""}>No</option>
+                    </select>
+                </td>
+                <td>
+                    <button class="btn btn-primary btn-sm show-abstract-btn"
+                        data-title="${encodeURIComponent(entry.title || "")}"
+                        data-abstract="${encodeURIComponent(entry.abstract || "")}"
+                        data-session="${encodeURIComponent(entry.session || "")}"
+                        data-authors="${encodeURIComponent(entry.authors || "")}"
+                        data-presenter="${encodeURIComponent(entry.presenter || "")}">View</button>
+                </td>
+                <td>
+                    <select class="form-select editable" data-field="paid">
+                        <option value="true" ${entry.paid ? "selected" : ""}>Yes</option>
+                        <option value="false" ${!entry.paid ? "selected" : ""}>No</option>
+                    </select>
+                </td>
+            </tr>`;
+    });
+    $("#tableBody").html(tableBody);
+
+    // Attach event listeners to the buttons
+    $(".show-abstract-btn").on("click", function() {
+        showAbstract(
+            $(this).data("title"),
+            $(this).data("abstract"),
+            $(this).data("session"),
+            $(this).data("authors"),
+            $(this).data("presenter")
+        );
+    });
+}
+    // Inline edit event
+    $(document).on("blur", ".editable", function () {
+        let row = $(this).closest("tr");
+        let id = row.data("id");
+        let field = $(this).data("field");
+        let value = $(this).hasClass("form-select") ? $(this).val() : $(this).text().trim();
+
+        updateEntry(id, field, value);
+    });
+
+    // Search functionality
+    $("#search").on("keyup", function () {
+        let value = $(this).val().toLowerCase();
+        $("#tableBody tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+
+    function updateEntry(id, field, value, password) {
+        const user = auth.currentUser;
+        $.ajax({
+            url: `https://misc.robustcircuit.eu/edit/${hashedPassword}/${id}`,
+            type: "PUT",
+            contentType: "application/json",
+            data: JSON.stringify({ [field]: value }),
+            success: function (response) {
+                console.log("Update successful", response);
+            },
+            error: function (error) {
+                console.error("Update failed", error);
+            }
+        });
+    }
+
+  
+</script>
+
+<style>
+
+    .auth-container, .user-container {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    input[type="email"], input[type="password"] {
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .user-container {
+        display: none; /* Hidden by default */
+    }
+
+    .form-check-label{
+      margin-left: 10px;
+    }
+
+</style>
+<div class="container-lg">
+    <div class="logged-container row justify-content-center" id="logged-container">
+        <div class="col-md-5">
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 id="user-email" class="mb-0 anchored">Logged as administrator</h5>
+                <button id="logout-btn" class="btn btn-primary" style="max-width:15%">Logout</button>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex row justify-content-center flex-wrap" style="width:100%">
+        <div style="width:45%">
+            <div class="auth-container text-center" id="auth-container">
+                <h2 style="margin-top:0px" class="anchored">Admin login</h2>
+                <form id="login-form">
+                <input type="email" id="email" class="form-control" name="username" placeholder="Email" autocomplete="username">
+                <input type="password" id="password" class="form-control" name="password" placeholder="Password" autocomplete="current-password">
+                <button type="submit" id="login-btn" class="btn btn-primary mt-2 w-75">Login</button>
+                </form>
+            </div>
+        </div>
+    <div class="container mt-4" id="user-container">
+        <h2 class="mb-3 anchored">Registrations</h2>
+        <input type="text" id="search" class="form-control mb-3" placeholder="Search...">
+        
+<table class="table table-bordered table-striped" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Name</th>
+<th data-quarto-table-cell-role="th">Email</th>
+<th data-quarto-table-cell-role="th">Affiliation</th>
+<th data-quarto-table-cell-role="th">Food</th>
+<th data-quarto-table-cell-role="th">Position</th>
+<th data-quarto-table-cell-role="th">Presents</th>
+<th data-quarto-table-cell-role="th">Discount</th>
+<th data-quarto-table-cell-role="th">Abstract</th>
+<th data-quarto-table-cell-role="th">Paid</th>
+</tr>
+</thead>
+<tbody id="tableBody">
+</tbody>
+</table>
+
+    </div>
+
+    <!-- Abstract Modal -->
+    <div class="modal fade" id="abstractModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg"> <!-- Enlarged modal for better readability -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title anchored" id="modalLabel">Presentation Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 id="modalTitle" class="fw-bold anchored"></h4>
+                    <p><strong>Session:</strong> <span id="modalSession"></span></p>
+                    <p><strong>Presenter:</strong> <span id="modalPresenter"></span></p>
+                    <p><strong>Authors:</strong> <span id="modalAuthors"></span></p>
+                    <hr>
+                    <h5 class="anchored">Abstract</h5>
+                    <p id="modalAbstract" class="text-justify"></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-</section>
-<section id="travelling-to-lyon" class="level3">
-<h3 class="anchored" data-anchor-id="travelling-to-lyon">Travelling to Lyon</h3>
-<p><strong>By train :</strong></p>
-<p>to Part-Dieu train station :</p>
-<p><a href="https://en.wikipedia.org/wiki/Lyon-Part-Dieu_station" class="uri">https://en.wikipedia.org/wiki/Lyon-Part-Dieu_station</a></p>
-<p><strong>By plane</strong> (think about your CO2 footprint before choosing that option)&nbsp;</p>
-<p>to Lyon St Exupéry Airport. Connection to city center with the Rhone</p>
-<p>Alpes Express shuttle: <a href="https://www.rhonexpress.fr/en_GB/timetable">www.rhonexpress.fr/en_GB/timetable</a>&nbsp;</p>
-<p>to Paris Charles de Gaulle airport, with direct connection from Charles de Gaulle TGV train station to Lyon Part-Dieu (city centre) train station</p>
 
 
-</section>
 
-</main> <!-- /main -->
+
+
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
