@@ -271,7 +271,6 @@ async function fetchAllData(hashedPassword) {
         </div>
     <div class="container mt-4" id="user-container">
         <h2 class="mb-3">Registrations</h2>
-        <span class="mb-3 text-muted">Affiliation highlighted in red are from low-income countries (and discount was requested)</span>
         <input type="text" id="search" class="form-control mb-3" placeholder="Search...">
         <table class="table table-bordered table-striped">
     <thead>
@@ -291,7 +290,9 @@ async function fetchAllData(hashedPassword) {
     </tbody>
 </table>
     </div>
-
+    <div class="mt-5 mb-5">
+    <span class="text-muted">Affiliation highlighted in red are from low-income countries (and discount was requested)</span>
+    </div>
     <!-- Abstract Modal -->
     <div class="modal fade" id="abstractModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg"> <!-- Enlarged modal for better readability -->
