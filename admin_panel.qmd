@@ -47,7 +47,6 @@ only.**]{style="text-align: center;"}
         return;
     }
     hashedPassword = await hashPassword(password);
-    console.log(hashedPassword)
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
     } catch (error) {
@@ -75,6 +74,7 @@ only.**]{style="text-align: center;"}
     }
 
   onAuthStateChanged(auth, (user) => {
+    /*
     console.log(hashedPassword)
     if (hashedPassword!==undefined){
         document.cookie = `sbdmH=${hashedPassword}; path=/`;
@@ -84,8 +84,7 @@ only.**]{style="text-align: center;"}
             hashedPassword = readCookie;
         }
     }
-    console.log(hashedPassword)
-    console.log(user.email)
+    */
     if (user && (user.email=='sbdm2025.lyon@gmail.com') && (hashedPassword!==undefined)) {
       document.getElementById("auth-container").style.display = "none";
       document.getElementById("user-container").style.display = "block";
@@ -95,6 +94,7 @@ only.**]{style="text-align: center;"}
       document.getElementById("logged-container").style.display = "none";
       document.getElementById("auth-container").style.display = "block";
       document.getElementById("user-container").style.display = "none";
+       signOut(auth);
     }
   });
 
@@ -270,28 +270,28 @@ async function fetchAllData(hashedPassword) {
             </div>
         </div>
     <div class="container mt-4" id="user-container">
-        <h2 class="mb-3">Registrations</h2>
-        <input type="text" id="search" class="form-control mb-3" placeholder="Search...">
-        <table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Affiliation</th>
-            <th>Position</th>
-            <th>Food</th>
-            <th>Presents</th>
-            <th>Abstract</th>
-            <th>Paid</th>
-        </tr>
-    </thead>
-    <tbody id="tableBody">
-        <!-- Data will be inserted here dynamically -->
-    </tbody>
-</table>
-    <div class="mt-5 mb-5">
-    <span class="text-muted">Affiliation highlighted in red are from low-income countries (and a discount was requested)</span>
-    </div>
+            <h2 class="mb-3">Registrations</h2>
+            <input type="text" id="search" class="form-control mb-3" placeholder="Search...">
+            <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Affiliation</th>
+                <th>Position</th>
+                <th>Food</th>
+                <th>Presents</th>
+                <th>Abstract</th>
+                <th>Paid</th>
+            </tr>
+            </thead>
+        <tbody id="tableBody">
+            <!-- Data will be inserted here dynamically -->
+        </tbody>
+        </table>
+        <div class="mt-5 mb-5">
+        <span class="text-muted">Affiliation highlighted in red are from low-income countries (and a discount was requested)</span>
+        </div>
     </div>
 
     <!-- Abstract Modal -->

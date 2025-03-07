@@ -197,7 +197,6 @@ ul.task-list li input[type="checkbox"] {
         return;
     }
     hashedPassword = await hashPassword(password);
-    console.log(hashedPassword)
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
     } catch (error) {
@@ -225,6 +224,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
   onAuthStateChanged(auth, (user) => {
+    /*
     console.log(hashedPassword)
     if (hashedPassword!==undefined){
         document.cookie = `sbdmH=${hashedPassword}; path=/`;
@@ -234,8 +234,7 @@ ul.task-list li input[type="checkbox"] {
             hashedPassword = readCookie;
         }
     }
-    console.log(hashedPassword)
-    console.log(user.email)
+    */
     if (user && (user.email=='sbdm2025.lyon@gmail.com') && (hashedPassword!==undefined)) {
       document.getElementById("auth-container").style.display = "none";
       document.getElementById("user-container").style.display = "block";
@@ -245,6 +244,7 @@ ul.task-list li input[type="checkbox"] {
       document.getElementById("logged-container").style.display = "none";
       document.getElementById("auth-container").style.display = "block";
       document.getElementById("user-container").style.display = "none";
+       signOut(auth);
     }
   });
 
@@ -414,9 +414,9 @@ async function fetchAllData(hashedPassword) {
             </div>
         </div>
     <div class="container mt-4" id="user-container">
-        <h2 class="mb-3 anchored">Registrations</h2>
-        <input type="text" id="search" class="form-control mb-3" placeholder="Search...">
-        
+            <h2 class="mb-3 anchored">Registrations</h2>
+            <input type="text" id="search" class="form-control mb-3" placeholder="Search...">
+            
 <table class="table table-bordered table-striped" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
@@ -434,9 +434,9 @@ async function fetchAllData(hashedPassword) {
 </tbody>
 </table>
 
-    <div class="mt-5 mb-5">
-    <span class="text-muted">Affiliation highlighted in red are from low-income countries (and a discount was requested)</span>
-    </div>
+        <div class="mt-5 mb-5">
+        <span class="text-muted">Affiliation highlighted in red are from low-income countries (and a discount was requested)</span>
+        </div>
     </div>
 
     <!-- Abstract Modal -->
