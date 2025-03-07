@@ -308,7 +308,7 @@ Tip
             radioSessionButton.checked = true;
         }
         // Prepopulate the radio button based on formSession
-        const presentsValue = result.data.presents; // Assuming this matches the radio values
+        const presentsValue = result.data.poster; // Assuming this matches the radio values
         const radioPresentsButton = document.querySelector(`input[name="formPoster"][value="${presentsValue}"]`);
         if (radioPresentsButton) {
             radioPresentsButton.checked = true;
