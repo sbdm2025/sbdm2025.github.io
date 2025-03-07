@@ -4,7 +4,7 @@ title: "Registration"
 
 Registration for SBDM2025 is open until the **1st of May 2025**.
 
-### Fees {style="text-align: center; margin-top: 25px;"}
+### Fees {style="text-align: center; margin-top: 30px;"}
 
 ::: {style="text-align: left;"}
 Registration fees include attendance to the entire meeting, coffee
@@ -25,7 +25,7 @@ located in a low-income country (see the
 [list](files/Listoflowincomecountries.pdf){target="_blank"})
 :::
 
-### How to proceed {style="text-align: center;"}
+### How to proceed {style="text-align: center; margin-top: 30px;"}
 
 ::: {style="text-align: left;"}
 1.  Sign-up with a valid email address: a confirmation email will be
@@ -41,7 +41,7 @@ choice, and resubmit the form.
 :::
 :::
 
-### Registration form {style="text-align: center"}
+### Registration form {style="text-align: center; margin-top: 30px;"}
 
 ```{=html}
 <script type="module">

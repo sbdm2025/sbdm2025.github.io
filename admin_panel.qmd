@@ -271,6 +271,7 @@ async function fetchAllData(hashedPassword) {
         </div>
     <div class="container mt-4" id="user-container">
         <h2 class="mb-3">Registrations</h2>
+        <span>Affiliation highlighted in red are from low-income countries (and discount was requested)</span>
         <input type="text" id="search" class="form-control mb-3" placeholder="Search...">
         <table class="table table-bordered table-striped">
     <thead>
