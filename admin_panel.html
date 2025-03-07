@@ -178,9 +178,15 @@ ul.task-list li input[type="checkbox"] {
   let hashedPassword
 
 
-  document.getElementById("login-btn").addEventListener("click", async () => {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    document.getElementById("login-form").addEventListener("submit", async (event) => {
+        event.preventDefault(); // Prevent form submission
+
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+    if (!email || !password) {
+        alert("Please enter both email and password.");
+        return;
+    }
     hashedPassword = await hashPassword(password);
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
@@ -250,10 +256,10 @@ async function fetchAllData(hashedPassword) {
     result.forEach(entry => {
         tableBody += `
             <tr data-id="${entry._id}">
-                <td contenteditable="true" class="editable" data-field="name">${entry.name}</td>
-                <td contenteditable="true" class="editable" data-field="email">${entry.email}</td>
+                <td contenteditable="true" data-field="name">${entry.name}</td>
+                <td contenteditable="true" data-field="email">${entry.email}</td>
                 <td contenteditable="true" class="editable" data-field="affiliation">${entry.affiliation}</td>
-                <td contenteditable="true" class="editable" data-field="foodrestriction">${entry.foodrestriction}</td>
+                <td contenteditable="true" data-field="foodrestriction">${entry.foodrestriction}</td>
                 <td contenteditable="true" class="editable" data-field="position">${entry.position}</td>
                 <td>
                     <select class="form-select editable" data-field="presents">
