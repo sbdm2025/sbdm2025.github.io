@@ -267,37 +267,32 @@ async function fetchAllData(hashedPassword) {
     result.forEach(entry => {
         tableBody += `
             <tr data-id="${entry._id}">
-                <td contenteditable="true" data-field="name">${entry.name}</td>
-                <td contenteditable="true" data-field="email">${entry.email}</td>
-                <td contenteditable="true" class="editable" data-field="affiliation">${entry.affiliation}</td>
-                <td contenteditable="true" data-field="foodrestriction">${entry.foodrestriction}</td>
-                <td contenteditable="true" class="editable" data-field="position">${entry.position}</td>
-                <td>
+                <td contenteditable="false" data-field="name"><div>${entry.name}</div></td>
+                <td contenteditable="false" data-field="email"><div>${entry.email}</td>
+                <td contenteditable="true" class="editable" data-field="affiliation"><div>${entry.affiliation}</div></td>
+                <td contenteditable="true" class="editable" data-field="position"><div>${entry.position}</div></td>
+                <td contenteditable="false" data-field="foodrestriction"><div>${entry.foodrestriction}</div></td>
+                <td><div>
                     <select class="form-select editable" data-field="presents">
                         <option value="true" ${entry.presents ? "selected" : ""}>Yes</option>
                         <option value="false" ${!entry.presents ? "selected" : ""}>No</option>
                     </select>
-                </td>
-                <td>
-                    <select class="form-select editable" data-field="discountRequest">
-                        <option value="true" ${entry.discountRequest ? "selected" : ""}>Yes</option>
-                        <option value="false" ${!entry.discountRequest ? "selected" : ""}>No</option>
-                    </select>
-                </td>
-                <td>
+                </div></td>
+                <td><div>
                     <button class="btn btn-primary btn-sm show-abstract-btn"
                         data-title="${encodeURIComponent(entry.title || "")}"
                         data-abstract="${encodeURIComponent(entry.abstract || "")}"
                         data-session="${encodeURIComponent(entry.session || "")}"
                         data-authors="${encodeURIComponent(entry.authors || "")}"
                         data-presenter="${encodeURIComponent(entry.presenter || "")}">View</button>
-                </td>
-                <td>
+                </div></td>
+                <td contenteditable="false" data-field="discountRequest"><div>${entry.discountRequest}</div></td>
+                <td><div>
                     <select class="form-select editable" data-field="paid">
                         <option value="true" ${entry.paid ? "selected" : ""}>Yes</option>
                         <option value="false" ${!entry.paid ? "selected" : ""}>No</option>
                     </select>
-                </td>
+                </div></td>
             </tr>`;
     });
     $("#tableBody").html(tableBody);
@@ -392,12 +387,9 @@ async function fetchAllData(hashedPassword) {
       margin-left: 10px;
     }
 
-    th {
-    vertical-align: middle; /* Aligns content vertically in the middle */
-    }
-    td {
-        display: flex;
-        align-items: center;  /* Vertical alignment */
+    td div {
+        display: table-cell;
+        vertical-align: middle;
     }
 </style>
 <div class="container-lg">
@@ -430,11 +422,11 @@ async function fetchAllData(hashedPassword) {
 <th data-quarto-table-cell-role="th">Name</th>
 <th data-quarto-table-cell-role="th">Email</th>
 <th data-quarto-table-cell-role="th">Affiliation</th>
-<th data-quarto-table-cell-role="th">Food</th>
 <th data-quarto-table-cell-role="th">Position</th>
+<th data-quarto-table-cell-role="th">Food</th>
 <th data-quarto-table-cell-role="th">Presents</th>
-<th data-quarto-table-cell-role="th">Discount</th>
 <th data-quarto-table-cell-role="th">Abstract</th>
+<th data-quarto-table-cell-role="th">Discount</th>
 <th data-quarto-table-cell-role="th">Paid</th>
 </tr>
 </thead>
