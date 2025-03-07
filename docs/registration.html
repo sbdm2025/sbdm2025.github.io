@@ -158,8 +158,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Registration for SBDM2025 is open until the <strong>1st of May 2025</strong>.</p>
-<section id="fees" class="level3" style="text-align: center;">
-<h3 style="text-align: center;" class="anchored" data-anchor-id="fees">Fees</h3>
+<section id="fees" class="level3" style="text-align: center; margin-top: 25px;">
+<h3 style="text-align: center; margin-top: 25px;" class="anchored" data-anchor-id="fees">Fees</h3>
 <div style="text-align: left;">
 <p>Registration fees include attendance to the entire meeting, coffee breaks, lunchs, dinners and social events. Register until the <strong>18th of April</strong> to benefit from a discount.</p>
 <div class="container-lg justify-content-center w-100">
@@ -236,33 +236,49 @@ Tip
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
 
-  document.getElementById("login-btn").addEventListener("click", async () => {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    try {
-      const userCredential = await signInWithEmailAndPassword(auth, email, password);
-      if (!userCredential.user.emailVerified) {
-        alert("Please verify your email address before logging in.");
-        await signOut(auth);
-        return;
-      }
-    } catch (error) {
-      alert(error.message);
-    }
-  });
+    document.getElementById("login-form").addEventListener("submit", async (event) => {
+        event.preventDefault(); // Prevent form submission
 
-  document.getElementById("signup-btn").addEventListener("click", async () => {
-    const email = document.getElementById("signup-email").value;
-    const password = document.getElementById("signup-password").value;
-    try {
-      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      await sendEmailVerification(userCredential.user);
-      document.getElementById("signup-password").setAttribute("autocomplete", "on");
-      alert("Verification email sent. Please check your inbox.");
-    } catch (error) {
-      alert(error.message);
-    }
-  });
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+
+        if (!email || !password) {
+            alert("Please enter both email and password.");
+            return;
+        }
+
+        try {
+            const userCredential = await signInWithEmailAndPassword(auth, email, password);
+            if (!userCredential.user.emailVerified) {
+                alert("Please verify your email address before logging in.");
+                await signOut(auth);
+                return;
+            }
+        } catch (error) {
+            alert(error.message);
+        }
+    });
+
+
+    document.getElementById("signin-form").addEventListener("submit", async (event) => {
+        event.preventDefault(); // Prevent form submission
+
+        const email = document.getElementById("signup-email").value.trim();
+        const password = document.getElementById("signup-password").value.trim();
+
+        if (!email || !password) {
+            alert("Please enter both email and password.");
+            return;
+        }
+
+        try {
+            const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+            await sendEmailVerification(userCredential.user);
+            alert("Verification email sent. Please check your inbox.");
+        } catch (error) {
+            alert(error.message);
+        }
+    });
 
   document.getElementById("logout-btn").addEventListener("click", async () => {
     await signOut(auth);
