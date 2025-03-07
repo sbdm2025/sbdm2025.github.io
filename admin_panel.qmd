@@ -129,12 +129,14 @@ async function fetchAllData(hashedPassword) {
                     </select>
                 </div></td>
                 <td><div>
+                    ${entry.title ? `
                     <button class="btn btn-primary btn-sm show-abstract-btn" style="margin:0px;"
                         data-title="${encodeURIComponent(entry.title || "")}"
                         data-abstract="${encodeURIComponent(entry.abstract || "")}"
                         data-session="${encodeURIComponent(entry.session || "")}"
                         data-authors="${encodeURIComponent(entry.authors || "")}"
                         data-presenter="${encodeURIComponent(entry.presenter || "")}">View</button>
+                    ` : ''}
                 </div></td>
                 <td><div>
                     <select class="form-select editable" data-field="paid">
@@ -280,7 +282,6 @@ async function fetchAllData(hashedPassword) {
             <th>Food</th>
             <th>Presents</th>
             <th>Abstract</th>
-            <th>Discount</th>
             <th>Paid</th>
         </tr>
     </thead>
