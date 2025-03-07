@@ -27,23 +27,6 @@ only.**]{style="text-align: center;"}
   const auth = getAuth(app);
   let hashedPassword
 
-    document.getElementById("login-form").addEventListener("submit", async (event) => {
-        event.preventDefault(); // Prevent form submission
-
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value.trim();
-    if (!email || !password) {
-        alert("Please enter both email and password.");
-        return;
-    }
-    hashedPassword = await hashPassword(password);
-    try {
-      const userCredential = await signInWithEmailAndPassword(auth, email, password);
-    } catch (error) {
-      alert(error.message);
-    }
-  });
-
     async function hashPassword(password) {
         const encoder = new TextEncoder();
         const data = encoder.encode(password);
@@ -53,9 +36,32 @@ only.**]{style="text-align: center;"}
             .join("");
     }
 
+    document.getElementById("login-form").addEventListener("submit", async (event) => {
+        event.preventDefault(); // Prevent form submission
+
+
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+    if (!email || !password) {
+        alert("Please enter both email and password.");
+        return;
+    }
+    hashedPassword = await hashPassword(password);
+    console.log(hashedPassword)
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+    } catch (error) {
+      alert(error.message);
+    }
+  });
+
+
+
   document.getElementById("logout-btn").addEventListener("click", async () => {
     await signOut(auth);
   });
+
+   document.getElementById("title-block-header").style.display = "none";
 
     function getCookie(name) {
         let cookies = document.cookie.split('; ');
@@ -70,6 +76,7 @@ only.**]{style="text-align: center;"}
 
   onAuthStateChanged(auth, (user) => {
     console.log(hashedPassword)
+    
     if (hashedPassword){
         document.cookie = `sbdmH=${hashedPassword}; path=/`;
     } else {
@@ -78,7 +85,7 @@ only.**]{style="text-align: center;"}
             hashedPassword = readCookie;
         }
     }
-    
+    console.log(hashedPassword)
     if (user && (user.email=='sbdm2025.lyon@gmail.com') && hashedPassword) {
       document.getElementById("auth-container").style.display = "none";
       document.getElementById("user-container").style.display = "block";
