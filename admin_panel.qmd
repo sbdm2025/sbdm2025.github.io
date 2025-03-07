@@ -291,7 +291,7 @@ async function fetchAllData(hashedPassword) {
 </table>
     </div>
     <div class="mt-5 mb-5">
-    <span class="text-muted">Affiliation highlighted in red are from low-income countries (and discount was requested)</span>
+    <span class="text-muted">Affiliation highlighted in red are from low-income countries (and a discount was requested)</span>
     </div>
     <!-- Abstract Modal -->
     <div class="modal fade" id="abstractModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
