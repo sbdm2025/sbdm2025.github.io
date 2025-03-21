@@ -416,7 +416,11 @@ Tip
     });
 
     sessionRadios.forEach(radio => {
-    radio.required = isPresenting;
+    if (isPresenting) {
+        radio.setAttribute("required", "required");
+    } else {
+        radio.removeAttribute("required");
+    }
     });
     // manages abstract text
     let abstractText = document.getElementById("formAbstract").value.trim();
