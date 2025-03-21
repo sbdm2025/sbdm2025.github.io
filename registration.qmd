@@ -159,6 +159,34 @@ choice, and resubmit the form.
         function toggleAbstract() {
             // Check if the "Yes" option is selected
             const isPosterSelected = document.querySelector('input[name="formPoster"]:checked')?.value === "true";
+            // List of conditional fields
+            const conditionalFields = [
+            "formTitle",
+            "formAuthors",
+            "formPresenter",
+            "formAbstract",
+            "formSession",
+            ];
+            const sessionRadios = document.querySelectorAll('input[name="formSession"]');
+
+            // Set or remove required depending on the condition
+            conditionalFields.forEach(id => {
+            const el = document.getElementById(id);
+            if (isPosterSelected) {
+                el.required = true;
+            } else {
+                el.required = false;
+            }
+            });
+
+            sessionRadios.forEach(radio => {
+            if (isPosterSelected) {
+                radio.setAttribute("required", "required");
+            } else {
+                radio.removeAttribute("required");
+            }
+            });
+
             abstractPoster.style.display = isPosterSelected ? "block" : "none";
             sessionPick.style.display = isPosterSelected ? "block" : "none";
             titlePoster.style.display = isPosterSelected ? "block" : "none";
@@ -248,6 +276,7 @@ choice, and resubmit the form.
         radio.removeAttribute("required");
     }
     });
+
     // manages abstract text
     let abstractText = document.getElementById("formAbstract").value.trim();
     let wordCount = abstractText.split(/\s+/).filter(word => word.length > 0).length;
