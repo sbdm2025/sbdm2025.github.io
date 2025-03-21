@@ -230,19 +230,19 @@ choice, and resubmit the form.
     ];
     const sessionRadios = document.querySelectorAll('input[name="formSession"]');
 
-    if (!isPresenting) {
-    // If not presenting a poster, remove required attributes
+    // Set or remove required depending on the condition
     conditionalFields.forEach(id => {
-        document.getElementById(id).removeAttribute("required");
-    });
-    sessionRadios.forEach(radio => radio.removeAttribute("required"));
+    const el = document.getElementById(id);
+    if (isPresenting) {
+        el.required = true;
     } else {
-    // Add required attributes if presenting
-    conditionalFields.forEach(id => {
-        document.getElementById(id).setAttribute("required", "required");
-    });
-    sessionRadios.forEach(radio => radio.setAttribute("required", "required"));
+        el.required = false;
     }
+    });
+
+    sessionRadios.forEach(radio => {
+    radio.required = isPresenting;
+    });
     // manages abstract text
     let abstractText = document.getElementById("formAbstract").value.trim();
     let wordCount = abstractText.split(/\s+/).filter(word => word.length > 0).length;
