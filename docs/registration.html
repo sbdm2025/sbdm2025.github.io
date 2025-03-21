@@ -340,18 +340,17 @@ Tip
             "formAuthors",
             "formPresenter",
             "formAbstract",
-            "formSession",
             ];
             const sessionRadios = document.querySelectorAll('input[name="formSession"]');
 
             // Set or remove required depending on the condition
             conditionalFields.forEach(id => {
-            const el = document.getElementById(id);
-            if (isPosterSelected) {
-                el.required = true;
-            } else {
-                el.required = false;
-            }
+                const el = document.getElementById(id);
+                if (isPosterSelected) {
+                    el.setAttribute("required", "required");
+                } else {
+                    el.removeAttribute("required");
+                }
             });
 
             sessionRadios.forEach(radio => {
@@ -430,18 +429,17 @@ Tip
     "formAuthors",
     "formPresenter",
     "formAbstract",
-    "formSession",
     ];
     const sessionRadios = document.querySelectorAll('input[name="formSession"]');
 
     // Set or remove required depending on the condition
     conditionalFields.forEach(id => {
     const el = document.getElementById(id);
-    if (isPresenting) {
-        el.required = true;
-    } else {
-        el.required = false;
-    }
+        if (isPresenting) {
+            el.setAttribute("required", "required");
+        } else {
+            el.removeAttribute("required");
+        }
     });
 
     sessionRadios.forEach(radio => {
