@@ -469,7 +469,7 @@ Tip
       authors: document.getElementById("formAuthors").value,
       presenter: document.getElementById("formPresenter").value,
       abstract: document.getElementById("formAbstract").value,
-      session: document.querySelector('input[name="formSession"]:checked').value,
+      session: document.querySelector('input[name="formSession"]:checked')?.value ?? "No session selected",
       discountRequest: hiddenInput.value,
       email: user.email,
     };
