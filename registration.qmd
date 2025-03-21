@@ -434,40 +434,40 @@ choice, and resubmit the form.
                 </div>
                 <div class="mb-3" id="titlePoster">
                     <label for="formAbstract" class="form-label">Poster title</label>
-                    <input type="text" class="form-control" id="formTitle" required>
+                    <input type="text" class="form-control" id="formTitle">
                 </div>
                 <div class="mb-3" id="authorsPoster">
                     <label for="formAuthors" class="form-label">Authors</label>
-                    <input type="text" class="form-control" id="formAuthors" required>
+                    <input type="text" class="form-control" id="formAuthors">
                 </div>
                 <div class="mb-3" id="presenterPoster">
                     <label for="formPresenter" class="form-label">Presenter</label>
-                    <input type="text" class="form-control" id="formPresenter" required>
+                    <input type="text" class="form-control" id="formPresenter">
                 </div>
                 <div class="mb-3" id="abstractPoster">
                     <label for="formAbstract" class="form-label">Poster abstract (max. 200 words)</label>
-                    <textarea class="form-control" id="formAbstract" rows="8" required></textarea>
+                    <textarea class="form-control" id="formAbstract" rows="8" ></textarea>
                 </div>
                 <div class="mb-3" id="sessionPick">
                     <label class="form-label">Indicate the session that corresponds best to your poster.</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="formSession" id="option1" value="Temporal Dynamics of decision making" required>
+                        <input class="form-check-input" type="radio" name="formSession" id="option1" value="Temporal Dynamics of decision making" >
                         <label class="form-check-label" for="option1">Temporal Dynamics of decision making</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="formSession" id="option2" value="Causal manipulations in decision making" required>
+                        <input class="form-check-input" type="radio" name="formSession" id="option2" value="Causal manipulations in decision making" >
                         <label class="form-check-label" for="option2">Causal manipulations in decision making</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="formSession" id="option3" value="Social cognition and decision making across species" required>
+                        <input class="form-check-input" type="radio" name="formSession" id="option3" value="Social cognition and decision making across species">
                         <label class="form-check-label" for="option3">Social cognition and decision making across species</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="formSession" id="option4" value="Naturalistic & context-dependant decision making" required>
+                        <input class="form-check-input" type="radio" name="formSession" id="option4" value="Naturalistic & context-dependant decision making">
                         <label class="form-check-label" for="option4">Naturalistic & context-dependant decision making</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="formSession" id="option5" value="Brain-body interaction and decision making" required>
+                        <input class="form-check-input" type="radio" name="formSession" id="option5" value="Brain-body interaction and decision making">
                         <label class="form-check-label" for="option5">Brain-body interaction and decision making</label>
                     </div>
                     <div class="form-check">
@@ -475,7 +475,7 @@ choice, and resubmit the form.
                         <label class="form-check-label" for="option6">Comparative decision across agents</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="formSession" id="option6" value="I am not sure" required>
+                        <input class="form-check-input" type="radio" name="formSession" id="option6" value="I am not sure" >
                         <label class="form-check-label" for="option6">I am not sure</label>
                     </div>
                 </div>
