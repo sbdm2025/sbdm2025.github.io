@@ -392,6 +392,32 @@ Tip
     hiddenInput.type = "hidden";
     hiddenInput.name = "formDiscount";
     hiddenInput.value = discountCheckbox.checked ? "true" : "false";
+
+    // Get value of poster choice
+    const isPresenting = document.querySelector('input[name="formPoster"]:checked').value === "true";
+
+    // List of conditional fields
+    const conditionalFields = [
+    "formTitle",
+    "formAuthors",
+    "formPresenter",
+    "formAbstract",
+    ];
+    const sessionRadios = document.querySelectorAll('input[name="formSession"]');
+
+    if (!isPresenting) {
+    // If not presenting a poster, remove required attributes
+    conditionalFields.forEach(id => {
+        document.getElementById(id).removeAttribute("required");
+    });
+    sessionRadios.forEach(radio => radio.removeAttribute("required"));
+    } else {
+    // Add required attributes if presenting
+    conditionalFields.forEach(id => {
+        document.getElementById(id).setAttribute("required", "required");
+    });
+    sessionRadios.forEach(radio => radio.setAttribute("required", "required"));
+    }
     // manages abstract text
     let abstractText = document.getElementById("formAbstract").value.trim();
     let wordCount = abstractText.split(/\s+/).filter(word => word.length > 0).length;
