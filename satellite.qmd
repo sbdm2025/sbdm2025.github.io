@@ -1,8 +1,5 @@
 ---
 title: "Satellite workshop: New perspectives on social networks from economics, psychology and neuroscience"
-about:
-  template: jolla
-  image: images/paste-1.png
 image: "images/paste-1.png"
 ---
 
