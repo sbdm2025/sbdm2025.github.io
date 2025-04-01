@@ -1,5 +1,8 @@
 ---
 title: "Satellite workshop: New perspectives on social networks from economics, psychology and neuroscience"
+about:
+  template: jolla
+  image: images/paste-1.png
 image: "images/paste-1.png"
 ---
 
@@ -52,15 +55,15 @@ understanding of decision-making in networked environments.
 ### Speakers
 
 -   Oriel Feldman Hall (neuro - Brown Univ) -
-    https://www.feldmanhalllab.com/
+    <https://www.feldmanhalllab.com/>
 -   Damon Centolla (sociology - University of Pennsylvania) -
-    https://www.asc.upenn.edu/people/faculty/damon-centola-phd
+    <https://www.asc.upenn.edu/people/faculty/damon-centola-phd>
 -   Edo Gallo (economics - Cambridge) - https://www.edoardogallo.com
 -   Friederike Mengel (economics - Essex) -
-    https://sites.google.com/site/friederikemengel/
+    <https://sites.google.com/site/friederikemengel/>
 -   Arno Riedl (Behavioral economics – Maastricht) -
-    https://www.arnoriedl.com/
+    <https://www.arnoriedl.com/>
 -   Jean-Claude Dreher (Neuroeconomics – Lyon) -
-    https://dreherteam.wixsite.com/neuroeconomics
--   Frédéric Moisan (Behavioral economics, Lyon)
-    https://em-lyon.com/en/frederic- moisan/research
+    <https://dreherteam.wixsite.com/neuroeconomics>
+-   Frédéric Moisan (Behavioral economics, Lyon) -
+    <https://em-lyon.com/en/frederic-moisan/research>

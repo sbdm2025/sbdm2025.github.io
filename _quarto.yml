@@ -24,7 +24,7 @@ website:
       - href: speakers.qmd
       - href: venue.qmd
       - href: program.qmd
-      - href: program.qmd
+      - href: satellite.qmd
         text: Satellite
       - href: registration.qmd
     right:
