@@ -308,7 +308,11 @@ choice, and resubmit the form.
       document.getElementById("responseMessage").innerText = result.message;
         setTimeout(() => {
             window.location.reload();
-        }, 1500); // Wait for 2 seconds before refreshing (optional)
+            const result = confirm("Do you want to proceed to the payment page?");
+            if (result) {
+                window.location.href = "https://dr07.azur-colloque.fr/inscription/en/367/inscription";
+            }  
+        }, 1000);
     } catch (error) {
       document.getElementById("responseMessage").innerText = "Error submitting the form.";
     }
@@ -361,6 +365,7 @@ choice, and resubmit the form.
     .form-check-label{
       margin-left: 10px;
     }
+    
 
 </style>
 ```
@@ -401,6 +406,11 @@ choice, and resubmit the form.
         </div>
     </div>
     <div class="user-container row justify-content-center" id="user-container">
+        <div class="container mt-5" style="text-align:left">
+            <div style="border-left: 5px solid #ffc107; background-color: #fff8e1; padding: 10px 15px; margin: 20px 0;">
+            ⚠️ <strong>If you have already submitted your registration using the form below</strong> you may access the payment page here:<br><a href="https://dr07.azur-colloque.fr/inscription/en/367/inscription" target="_blank">https://dr07.azur-colloque.fr/inscription/en/367/inscription</a>.<br>Otherwise, you'll be redirected towards the payment page when clicking the submit button.
+            </div>
+        </div>
         <div class="container mt-5" style="text-align:left">
             <h3>Registration Form</h3>
             <form id="registrationForm">
@@ -507,7 +517,7 @@ choice, and resubmit the form.
                         <label class="form-check-label" for="option6">I am not sure</label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Save / Submit</button>
             </form>
             <p id="responseMessage" class="mt-3"></p>
         </div>
