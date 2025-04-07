@@ -2,10 +2,7 @@
 title: "Program"
 ---
 
-::: callout-warning
-The program will be announced soon.
-:::
-
+Please find below the schedule of each talk. You may find more information about each speaker in the [Speakers](speakers) tab
 +-------------+----------------------------------------+--------------+
 |             | #### Day 1 - Monday - June 16th \|    
 +-------------+----------------------------------------+--------------+
@@ -22,7 +19,7 @@ The program will be announced soon.
 +-------------+----------------------------------------+--------------+
 | 11:40       | Coffee break + Posters                
 +-------------+----------------------------------------+--------------+
-| 12:00       | Jacob Bakermans                              |              |
+| 12:00       | Jacob Bakermans                          
 +-------------+----------------------------------------+--------------+
 | 12:30       | Speaker 5 (from submissions)         
 +-------------+----------------------------------------+--------------+
