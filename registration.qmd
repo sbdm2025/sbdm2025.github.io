@@ -15,8 +15,9 @@ April** to benefit from a discount.
 ::: justify-content-center
 |                                           | Early registration (until 18/04) | Late registration (after 18/04) |
 |:----------------------------:|:-------------------:|:-------------------:|
-| Researchers, postdocs and permanent staff |               290€               |              340€               |
-|       Master's and doctoral students       |               190€               |              240€               |
+| Researchers, postdocs and permanent staff |               290€               |              350€               |
+|       Master's and doctoral students       |               190€               |              250€               |
+|       Local PhD students (NSCO)       |               95€               |              95€              |
 |       Speakers       |               0€               |              0€               |
 :::
 :::
