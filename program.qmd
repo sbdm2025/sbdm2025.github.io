@@ -7,7 +7,7 @@ You may find more information about each speaker in the [Speakers](speakers) tab
 
 ### Day 1 – Monday – June 16th
 
-| Time      | Title                                      | Speaker(s)                                  |
+| Time      | Event                                      | Speaker(s)                                  |
 |-----------|--------------------------------------------|---------------------------------------------|
 | 09:30     | Registration                                |                                             |
 | **10:00** | **Session: Temporal Dynamics of Decision Making** |                                      |
@@ -29,11 +29,10 @@ You may find more information about each speaker in the [Speakers](speakers) tab
 | 17:15     | Discussion                                  |                                             |
 | **17:45** | End                                         |                                             |
 
----
 
 ### Day 2 – Tuesday – June 17th
 
-| Time      | Title                                      | Speaker(s)                                  |
+| Time      | Event                                      | Speaker(s)                                  |
 |-----------|--------------------------------------------|---------------------------------------------|
 | **09:00** | **Session: Social Cognition and Decision Making Across Species** |               |
 | 09:10     | Talk                                        | Marco Wittmann                              |
@@ -55,11 +54,10 @@ You may find more information about each speaker in the [Speakers](speakers) tab
 | 17:00     | Discussion                                  |                                             |
 | 17:30     | End                                         |                                             |
 
----
 
 ### Day 3 – Wednesday – June 18th
 
-| Time      | Title                                      | Speaker(s)                                  |
+| Time      | Event                                      | Speaker(s)                                  |
 |-----------|--------------------------------------------|---------------------------------------------|
 | **09:00** | **Session: Naturalistic & Context-Dependent Decision Making** |                    |
 | 09:10     | Talk                                        | Jacqueline Scholl                           |
