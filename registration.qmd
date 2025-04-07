@@ -307,11 +307,12 @@ choice, and resubmit the form.
       const result = await response.json();
       document.getElementById("responseMessage").innerText = result.message;
         setTimeout(() => {
-            window.location.reload();
             const result = confirm("Do you want to proceed to the payment page?");
             if (result) {
                 window.location.href = "https://dr07.azur-colloque.fr/inscription/en/367/inscription";
-            }  
+            } else {
+                window.location.reload();
+            }
         }, 1000);
     } catch (error) {
       document.getElementById("responseMessage").innerText = "Error submitting the form.";

@@ -1,0 +1,13 @@
+---
+title: "David Thura"
+author: "SBDM2025"
+categories: ["Comparative decision across agents"]
+image: "https://static.wixstatic.com/media/daa608_4a4d76514db64c058f8228a8e28564df~mv2.jpg/v1/fill/w_134,h_155,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ProfilPic_2020_edited.jpg"
+description: "IMPACT, Lyon Neuroscience Research Center (Lyon, France)" 
+---
+
+Session: Comparative decision across agents
+Date & time: TBA
+Title: TBA
+
+Website: [https://www.davidthura.com/](https://www.davidthura.com/)

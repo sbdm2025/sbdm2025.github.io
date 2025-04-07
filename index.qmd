@@ -65,7 +65,7 @@ Registration is now open! Click [here](registration) to register.
       <img src="images/GATE.png" class="img-fluid logo-img" alt="Logo GATE">
     </div>
     <div class="logo-wrapper">
-      <img src="images/LABEX_CORTEX.svg" class="img-fluid logo-img" alt="Logo LABEX_CORTEX">
+      <img src="images/LABEX_CORTEX.png" class="img-fluid logo-img" alt="Logo LABEX_CORTEX">
     </div>
     <div class="logo-wrapper">
       <img src="images/LyonLumiere.png" class="img-fluid logo-img" alt="Logo LyonLumiere">
@@ -74,10 +74,10 @@ Registration is now open! Click [here](registration) to register.
       <img src="images/UCBL.png" class="img-fluid logo-img" alt="Logo UCBL">
     </div>
     <div class="logo-wrapper">
-      <img src="images/nsco-logo.svg" class="img-fluid logo-img" alt="Logo nsco">
+      <img src="images/nsco-logo.png" class="img-fluid logo-img" alt="Logo nsco">
     </div>
     <div class="logo-wrapper">
-      <img src="images/seg-logo.svg" class="img-fluid logo-img" alt="Logo seg">
+      <img src="images/seg-logo.png" class="img-fluid logo-img" alt="Logo seg">
     </div>
     <!-- Add more logos as needed -->
   </div>
