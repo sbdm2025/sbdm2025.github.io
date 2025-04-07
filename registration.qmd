@@ -35,11 +35,14 @@ located in a low-income country (see the
 2.  Complete the registration form. You may submit a title and an
     abstract if you wish present a poster.
 
-::: callout-tip
-You may edit your registration form until the **1st of May 2025**. To do
+3.  You may edit your registration form until the **1st of May 2025**. To do
 so, simply log in again with your credentials, update the fields of your
 choice, and resubmit the form.
+
+::: callout-warning
+Your registration will only be considered complete and valid after your payment has been processed.
 :::
+
 :::
 
 ### Registration form {style="text-align: center; margin-top: 30px;margin-bottom: 15px;"}
