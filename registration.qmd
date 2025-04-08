@@ -13,7 +13,7 @@ April** to benefit from a discount.
 
 ::: {.container-lg .justify-content-center .w-100}
 ::: justify-content-center
-|                                           | Early registration (until 18/04) | Late registration (after 18/04) |
+|                                           | Early registration (until 01/05) | Late registration (after 01/05) |
 |:----------------------------:|:-------------------:|:-------------------:|
 | Researchers, postdocs and permanent staff |               290€               |              350€               |
 |       Master's and doctoral students       |               190€               |              250€               |
