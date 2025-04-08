@@ -2,7 +2,7 @@
 title: "Gerhard Jocham"
 author: "SBDM2025"
 categories: ["Causal manipulations in decision making"]
-image: https://pbs.twimg.com/profile_images/1096588208312385536/3Al1ahgb_400x400.png
+image: https://www.ovgu.de/unimagdeburg_media/Presse/Bilder/Pressemitteilungen/2018/Portrait_Jocham_Gerhard+%28c%29+Harald+Krieg-p-58212.jpeg
 description: "Biological psychology of decision-making, Heinrich-Heine-Universität Düsseldorf (Germany)"
 ---
 
