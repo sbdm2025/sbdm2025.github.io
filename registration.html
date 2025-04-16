@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.489">
+<meta name="generator" content="quarto-1.4.404">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -316,6 +316,9 @@ Warning
         if (result.data.discountRequest=="true"){
             document.getElementById("formDiscount").checked = true;
         }
+        if (result.data.optOutGala=="true"){
+            document.getElementById("formOptoutGala").checked = true;
+        }
         // Prepopulate the radio button based on formSession
         const sessionValue = result.data.session; // Assuming this matches the radio values
         const radioSessionButton = document.querySelector(`input[name="formSession"][value="${sessionValue}"]`);
@@ -430,10 +433,16 @@ Warning
     if (!user || !user.emailVerified) return;
     // manage checkbox
     let discountCheckbox = document.getElementById("formDiscount");
+    let optoutGalaCheckbox = document.getElementById("formOptoutGala");
     let hiddenInput = document.createElement("input");
     hiddenInput.type = "hidden";
     hiddenInput.name = "formDiscount";
     hiddenInput.value = discountCheckbox.checked ? "true" : "false";
+    
+    
+    let hiddenInput2 = document.createElement("input");
+    hiddenInput2.name = "formOptoutGala";
+    hiddenInput2.value=optoutGalaCheckbox.checked ? "true" : "false";
 
     // Get value of poster choice
     const isPresenting = document.querySelector('input[name="formPoster"]:checked').value === "true";
@@ -624,6 +633,15 @@ Warning
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="formFood" id="foodoption3" value="Vegan" required="">
                         <label class="form-check-label" for="foodoption3">Vegan</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="formOptoutGala" name="formOptoutGala" checked="">
+                        <label class="form-check-label" for="formOptoutGala">I will be present at the Gala dinner (June 17th)</label>
+                        <div class="form-text text-muted">
+                            Opting-out from the Gala dinner will not reduce your registration fees, but it will contribute to reduce food waste if you already know that you won't join.
+                        </div>
                     </div>
                 </div>
                 <div class="mb-3">
