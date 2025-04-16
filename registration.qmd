@@ -131,6 +131,9 @@ Your registration will only be considered complete and valid after your payment 
         if (result.data.discountRequest=="true"){
             document.getElementById("formDiscount").checked = true;
         }
+        if (result.data.optOutGala=="true"){
+            document.getElementById("formOptoutGala").checked = true;
+        }
         // Prepopulate the radio button based on formSession
         const sessionValue = result.data.session; // Assuming this matches the radio values
         const radioSessionButton = document.querySelector(`input[name="formSession"][value="${sessionValue}"]`);
@@ -245,10 +248,16 @@ Your registration will only be considered complete and valid after your payment 
     if (!user || !user.emailVerified) return;
     // manage checkbox
     let discountCheckbox = document.getElementById("formDiscount");
+    let optoutGalaCheckbox = document.getElementById("formOptoutGala");
     let hiddenInput = document.createElement("input");
     hiddenInput.type = "hidden";
     hiddenInput.name = "formDiscount";
     hiddenInput.value = discountCheckbox.checked ? "true" : "false";
+    
+    
+    let hiddenInput2 = document.createElement("input");
+    hiddenInput2.name = "formOptoutGala";
+    hiddenInput2.value=optoutGalaCheckbox.checked ? "true" : "false";
 
     // Get value of poster choice
     const isPresenting = document.querySelector('input[name="formPoster"]:checked').value === "true";
@@ -446,6 +455,15 @@ Your registration will only be considered complete and valid after your payment 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="formFood" id="foodoption3" value="Vegan" required>
                         <label class="form-check-label" for="foodoption3">Vegan</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="formOptoutGala" name="formOptoutGala" checked>
+                        <label class="form-check-label" for="formOptoutGala">I will be present at the Gala dinner (June 17th)</label>
+                        <div class="form-text text-muted">
+                            Opting-out from the Gala dinner will not reduce your registration fees, but it will contribute to reduce food waste if you already know that you won't join.
+                        </div>
                     </div>
                 </div>
                 <div class="mb-3">

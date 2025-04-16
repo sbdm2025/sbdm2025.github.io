@@ -59,27 +59,59 @@ Registration is now open, until the 31st of May! Click [here](registration) to r
 <div class="container">
   <div class="d-flex flex-wrap justify-content-center align-items-center">
     <div class="logo-wrapper">
-      <img src="images/CRNL.png" class="img-fluid logo-img" alt="Logo CRNL">
+      <a href="https://www.crnl.fr/en?language=en"><img src="images/CRNL.png" class="img-fluid logo-img" alt="Logo CRNL"></a>
     </div>
     <div class="logo-wrapper">
-      <img src="images/GATE.png" class="img-fluid logo-img" alt="Logo GATE">
+      <a href="https://www.brio.institute/home"><img src="images/BRIO-log.png" class="img-fluid logo-img" alt="Logo BRIO"></a>
     </div>
     <div class="logo-wrapper">
-      <img src="images/LABEX_CORTEX.png" class="img-fluid logo-img" alt="Logo LABEX_CORTEX">
+      <a href="https://labex-cortex.universite-lyon.fr/"><img src="images/LABEX_CORTEX.png" class="img-fluid logo-img" alt="Logo LABEX_CORTEX"></a>
     </div>
     <div class="logo-wrapper">
-      <img src="images/LyonLumiere.png" class="img-fluid logo-img" alt="Logo LyonLumiere">
+      <a href="https://welcome.univ-lyon2.fr/"><img src="images/LyonLumiere.png" class="img-fluid logo-img" alt="Logo LyonLumiere"></a>
     </div>
     <div class="logo-wrapper">
-      <img src="images/UCBL.png" class="img-fluid logo-img" alt="Logo UCBL">
+      <a href="https://www.univ-lyon1.fr/en"><img src="images/UCBL.png" class="img-fluid logo-img" alt="Logo UCBL"></a>
     </div>
     <div class="logo-wrapper">
-      <img src="images/nsco-logo.png" class="img-fluid logo-img" alt="Logo nsco">
+      <a href="https://nsco.universite-lyon.fr/the-neurosciences-and-cognition-doctoral-school-ed-476-nsco--148506.kjsp?RH=ED-NSCO"><img src="images/nsco-logo.png" class="img-fluid logo-img" alt="Logo nsco"></a>
     </div>
     <div class="logo-wrapper">
-      <img src="images/seg-logo.png" class="img-fluid logo-img" alt="Logo seg">
+      <a href="https://edseg.universite-lyon.fr/ed-486-seg-en-95692.kjsp?RH=1552544795785341"><img src="images/seg-logo.png" class="img-fluid logo-img" alt="Logo seg"></a>
     </div>
     <!-- Add more logos as needed -->
+  </div>
+</div>
+
+```
+
+### Participating institutes
+
+```{=html}
+<style>
+.logo-wrapper {
+  flex: 0 1 auto;          /* allows shrinking on small screens */
+  margin: 10px;
+}
+.logo-img {
+  max-height: 100px;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+}
+</style>
+
+<div class="container">
+  <div class="d-flex flex-wrap justify-content-center align-items-center">
+    <div class="logo-wrapper">
+      <a href="https://sbri.fr/"><img src="images/logo-sbri-lyon-3-cropped.svg" class="img-fluid logo-img" alt="Logo SBRI"></a>
+    </div>
+    <div class="logo-wrapper">
+      <a href="https://www.crnl.fr/en?language=en"><img src="images/CRNL.png" class="img-fluid logo-img" alt="Logo BRIO"></a>
+    </div>
+    <div class="logo-wrapper">
+      <a href="https://www.gate.cnrs.fr/en/"><img src="images/GATE.png" class="img-fluid logo-img" alt="Logo GATE"></a>
+    </div>
   </div>
 </div>
 
