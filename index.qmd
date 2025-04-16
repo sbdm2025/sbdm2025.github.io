@@ -24,12 +24,12 @@ You can find the list of confirmed speakers [here](speakers). The organizing com
 
 | Themes                                              | Chair |
 |-----------------------------------------------------|-------|
-| Brain-body interaction and decision making          | TBA   |
-| Comparative decision across agents                  | TBA   |
-| Causal manipulations in decision making             | TBA   |
-| Social cognition and decision making across species | TBA   |
-| Naturalistic & context-dependent decision making    | TBA   |
-| Temporal dynamics of decision making                | TBA   |
+| Brain-body interaction and decision making          | Leonie Koban   |
+| Comparative decision across agents                  | Fadila Hadj-Bouziane   |
+| Causal manipulations in decision making             | Mathias Pessiglione   |
+| Social cognition and decision making across species | Jérôme Sallet   |
+| Naturalistic & context-dependent decision making    | Guillaume Sescousse  |
+| Temporal dynamics of decision making                | Romain Ligneul   |
 
 Talks are [scheduled](program) to be 30 minutes overall with \~25 minute long talks
 followed by Q and A. Each session will end with a longer general
