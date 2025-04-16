@@ -278,10 +278,12 @@ async function fetchAllData(hashedPassword) {
                 <td contenteditable="false" data-field="foodrestriction"><div>${entry.foodrestriction}</div></td>
                 <td contenteditable="true" data-field="optoutGala">
                 <div>
-                    <select class="form-select editable" data-field="optoutGala">
-                        <option value="true" ${entry.optoutGala ? "selected" : ""}>Yes</option>
-                        <option value="false" ${!entry.optoutGala ? "selected" : ""}>No</option>
-                    </select>
+                <input
+                    type="checkbox"
+                    class="form-check-input editable"
+                    data-field="optoutGala"
+                    ${entry.optoutGala ? "checked" : ""}
+                />
                 </div>
                 </td>
                 <td><div>
@@ -294,12 +296,16 @@ async function fetchAllData(hashedPassword) {
                         data-presenter="${encodeURIComponent(entry.presenter || "")}">View</button>
                     ` : ''}
                 </div></td>
-                <td><div>
-                    <select class="form-select editable" data-field="paid">
-                        <option value="true" ${entry.paid ? "selected" : ""}>Yes</option>
-                        <option value="false" ${!entry.paid ? "selected" : ""}>No</option>
-                    </select>
-                </div></td>
+                <td>                
+                <div>
+                <input
+                    type="checkbox"
+                    class="form-check-input editable"
+                    data-field="paid"
+                    ${entry.paid ? "checked" : ""}
+                />
+                </div>
+                </td>
             </tr>`;
     });
     $("#tableBody").html(tableBody);
