@@ -361,7 +361,47 @@ async function fetchAllData(hashedPassword) {
         });
     }
 
-  
+    function getDateFromObjectId(objectId) {
+        const timestampHex = objectId.substring(0, 8);
+        const timestamp = parseInt(timestampHex, 16);
+        return new Date(timestamp * 1000);
+    }
+
+    async function exportTableAsCSV() {
+        const response = await fetch(`https://misc.robustcircuit.eu/all/${hashedPassword}`);
+        let result = await response.json();
+
+        // Sort by ObjectId creation date
+        result.sort((a, b) => getDateFromObjectId(a._id) - getDateFromObjectId(b._id));
+
+        // Define CSV headers
+        const headers = ["Name", "Email", "Affiliation", "Position", "Food Restriction", "Gala Opt-out", "Title", "Paid", "Created At"];
+
+        // Create rows
+        const rows = result.map(entry => [
+            `"${entry.name || ''}"`,
+            `"${entry.email || ''}"`,
+            `"${entry.affiliation || ''}"`,
+            `"${entry.position || ''}"`,
+            `"${entry.foodrestriction || ''}"`,
+            entry.optoutGala ? "Yes" : "No",
+            `"${entry.title || ''}"`,
+            entry.paid ? "Yes" : "No",
+            getDateFromObjectId(entry._id).toISOString()
+        ]);
+
+        const csvContent = [headers.join(","), ...rows.map(r => r.join(","))].join("\n");
+
+        const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+        const link = document.createElement("a");
+        const url = URL.createObjectURL(blob);
+        link.setAttribute("href", url);
+        link.setAttribute("download", "registrations_sorted.csv");
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+    
 </script>
 <style>
 
@@ -453,6 +493,7 @@ async function fetchAllData(hashedPassword) {
 </table>
 
         <div class="mt-5 mb-5">
+        <button class="btn btn-success mb-4" onclick="exportTableAsCSV()">Download CSV (Sorted by Registration Date)</button>
         <span class="text-muted">Affiliation highlighted in red are from low-income countries (and a discount was requested)</span>
         </div>
     </div>
