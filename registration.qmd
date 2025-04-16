@@ -4,6 +4,11 @@ title: "Registration"
 
 Registration for SBDM2025 is open until the **31st of May 2025**.
 
+::: callout-note
+**Contributed talks** will be selected amongst the abstracts submitted before the **16th of May**.
+:::
+
+
 ### Fees {style="text-align: center; margin-top: 30px;margin-bottom: 15px;"}
 
 ::: {style="text-align: left;"}
@@ -17,7 +22,7 @@ May** to benefit from a discount.
 |:----------------------------:|:-------------------:|:-------------------:|
 | Researchers, postdocs and permanent staff |               290€               |              350€               |
 |       Master's and doctoral students       |               190€               |              250€               |
-|       Local PhD students (NSCO)       |               95€               |              95€              |
+|       Local PhD students (financial support of NSCO & SEG)       |               95€               |              95€              |
 |       Speakers       |               0€               |              0€               |
 :::
 :::
@@ -256,6 +261,7 @@ Your registration will only be considered complete and valid after your payment 
     
     
     let hiddenInput2 = document.createElement("input");
+    hiddenInput2.type = "hidden";
     hiddenInput2.name = "formOptoutGala";
     hiddenInput2.value=optoutGalaCheckbox.checked ? "true" : "false";
 
@@ -297,6 +303,7 @@ Your registration will only be considered complete and valid after your payment 
         return // Stop form submission
     }
     this.appendChild(hiddenInput);
+    this.appendChild(hiddenInput2);
     const formData = {
       form_id: document.getElementById("formId").value,
       name: document.getElementById("formName").value,
@@ -310,6 +317,7 @@ Your registration will only be considered complete and valid after your payment 
       abstract: document.getElementById("formAbstract").value,
       session: document.querySelector('input[name="formSession"]:checked')?.value ?? "No session selected",
       discountRequest: hiddenInput.value,
+      optoutGala: hiddenInput2.value,
       email: user.email,
     };
     try {
@@ -462,7 +470,7 @@ Your registration will only be considered complete and valid after your payment 
                         <input class="form-check-input" type="checkbox" id="formOptoutGala" name="formOptoutGala" checked>
                         <label class="form-check-label" for="formOptoutGala">I will be present at the Gala dinner (June 17th)</label>
                         <div class="form-text text-muted">
-                            Opting-out from the Gala dinner will not reduce your registration fees, but it will contribute to reduce food waste if you already know that you won't join.
+                            Opting out of the Gala dinner will not reduce your registration fees, but it will help reduce food waste if you already know you won’t be attending.
                         </div>
                     </div>
                 </div>

@@ -276,6 +276,7 @@ async function fetchAllData(hashedPassword) {
                 <td contenteditable="true" class="editable" data-field="affiliation" style="color: ${entry.discountRequest ? 'red': 'inherit'};"><div>${entry.affiliation}</div></td>
                 <td contenteditable="true" class="editable" data-field="position"><div>${entry.position}</div></td>
                 <td contenteditable="false" data-field="foodrestriction"><div>${entry.foodrestriction}</div></td>
+                <td contenteditable="true" class="editable" data-field="optoutGala" style="color: ${entry.formOptoutGala ? 'red': 'inherit'};"></td>
                 <td><div>
                     <select class="form-select editable" data-field="presents">
                         <option value="true" ${entry.presents ? "selected" : ""}>Yes</option>
