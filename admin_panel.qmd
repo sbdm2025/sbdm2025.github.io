@@ -247,6 +247,8 @@ async function fetchAllData(hashedPassword) {
         link.click();
         document.body.removeChild(link);
     }
+
+    window.exportTableAsCSV = exportTableAsCSV;
     
 </script>
 ```
