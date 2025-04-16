@@ -162,6 +162,19 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Registration for SBDM2025 is open until the <strong>31st of May 2025</strong>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Contributed talks</strong> will be selected amongst the abstracts submitted before the <strong>16th of May</strong>.</p>
+</div>
+</div>
 <section id="fees" class="level3" style="text-align: center; margin-top: 30px;margin-bottom: 15px;">
 <h3 style="text-align: center; margin-top: 30px;margin-bottom: 15px;" class="anchored" data-anchor-id="fees">Fees</h3>
 <div style="text-align: left;">
@@ -193,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;">250€</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Local PhD students (NSCO)</td>
+<td style="text-align: center;">Local PhD students (financial support of NSCO &amp; SEG)</td>
 <td style="text-align: center;">95€</td>
 <td style="text-align: center;">95€</td>
 </tr>
@@ -441,6 +454,7 @@ Warning
     
     
     let hiddenInput2 = document.createElement("input");
+    hiddenInput2.type = "hidden";
     hiddenInput2.name = "formOptoutGala";
     hiddenInput2.value=optoutGalaCheckbox.checked ? "true" : "false";
 
@@ -482,6 +496,7 @@ Warning
         return // Stop form submission
     }
     this.appendChild(hiddenInput);
+    this.appendChild(hiddenInput2);
     const formData = {
       form_id: document.getElementById("formId").value,
       name: document.getElementById("formName").value,
@@ -495,6 +510,7 @@ Warning
       abstract: document.getElementById("formAbstract").value,
       session: document.querySelector('input[name="formSession"]:checked')?.value ?? "No session selected",
       discountRequest: hiddenInput.value,
+      optoutGala: hiddenInput2.value,
       email: user.email,
     };
     try {
@@ -640,7 +656,7 @@ Warning
                         <input class="form-check-input" type="checkbox" id="formOptoutGala" name="formOptoutGala" checked="">
                         <label class="form-check-label" for="formOptoutGala">I will be present at the Gala dinner (June 17th)</label>
                         <div class="form-text text-muted">
-                            Opting-out from the Gala dinner will not reduce your registration fees, but it will contribute to reduce food waste if you already know that you won't join.
+                            Opting out of the Gala dinner will not reduce your registration fees, but it will help reduce food waste if you already know you won’t be attending.
                         </div>
                     </div>
                 </div>
