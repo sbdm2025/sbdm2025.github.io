@@ -326,8 +326,14 @@ async function fetchAllData(hashedPassword) {
         let row = $(this).closest("tr");
         let id = row.data("id");
         let field = $(this).data("field");
-        let value = $(this).hasClass("form-select") ? $(this).val() : $(this).text().trim();
-
+        let value;
+        if ($(this).is(":checkbox")) {
+            value = $(this).prop("checked");
+        } else if ($(this).is("select")) {
+            value = $(this).val();
+        } else {
+            value = $(this).text().trim();
+        }
         updateEntry(id, field, value);
     });
 
