@@ -62,9 +62,6 @@ Registration is now open, until the 31st of May! Click [here](registration) to r
       <a href="https://www.crnl.fr/en?language=en"><img src="images/CRNL.png" class="img-fluid logo-img" alt="Logo CRNL"></a>
     </div>
     <div class="logo-wrapper">
-      <a href="https://www.brio.institute/home"><img src="images/BRIO-log.png" class="img-fluid logo-img" alt="Logo BRIO"></a>
-    </div>
-    <div class="logo-wrapper">
       <a href="https://labex-cortex.universite-lyon.fr/"><img src="images/LABEX_CORTEX.png" class="img-fluid logo-img" alt="Logo LABEX_CORTEX"></a>
     </div>
     <div class="logo-wrapper">
@@ -78,6 +75,9 @@ Registration is now open, until the 31st of May! Click [here](registration) to r
     </div>
     <div class="logo-wrapper">
       <a href="https://edseg.universite-lyon.fr/ed-486-seg-en-95692.kjsp?RH=1552544795785341"><img src="images/seg-logo.png" class="img-fluid logo-img" alt="Logo seg"></a>
+    </div>
+    <div class="logo-wrapper">
+      <a href="https://www.brio.institute/home"><img src="images/BRIO-log.png" class="img-fluid logo-img" alt="Logo BRIO"></a>
     </div>
     <!-- Add more logos as needed -->
   </div>
