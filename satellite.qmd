@@ -57,25 +57,26 @@ understanding of decision-making in networked environments.
 -   Oriel Feldman Hall (neuroscience - Brown Univ) -
     <https://www.feldmanhalllab.com/>
 
-    **Title**: Cognitive maps of social networks The success of the
-    human species depends on our ability to successfully navigate
-    through our complex social communities, where our friends are
-    connected to many others, who are in turn connected to others, and
-    so on. Our social networks are extraordinarily dense, complex, and
-    continually evolving as friendships are made and broken. It is an
-    enormous challenge to figure out how people are connected within a
-    network, and continually update one’s representation as the network
-    inevitably shifts over time. Yet, knowing your social network’s
-    structure affords many advantages, such as being able to disseminate
-    information, manage one’s own (and others) reputations, or even
-    strategically figure out how to occupy a central position. I will
-    discuss our recent research probing the mechanisms that underpin how
-    humans learn about the relationships in social networks, and the
-    format of representation they use to encode these social networks:
-    abstract cognitive maps. We find that abstract maps are used to
-    solve multiple different social navigation problems, from climbing
-    the social ladder into positions of influence to learning to gossip
-    with the right people.
+    **Title**: Cognitive maps of social networks
+
+    The success of the human species depends on our ability to
+    successfully navigate through our complex social communities, where
+    our friends are connected to many others, who are in turn connected
+    to others, and so on. Our social networks are extraordinarily dense,
+    complex, and continually evolving as friendships are made and
+    broken. It is an enormous challenge to figure out how people are
+    connected within a network, and continually update one’s
+    representation as the network inevitably shifts over time. Yet,
+    knowing your social network’s structure affords many advantages,
+    such as being able to disseminate information, manage one’s own (and
+    others) reputations, or even strategically figure out how to occupy
+    a central position. I will discuss our recent research probing the
+    mechanisms that underpin how humans learn about the relationships in
+    social networks, and the format of representation they use to encode
+    these social networks: abstract cognitive maps. We find that
+    abstract maps are used to solve multiple different social navigation
+    problems, from climbing the social ladder into positions of
+    influence to learning to gossip with the right people.
 
 -   Damon Centolla (sociology - University of Pennsylvania) -
     <https://www.asc.upenn.edu/people/faculty/damon-centola-phd>
@@ -84,78 +85,85 @@ understanding of decision-making in networked environments.
 
 -   Edo Gallo (economics - Cambridge) - <https://www.edoardogallo.com>
 
-    **Title**: Money vs social exclusion in networks Globalization
-    offers unparalleled opportunities to expand economic welfare across
-    large networks of unrelated individuals. Social exclusion –
-    permanent or temporary – and monetary exchange are institutions that
-    in theory can incentivize cooperation. In an experiment, we evaluate
-    their relative performance and interaction in anonymous networks of
-    different sizes. Permanent social exclusion (ostracism) leads to
-    sparse networks, which reduces long-run economic potential. Monetary
-    exchange and temporary social exclusion perform similarly well in
-    small networks. Yet, in large networks monetary exchange is the only
-    institution that promotes full cooperation as it completely crowds
-    out ostracism and maintains the network intact. An insight is that
-    monetary systems outperform social exclusion mechanisms in promoting
-    cooperation in globalized social and economic networks.
+    **Title**: Money vs social exclusion in networks
+
+    Globalization offers unparalleled opportunities to expand economic
+    welfare across large networks of unrelated individuals. Social
+    exclusion – permanent or temporary – and monetary exchange are
+    institutions that in theory can incentivize cooperation. In an
+    experiment, we evaluate their relative performance and interaction
+    in anonymous networks of different sizes. Permanent social exclusion
+    (ostracism) leads to sparse networks, which reduces long-run
+    economic potential. Monetary exchange and temporary social exclusion
+    perform similarly well in small networks. Yet, in large networks
+    monetary exchange is the only institution that promotes full
+    cooperation as it completely crowds out ostracism and maintains the
+    network intact. An insight is that monetary systems outperform
+    social exclusion mechanisms in promoting cooperation in globalized
+    social and economic networks.
 
 -   Friederike Mengel (economics - Essex) -
     <https://sites.google.com/site/friederikemengel/>
 
-    **Title**: Influence in Social Networks In a series of laboratory
-    and online experiments, we investigate the perceived and actual
-    influence, direct and indirect, that early movers have over later
-    movers in a sequential-move binary-action coordination game played
-    on a network. Each human subject is assigned to a particular node in
-    a specified 5 or 10 node network, and chooses In or Out knowing how
-    many neighbors have previously chosen In. We measure influence in
-    terms of the number of In choices that follow an initial exogenous
-    In versus Out choice. Influence is quite heterogeneous across
-    different network positions. Human subjects are aware of their
-    influence and act on it, but overestimate their influence on
-    average. A simple adaptive learning model explains entry and
-    perceptions of influence reasonably well, especially for well
-    connected nodes.
+    **Title**: Influence in Social Networks
+
+    In a series of laboratory and online experiments, we investigate the
+    perceived and actual influence, direct and indirect, that early
+    movers have over later movers in a sequential-move binary-action
+    coordination game played on a network. Each human subject is
+    assigned to a particular node in a specified 5 or 10 node network,
+    and chooses In or Out knowing how many neighbors have previously
+    chosen In. We measure influence in terms of the number of In choices
+    that follow an initial exogenous In versus Out choice. Influence is
+    quite heterogeneous across different network positions. Human
+    subjects are aware of their influence and act on it, but
+    overestimate their influence on average. A simple adaptive learning
+    model explains entry and perceptions of influence reasonably well,
+    especially for well connected nodes.
 
 -   Arno Riedl (behavioral economics – Maastricht) -
     <https://www.arnoriedl.com/>
 
     **Title**: Coordination and Network Proximity: Experimental Evidence
-    from the Field (with Ben D'Exelle and Christine Gutekunst) We
-    conduct a field experiment in real-world social networks to analyse
-    the influence of network proximity on the ability of two persons to
-    coordinate costly effort. Using data on the friendship networks of
-    22 villages in Uganda, we identify the effect of proximity between
-    two participants by experimentally varying the effort costs and the
-    disclosure of their identities. We find that effort in the
-    coordination task is higher if the paired participants are friends
-    and have common friends, i.e., they are part of the same triad. We
-    do not find support for alternative measures of network proximity
-    that involve a different combination of direct and common friends.
+    from the Field (with Ben D'Exelle and Christine Gutekunst)
+
+    We conduct a field experiment in real-world social networks to
+    analyse the influence of network proximity on the ability of two
+    persons to coordinate costly effort. Using data on the friendship
+    networks of 22 villages in Uganda, we identify the effect of
+    proximity between two participants by experimentally varying the
+    effort costs and the disclosure of their identities. We find that
+    effort in the coordination task is higher if the paired participants
+    are friends and have common friends, i.e., they are part of the same
+    triad. We do not find support for alternative measures of network
+    proximity that involve a different combination of direct and common
+    friends.
 
 -   Frédéric Moisan (behavioral economics, Lyon) -
     <https://em-lyon.com/en/frederic-moisan/research>
 
     **Title**: Experimental Evidence on Group Size Effects in Network
-    Formation Games This paper presents experimental evidence on games
-    where individuals can unilaterally decide on their links with each
-    other. Linking decisions give rise to directed graphs. We consider
-    two classes of situations: one, benefits flow along the direction of
-    the network paths (one-way flow), and two, when the benefits flow on
-    network paths without regard to the direction of links (two-way
-    flow). Our experiments reveal that in the one-way flow model
-    subjects create sparse networks whose distance grows and efficiency
-    falls as group size grows; by contrast, in the two-way flow model
-    subjects create sparse and small world networks whose efficiency
-    remains high in both small and large groups. We show that a bounded
-    rational model that combines myopic best response with targeting a
-    most connected individual provides a coherent account of our
-    experimental data.
+    Formation Games
+
+    This paper presents experimental evidence on games where individuals
+    can unilaterally decide on their links with each other. Linking
+    decisions give rise to directed graphs. We consider two classes of
+    situations: one, benefits flow along the direction of the network
+    paths (one-way flow), and two, when the benefits flow on network
+    paths without regard to the direction of links (two-way flow). Our
+    experiments reveal that in the one-way flow model subjects create
+    sparse networks whose distance grows and efficiency falls as group
+    size grows; by contrast, in the two-way flow model subjects create
+    sparse and small world networks whose efficiency remains high in
+    both small and large groups. We show that a bounded rational model
+    that combines myopic best response with targeting a most connected
+    individual provides a coherent account of our experimental data.
 
 -   Jean-Claude Dreher (neuroeconomics – Lyon) -
     <https://dreherteam.wixsite.com/neuroeconomics>
 
     **Title**: Brain computations engaged in social network interactions
+
     Social networks play a crucial role in creating links between
     individuals and in informal transmission of information across
     society. Although the computations engaged in social learning have
