@@ -38,7 +38,8 @@ The conference is 3 full days with 6 key themes.
 
 ### Registration
 
-Registration is now open, until the 31st of May! Click [here](registration) to register.
+Registration is open until the 31st of May. Early registration deadline 15th May. 
+Register [here](registration) now!
 
 ### Our sponsors
 
@@ -79,6 +80,10 @@ Registration is now open, until the 31st of May! Click [here](registration) to r
     <div class="logo-wrapper">
       <a href="https://www.brio.institute/home"><img src="images/BRIO-log.png" class="img-fluid logo-img" alt="Logo BRIO"></a>
     </div>
+    <div class="logo-wrapper">
+      <a href="https://www.rogue-research.com/"><img src="images/rogue.png" class="img-fluid logo-img" alt="Logo ROGUE"></a>
+    </div>
+    
     <!-- Add more logos as needed -->
   </div>
 </div>
