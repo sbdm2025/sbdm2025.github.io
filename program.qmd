@@ -10,7 +10,7 @@ You may find more information about each speaker in the [Speakers](speakers) tab
 | Time      | Event                                      | Speaker(s)                                  |
 |-----------|--------------------------------------------|---------------------------------------------|
 | 09:30     | Registration                                |                                             |
-| **10:00** | **Session: Comparative decision across agents** | Chair: Fadila Hadj-Bouziane             |
+| **10:00** | **Session: Comparative decision across agents** | *Chair: Fadila Hadj-Bouziane*             |
 | 10:10     | Talk                                        | Céline Amiez                                |
 | 10:40     | Talk                                        | Martha N. Havenith & Marieke Schölvinck     |
 | 11:10     | Talk                                        | David Thura                                 |
@@ -19,7 +19,7 @@ You may find more information about each speaker in the [Speakers](speakers) tab
 | 12:30     | Contributed Talk                            | From submissions                            |
 | 12:45     | Discussion                                  |                                             |
 | 13:15     | Lunch + Posters                             |                                             |
-| **14:30** | **Session: Causal Manipulations in Decision Making** | Chair: Mathias Pessiglione         |
+| **14:30** | **Session: Causal Manipulations in Decision Making** | *Chair: Mathias Pessiglione*         |
 | 14:40     | Talk                                        | Anna Beyeler                                |
 | 15:10     | Talk                                        | Charlie Wilson                              |
 | 15:40     | Talk                                        | Gerhard Jocham                              |
@@ -34,7 +34,7 @@ You may find more information about each speaker in the [Speakers](speakers) tab
 
 | Time      | Event                                      | Speaker(s)                                  |
 |-----------|--------------------------------------------|---------------------------------------------|
-| **09:00** | **Session: Social Cognition and Decision Making Across Species** | Chair: Jérôme Sallet   |
+| **09:00** | **Session: Social Cognition and Decision Making Across Species** | *Chair: Jérôme Sallet*   |
 | 09:10     | Talk                                        | Marco Wittmann                              |
 | 09:40     | Talk                                        | Astrid Hophensitz                           |
 | 10:10     | Talk                                        | Julia Sliwa                                 |
@@ -44,7 +44,7 @@ You may find more information about each speaker in the [Speakers](speakers) tab
 | 11:45     | Discussion                                  |                                             |
 | 12:15     | Data BLITZ                                  |                                             |
 | 12:45     | Lunch + Posters                             |                                             |
-| **14:00** | **Session: Temporal Dynamics of Decision Making** | Chair: Romain Ligneul                 |
+| **14:00** | **Session: Temporal Dynamics of Decision Making** | *Chair: Romain Ligneul*                 |
 | 14:10     | Talk                                        | Julien Bastin                               |
 | 14:40     | Talk                                        | Theresa Desrochers                          |
 | 15:10     | Talk                                        | Torben Ott                                  |
@@ -59,7 +59,7 @@ You may find more information about each speaker in the [Speakers](speakers) tab
 
 | Time      | Event                                      | Speaker(s)                                  |
 |-----------|--------------------------------------------|---------------------------------------------|
-| **09:00** | **Session: Naturalistic & Context-Dependent Decision Making** | Chair: Guillaume Sescousse |
+| **09:00** | **Session: Naturalistic & Context-Dependent Decision Making** | *Chair: Guillaume Sescousse* |
 | 09:10     | Talk                                        | Jacqueline Scholl                           |
 | 09:40     | Talk                                        | Eran Eldar                                  |
 | 10:10     | Talk                                        | Alizée Lopez-Persem                         |
@@ -68,7 +68,7 @@ You may find more information about each speaker in the [Speakers](speakers) tab
 | 11:30     | Contributed Talk                            | From submissions                            |
 | 11:45     | Discussion                                  |                                             |
 | 12:15     | Lunch                                       |                                             |
-| **13:15** | **Session: Brain–Body Interaction and Decision Making** | Chair: L Koban                  |
+| **13:15** | **Session: Brain–Body Interaction and Decision Making** | *Chair: Leonie Koban*             |
 | 13:20     | Talk                                        | Micah Allen                                 |
 | 13:50     | Talk                                        | Hilke Plassmann                             |
 | 14:20     | Talk                                        | Soyoung Park                                |

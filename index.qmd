@@ -1,5 +1,5 @@
 ---
-title: "12th Symposium on Biology of Decision Making 2025 - Lyon"
+title: "12th Symposium on The Biology of Decision Making 2025 - Lyon"
 about:
   template: marquee
   image: images/palais_hirsh.jpg

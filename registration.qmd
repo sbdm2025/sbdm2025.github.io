@@ -8,7 +8,6 @@ Registration for SBDM2025 is open until the **31st of May 2025**.
 **Contributed talks** will be selected amongst the abstracts submitted before the **16th of May**.
 :::
 
-
 ### Fees {style="text-align: center; margin-top: 30px;margin-bottom: 15px;"}
 
 ::: {style="text-align: left;"}
@@ -22,7 +21,7 @@ May** to benefit from a discount.
 |:----------------------------:|:-------------------:|:-------------------:|
 | Researchers, postdocs and permanent staff |               290€               |              350€               |
 |       Master's and doctoral students       |               190€               |              250€               |
-|       Local PhD students (financial support of NSCO & SEG)       |               95€               |              95€              |
+|       Local students (with financial support of NSCO & SEG)       |               95€               |              95€              |
 |       Speakers       |               0€               |              0€               |
 :::
 :::
