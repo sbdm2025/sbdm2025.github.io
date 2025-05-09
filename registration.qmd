@@ -13,12 +13,12 @@ Registration for SBDM2025 is open until the **31st of May 2025**.
 
 ::: {style="text-align: left;"}
 Registration fees include attendance to the entire meeting, coffee
-breaks, lunchs and social events. Register until the **1st of
+breaks, lunchs and social events. Register until the **15st of
 May** to benefit from a discount.
 
 ::: {.container-lg .justify-content-center .w-100}
 ::: justify-content-center
-|                                           | Early registration (until 01/05) | Late registration (after 01/05) |
+|                                           | Early registration (until 01/05) | Late registration (after 15/05) |
 |:----------------------------:|:-------------------:|:-------------------:|
 | Researchers, postdocs and permanent staff |               290€               |              350€               |
 |       Master's and doctoral students       |               190€               |              250€               |
