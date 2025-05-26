@@ -9,7 +9,8 @@ You may find more information about each speaker in the [Speakers](speakers) tab
 
 | Time      | Event                                      | Speaker(s)                                  |
 |-----------|--------------------------------------------|---------------------------------------------|
-| 09:30     | Registration                                |                                             |
+| 09:15     | Registration                                |                                             |
+| 10:00     | Welcome address                              |                                             |
 | **10:00** | **Session: Comparative decision across agents** | *Chair: Fadila Hadj-Bouziane*             |
 | 10:10     | Talk                                        | Céline Amiez                                |
 | 10:40     | Talk                                        | Martha N. Havenith & Marieke Schölvinck     |
