@@ -9,8 +9,8 @@ You may find more information about each speaker in the [Speakers](speakers) tab
 
 | Time      | Event                                      | Speaker(s)                                  |
 |-----------|--------------------------------------------|---------------------------------------------|
-| 09:15     | Registration                                |                                             |
-| 10:00     | Welcome address                              |                                             |
+| 09:20     | Registration                                |                                             |
+| 09:50     | Welcome address                              |                                             |
 | **10:00** | **Session: Comparative decision across agents** | *Chair: Fadila Hadj-Bouziane*             |
 | 10:10     | Talk                                        | Céline Amiez                                |
 | 10:40     | Talk                                        | Martha N. Havenith & Marieke Schölvinck     |
@@ -20,15 +20,15 @@ You may find more information about each speaker in the [Speakers](speakers) tab
 | 12:30     | Contributed Talk                            | From submissions                            |
 | 12:45     | Discussion                                  |                                             |
 | 13:15     | Lunch + Posters                             |                                             |
-| **14:30** | **Session: Causal Manipulations in Decision Making** | *Chair: Mathias Pessiglione*         |
-| 14:40     | Talk                                        | Anna Beyeler                                |
-| 15:10     | Talk                                        | Charlie Wilson                              |
-| 15:40     | Talk                                        | Gerhard Jocham                              |
-| 16:10     | Coffee break + Posters                      |                                             |
-| 16:30     | Talk                                        | Elsa Fouragnan                              |
-| 17:00     | Contributed Talk                            | From submissions                            |
-| 17:15     | Discussion                                  |                                             |
-| **17:45** | End                                         |                                             |
+| **15:00** | **Session: Causal Manipulations in Decision Making** | *Chair: Mathias Pessiglione*         |
+| 15:10     | Talk                                        | Anna Beyeler                                |
+| 15:40     | Talk                                        | Charlie Wilson                              |
+| 16:10     | Talk                                        | Gerhard Jocham                              |
+| 16:40     | Coffee break + Posters                      |                                             |
+| 17:00     | Talk                                        | Elsa Fouragnan                              |
+| 17:30     | Contributed Talk                            | From submissions                            |
+| 17:45     | Discussion                                  |                                             |
+| **18:15** | End                                         |                                             |
 
 
 ### Day 2 – Tuesday – June 17th
@@ -43,9 +43,8 @@ You may find more information about each speaker in the [Speakers](speakers) tab
 | 11:00     | Talk                                        | Pier Francesco Ferrari                      |
 | 11:30     | Contributed Talk                            | From submissions                            |
 | 11:45     | Discussion                                  |                                             |
-| 12:15     | Data BLITZ                                  |                                             |
-| 12:45     | Lunch + Posters                             |                                             |
-| **14:00** | **Session: Temporal Dynamics of Decision Making** | *Chair: Romain Ligneul*                 |
+| 12:15     | Lunch + Posters                             |                                             |
+| **14:00** | **Session: Temporal Dynamics of Decision Making** | *Chair: Romain Ligneul*               |
 | 14:10     | Talk                                        | Julien Bastin                               |
 | 14:40     | Talk                                        | Theresa Desrochers                          |
 | 15:10     | Talk                                        | Torben Ott                                  |
