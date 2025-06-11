@@ -23,6 +23,10 @@ France
 
 [Google map link](https://maps.app.goo.gl/cDkRTzhQE22X34Nn8)
 
+##### How to come to the Institut des Sciences Cognitives (67 bd Pinel, 69675 Bron)
+https://www.tcl.fr/en
+Stop from bus C8, 'Hôpitaux Est-Pinel' from Metro station 'Grange-Blanche' or stop from Tramway T6 'Hôpitaux Est-Pinel' 
+
 ### Organizers
 
 Jean-Claude Dreher (Institut des Sciences Cognitives Marc Jeannerod,
@@ -52,6 +56,27 @@ individuals make decisions in social and economic contexts. Through
 recent empirical and theoretical approaches, we aim to deepen our
 understanding of decision-making in networked environments.
 
+### Schedule
+
+For more information about the speakers, see next section.
+
+| Time      | Event                                      | Speaker(s)                                  |
+|-----------|--------------------------------------------|---------------------------------------------|
+| 09:00     | Arrival at Institut des Sciences Cognitives |                                            |
+| **09:15**     | Welcome address                              |                                           |
+| 09:30     | Talk                                        | Oriel Feldman Hall                         |
+| 10:15     | Talk                                        | Jean-Claude Dreher                         |
+| 11:00     | Coffee break                      |                                             |
+| 11:30     | Talk                                        | Edoardo Gallo                             |
+| 12:15     | Talk                                        | Friederike Mengel                             |
+| 13:00     | Lunch (provided)                           |                                             |
+| 14:00     | Talk                                        | Damon Centola                                |
+| 14:45     | Talk                                        | Fréderic Moisan                              |
+| 15:30     | Coffee break                                |                                             |
+| 15:45     | Talk                                        | Arno Riedl                               |
+| 16:30     | General discussion                          | From submissions                            |
+| **17:00** | End                                         |                                             |
+
 ### Speakers
 
 -   Oriel Feldman Hall (neuroscience - Brown Univ) -
@@ -78,12 +103,35 @@ understanding of decision-making in networked environments.
     problems, from climbing the social ladder into positions of
     influence to learning to gossip with the right people.
 
--   Damon Centola (sociology - University of Pennsylvania)
-    <https://www.asc.upenn.edu/people/faculty/damon-centola-phd>
+-   Jean-Claude Dreher (neuroeconomics – Lyon) -
+    <https://dreherteam.wixsite.com/neuroeconomics>
 
-    **Title**: The "New" Science of Collective Intelligence
+    **Title**: Brain computations engaged in social network interactions
 
-    Can networks protect us from disinformation?  Can the science of collective intelligence restore our capacity for productive online discourse? I offer new findings on the intelligence of collectives, which show that the greatest source of group wisdom is people’s ability to influence one another. However, the key to our collective intelligence lies in the structure of that influence. I present results from a series of independently replicated and experimentally controlled online disinformation campaigns regarding vaccine safety. I show how changes to the topological connectivity of online networks enable “wisdom of the crowd” learning dynamics that effectively counteract disinformation campaigns, even among homogeneous populations (i.e., “echo chambers”) subjected to targeted attacks. These results reveal an unexpected relationship between network structure and the emotional quality of online discussions, which correspond to significant changes in communities’ endogenous capacity for distributed collective learning.
+    Social networks play a crucial role in creating links between
+    individuals and in informal transmission of information across
+    society. Although the computations engaged in social learning have
+    started to be investigated in dyadic interactions and in very small
+    groups, little is known about the mechanisms used by the brain when
+    individuals interact in social networks. I will present recent
+    theoretical and experimental work shedding light on the computations
+    people use to integrate and transmit information in social networks.
+    I will show that a variant of the classical DeGroot learning rule
+    captures transmission of information in social networks better than
+    a sequential error-driven process using successive weighted update
+    of one’s neighbors’ opinions. I will also present recent fMRI
+    results showing how the brain decides whether to share extra
+    information with others, depending upon one’s own confidence about
+    the reliability of information and upon our beliefs concerning the
+    preferences of receivers. Finally, I will present an Agent-Based
+    model of dynamic network formation where individuals act
+    asynchronously based on a partial view of the network. This model
+    converges towards the most efficient network structure, showing that
+    seemingly complex behaviors in such game emerges from decentralized,
+    homogenous, payoff-driven agents. Together, these results pave the
+    way to develop a mechanistic understanding of social learning
+    mechanisms used by networked individuals interacting dynamically in
+    real time.
 
 -   Edo Gallo (economics - Cambridge) - <https://www.edoardogallo.com>
 
@@ -123,23 +171,12 @@ understanding of decision-making in networked environments.
     model explains entry and perceptions of influence reasonably well,
     especially for well connected nodes.
 
--   Arno Riedl (behavioral economics – Maastricht) -
-    <https://www.arnoriedl.com/>
+-   Damon Centola (sociology - University of Pennsylvania)
+    <https://www.asc.upenn.edu/people/faculty/damon-centola-phd>
 
-    **Title**: Coordination and Network Proximity: Experimental Evidence
-    from the Field (with Ben D'Exelle and Christine Gutekunst)
+    **Title**: The "New" Science of Collective Intelligence
 
-    We conduct a field experiment in real-world social networks to
-    analyse the influence of network proximity on the ability of two
-    persons to coordinate costly effort. Using data on the friendship
-    networks of 22 villages in Uganda, we identify the effect of
-    proximity between two participants by experimentally varying the
-    effort costs and the disclosure of their identities. We find that
-    effort in the coordination task is higher if the paired participants
-    are friends and have common friends, i.e., they are part of the same
-    triad. We do not find support for alternative measures of network
-    proximity that involve a different combination of direct and common
-    friends.
+    Can networks protect us from disinformation?  Can the science of collective intelligence restore our capacity for productive online discourse? I offer new findings on the intelligence of collectives, which show that the greatest source of group wisdom is people’s ability to influence one another. However, the key to our collective intelligence lies in the structure of that influence. I present results from a series of independently replicated and experimentally controlled online disinformation campaigns regarding vaccine safety. I show how changes to the topological connectivity of online networks enable “wisdom of the crowd” learning dynamics that effectively counteract disinformation campaigns, even among homogeneous populations (i.e., “echo chambers”) subjected to targeted attacks. These results reveal an unexpected relationship between network structure and the emotional quality of online discussions, which correspond to significant changes in communities’ endogenous capacity for distributed collective learning.
 
 -   Frédéric Moisan (behavioral economics, Lyon) -
     <https://em-lyon.com/en/frederic-moisan/research>
@@ -161,32 +198,53 @@ understanding of decision-making in networked environments.
     that combines myopic best response with targeting a most connected
     individual provides a coherent account of our experimental data.
 
--   Jean-Claude Dreher (neuroeconomics – Lyon) -
-    <https://dreherteam.wixsite.com/neuroeconomics>
+-   Arno Riedl (behavioral economics – Maastricht) -
+    <https://www.arnoriedl.com/>
 
-    **Title**: Brain computations engaged in social network interactions
+    **Title**: Coordination and Network Proximity: Experimental Evidence
+    from the Field (with Ben D'Exelle and Christine Gutekunst)
 
-    Social networks play a crucial role in creating links between
-    individuals and in informal transmission of information across
-    society. Although the computations engaged in social learning have
-    started to be investigated in dyadic interactions and in very small
-    groups, little is known about the mechanisms used by the brain when
-    individuals interact in social networks. I will present recent
-    theoretical and experimental work shedding light on the computations
-    people use to integrate and transmit information in social networks.
-    I will show that a variant of the classical DeGroot learning rule
-    captures transmission of information in social networks better than
-    a sequential error-driven process using successive weighted update
-    of one’s neighbors’ opinions. I will also present recent fMRI
-    results showing how the brain decides whether to share extra
-    information with others, depending upon one’s own confidence about
-    the reliability of information and upon our beliefs concerning the
-    preferences of receivers. Finally, I will present an Agent-Based
-    model of dynamic network formation where individuals act
-    asynchronously based on a partial view of the network. This model
-    converges towards the most efficient network structure, showing that
-    seemingly complex behaviors in such game emerges from decentralized,
-    homogenous, payoff-driven agents. Together, these results pave the
-    way to develop a mechanistic understanding of social learning
-    mechanisms used by networked individuals interacting dynamically in
-    real time.
+    We conduct a field experiment in real-world social networks to
+    analyse the influence of network proximity on the ability of two
+    persons to coordinate costly effort. Using data on the friendship
+    networks of 22 villages in Uganda, we identify the effect of
+    proximity between two participants by experimentally varying the
+    effort costs and the disclosure of their identities. We find that
+    effort in the coordination task is higher if the paired participants
+    are friends and have common friends, i.e., they are part of the same
+    triad. We do not find support for alternative measures of network
+    proximity that involve a different combination of direct and common
+    friends.
+
+
+### Sponsors
+
+```{=html}
+<style>
+.logo-wrapper {
+  flex: 0 1 auto;          /* allows shrinking on small screens */
+  margin: 10px;
+}
+.logo-img {
+  max-height: 100px;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+}
+</style>
+
+<div class="container">
+  <div class="d-flex flex-wrap justify-content-center align-items-center">
+     <div class="logo-wrapper">
+      <a href=""><img src="images/ANR-logo-2021-sigle.png" class="img-fluid logo-img"></a>
+    </div>   
+    <div class="logo-wrapper">
+      <a href=""><img src="images/Logo_emlyon_2021.png" class="img-fluid logo-img"></a>
+    </div>
+    <div class="logo-wrapper">
+      <a href="https://labex-cortex.universite-lyon.fr/"><img src="images/LABEX_CORTEX.png" class="img-fluid logo-img" alt="Logo LABEX_CORTEX"></a>
+    </div>
+  </div>
+</div>
+
+```
