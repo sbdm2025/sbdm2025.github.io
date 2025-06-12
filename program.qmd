@@ -4,7 +4,6 @@ title: "Program"
 
 Please find below the schedule of each talk. You may find more information about each speaker and their talk in the [Speakers](speakers) tab or by clicking on their name in the program.
 
-```{=html}
 <style>
 table {
   width: 100%;
@@ -30,8 +29,12 @@ tbody td {
   border: 1px solid #ccc; /* Border for body cells */
 }
 
+tbody tr {
+  border: 1px solid #ccc; /* Border for body cells */
+}
+
 tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color:rgb(225, 225, 225);
 }
 
 tbody tr:nth-child(odd) {
@@ -74,8 +77,6 @@ h3 {
 
 
 </style>
-
-```
 
 ### Day 1 – Monday – June 16th
 
