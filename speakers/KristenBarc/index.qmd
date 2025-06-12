@@ -2,7 +2,7 @@
 title: "Kristen Barc"
 author: "SBDM2025"
 categories: ["Comparative decision across agents"]
-image: images/place_holder.png
+image: https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png
 description: "Paris Brain Institute & Centre de Recherche en Neurosciences de Lyon" 
 
 ---

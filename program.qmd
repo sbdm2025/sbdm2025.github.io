@@ -85,24 +85,24 @@ h3 {
 | 09:20     | Registration                                |                                             |
 | 09:50     | Welcome address                              |                                             |
 | **10:00** | **Session: Comparative decision across agents** | *Chair: Fadila Hadj-Bouziane*             |
-| 10:10     | The prefrontal operculum: a critical functional hub for the emergence of speech?                                         | Céline Amiez                                |
-| 10:40     | Catching cognition in the act - new ways to track naturalistic decision making across species | Martha N. Havenith & Marieke Schölvinck     |
-| 11:10     | The coordination between decisions and movements during interactive behavior: insights from human and non-human primates                                        | David Thura                                 |
+| 10:10     | The prefrontal operculum: a critical functional hub for the emergence of speech?                                         | [Céline Amiez](/speakers/CelineAmiez/index.qmd)                                |
+| 10:40     | Catching cognition in the act - new ways to track naturalistic decision making across species | [Martha N. Havenith](/speakers/MarthaNariHavenith/index.qmd) & [Marieke Schölvinck](/speakers/MariekeScholvinck/index.qmd)     |
+| 11:10     | The coordination between decisions and movements during interactive behavior: insights from human and non-human primates                                        | [David Thura](/speakers/DavidThura/index.qmd)                                 |
 | 11:40     | Coffee break + Posters                      |                                             |
-| 12:00     | Replay in artificial and biological intelligence: learning, planning, and map construction. | Jacob Bakermans                             |
-| 12:30     | The metacognitive control of decisions predicts whether and how mice override their default policy                            | Kristen Barc                            |
+| 12:00     | Replay in artificial and biological intelligence: learning, planning, and map construction. | [Jacob Bakermans](/speakers/JacobBakermans/index.qmd)                             |
+| 12:30     | The metacognitive control of decisions predicts whether and how mice override their default policy                            | [Kristen Barc](/speakers/KristenBarc/index.qmd)                            |
 | 12:45     | Discussion                                  |                                             |
 | 13:15     | Lunch + Posters                             |                                             |
 
 |       |                                       |                                   |
 |-----------|--------------------------------------------|---------------------------------------------|
 | **15:00** | **Session: Causal Manipulations in Decision Making** | *Chair: Mathias Pessiglione*         |
-| 15:10     | Dopamine transmission in the anterior insula shapes the neural coding of anxiety                                        | Anna Beyeler                                |
+| 15:10     | Dopamine transmission in the anterior insula shapes the neural coding of anxiety                                        | [Anna Beyeler](/speakers/AnnaBeyeler/index.qmd)                                |
 | 15:40     | Title (TBA)                                        | Charlie Wilson                              |
-| 16:10     | Pharmacological modulation of reinforcement learning and decision making                                        | Gerhard Jocham                              |
+| 16:10     | Pharmacological modulation of reinforcement learning and decision making                                        | [Gerhard Jocham](/speakers/GerhardJocham/index.qmd)                              |
 | 16:40     | Coffee break + Posters                      |                                             |
-| 17:00     | Improving decision making through ultrasound-induced neuroplasticity                                        | Elsa Fouragnan                              |
-| 17:30     | A computational account of persecutory delusion using ketamine as a model of psychosis                            | Etienne Pigeon                            |
+| 17:00     | Improving decision making through ultrasound-induced neuroplasticity                                        | [Elsa Fouragnan](/speakers/ElsaFouragnan/index.qmd)                              |
+| 17:30     | A computational account of persecutory delusion using ketamine as a model of psychosis                            | [Etienne Pigeon](/speakers/EtiennePigeon/index.qmd)                            |
 | 17:45     | Discussion                                  |                                             |
 | **18:15** | End                                         |                                             |
 
@@ -113,23 +113,23 @@ h3 {
 |-----------|--------------------------------------------|---------------------------------------------|
 | **09:00** | **Session: Social Cognition and Decision Making Across Species** | *Chair: Jérôme Sallet*   |
 | 09:10     | Social basis functions                                        | [Marco Wittmann](/speakers/MarcoWittmann/index.qmd)                              |
-| 09:40     | On the effects and usages of facial signals in situations requiring trust                                        | Astrid Hophensitz                           |
-| 10:10     | From agents, to actions, to interactions, to societies: imaging the primate social brain                                        | Julia Sliwa                                 |
+| 09:40     | On the effects and usages of facial signals in situations requiring trust                                        | [Astrid Hophensitz](/speakers/AstridHopfensitz/index.qmd)                           |
+| 10:10     | From agents, to actions, to interactions, to societies: imaging the primate social brain                                        | [Julia Sliwa](/speakers/JuliaSliwa/index.qmd)                                 |
 | 10:40     | Coffee break + Posters                      |                                             |
-| 11:00     | The Lasting Impact of Psychosocial Deprivation on Adolescent Executive Functions and Prefrontal Cortex Development                                        | Pier Francesco Ferrari                      |
-| 11:30     | Developmental differences in social information use under uncertainty                            | Lieke Hofmans                             |
+| 11:00     | The Lasting Impact of Psychosocial Deprivation on Adolescent Executive Functions and Prefrontal Cortex Development                                        | [Pier Francesco Ferrari](/speakers/PierFrancescoFerrari/index.qmd)                      |
+| 11:30     | Developmental differences in social information use under uncertainty                            | [Lieke Hofmans](/speakers/LiekeHofmans/index.qmd)                             |
 | 11:45     | Discussion                                  |                                             |
 | 12:15     | Lunch + Posters                             |                                             |
 
 |       |                                       |                                   |
 |-----------|--------------------------------------------|---------------------------------------------|
 | **14:00** | **Session: Temporal Dynamics of Decision Making** | *Chair: Romain Ligneul*               |
-| 14:10     | Spontaneous anterior insula fluctuations bias preference-based decisions                                        | Julien Bastin                               |
-| 14:40     | Cognitive Sequences: Parallel Cross-Species Dynamics in Lateral Prefrontal Cortex                                        | Theresa Desrochers                          |
-| 15:10     | Time is precious: Normative and neural principles of time investments across species                                        | Torben Ott                                  |
+| 14:10     | Spontaneous anterior insula fluctuations bias preference-based decisions                                        | [Julien Bastin](/speakers/JulienBastin/index.qmd)                               |
+| 14:40     | Cognitive Sequences: Parallel Cross-Species Dynamics in Lateral Prefrontal Cortex                                        | [Theresa Desrochers](/speakers/TheresaDesrochers/index.qmd)                          |
+| 15:10     | Time is precious: Normative and neural principles of time investments across species                                        | [Torben Ott](/speakers/TorbenOtt/index.qmd)                                  |
 | 15:40     | Coffee break + Posters                      |                                             |
-| 16:00     | The neurophysiology of decision-making: multiple interacting decision systems separated computationally                                        | David Redish                                |
-| 16:30     | A grid-like representation for subjective value-based decision-making                            | Erie Boorman                            |
+| 16:00     | The neurophysiology of decision-making: multiple interacting decision systems separated computationally                                        | [David Redish](/speakers/DavidRedish/index.qmd)                                |
+| 16:30     | A grid-like representation for subjective value-based decision-making                            | [Erie Boorman](/speakers/ErieBoorman/index.qmd)                            |
 | 17:00     | Discussion                                  |                                             |
 | 17:30     | End                                         |                                             |
 | Evening   | Gala Dinner                                 |                                             |
@@ -138,23 +138,23 @@ h3 {
 | Time      | Event                                      | Speaker(s)                                  |
 |-----------|--------------------------------------------|---------------------------------------------|
 | **09:00** | **Session: Naturalistic & Context-Dependent Decision Making** | *Chair: Guillaume Sescousse* |
-| 09:10     | Emotions in self-organized behaviour                                        | Jacqueline Scholl                           |
-| 09:40     | Mood as a vehicle of reinforcement learning                                        | Eran Eldar                                  |
-| 10:10     | The role of subjective valuation in creative thinking: behavioral, neural, and causal evidence                                        | Alizée Lopez-Persem                         |
+| 09:10     | Emotions in self-organized behaviour                                        | [Jacqueline Scholl](/speakers/JacquelineScholl/index.qmd)                           |
+| 09:40     | Mood as a vehicle of reinforcement learning                                        | [Eran Eldar](/speakers/EranEldar/index.qmd)                                  |
+| 10:10     | The role of subjective valuation in creative thinking: behavioral, neural, and causal evidence                                        | [Alizée Lopez-Persem](/speakers/AlizeeLopez/index.qmd)                         |
 | 10:40     | Coffee break + Posters                      |                                             |
-| 11:00     | Dopaminergic Control of Social Specialization in Mouse Microsocieties                                        | Philippe Faure                              |
-| 11:30     | Two-dimensional Reward Evaluation and Its Link to Anticipatory Anhedonia                            | Ryan Yan                            |
+| 11:00     | Dopaminergic Control of Social Specialization in Mouse Microsocieties                                        | [Philippe Faure](/speakers/PhilippeFaure/index.qmd)                              |
+| 11:30     | Two-dimensional Reward Evaluation and Its Link to Anticipatory Anhedonia                            | [Ryan Yan](/speakers/RyanYan/index.qmd)                            |
 | 11:45     | Discussion                                  |                                             |
 | 12:15     | Lunch                                       |                                             |
 
 |       |                                       |                                   |
 |-----------|--------------------------------------------|---------------------------------------------|
 | **13:15** | **Session: Brain–Body Interaction and Decision Making** | *Chair: Leonie Koban*             |
-| 13:20     | Bridging Brain and Body: Computational and Pharmacological Insights into Interoception                                        | Micah Allen                                 |
-| 13:50     | More than just a gut feeling: Does the gut microbiome influence decision making - first evidence from a synbiotic intervention study                                        | Hilke Plassmann                             |
-| 14:20     | Body-Brain Interaction Regulating Human Choice                                        | Soyoung Park                                |
+| 13:20     | Bridging Brain and Body: Computational and Pharmacological Insights into Interoception                                        | [Micah Allen](/speakers/MicahAllen/index.qmd)                                 |
+| 13:50     | More than just a gut feeling: Does the gut microbiome influence decision making - first evidence from a synbiotic intervention study                                        | [Hilke Plassmann](/speakers/HilkePlassmann/index.qmd)                             |
+| 14:20     | Body-Brain Interaction Regulating Human Choice                                        | [Soyoung Park](/speakers/SoyoungPark/index.qmd)                                |
 | 14:50     | Coffee break + Posters                      |                                             |
-| 15:10     | Decisions and bodily signals                                        | Catherine Tallon-Baudry                     |
-| 15:40     | The effect of vagal signal amplification with transcutaneous vagus nerve stimulation on perceptual decisions under threat                            | Lina Skora                            |
+| 15:10     | Decisions and bodily signals                                        | [Catherine Tallon-Baudry](/speakers/CaterineTallonBaudry/index.qmd)                     |
+| 15:40     | The effect of vagal signal amplification with transcutaneous vagus nerve stimulation on perceptual decisions under threat                            | [Lina Skora](/speakers/LinaSkora/index.qmd)                            |
 | 15:55     | Discussion                                  |                                             |
 | 16:25     | End                                         |                                             |
