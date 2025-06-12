@@ -2,12 +2,14 @@
 title: "Lieke Hofmans"
 author: "SBDM2025"
 categories: ["Social cognition and decision making across species"]
+image: https://bits-of-information.org/DDN/wp-content/uploads/2023/01/Lieke_bewerkt1.jpg
+description: "Motivation, Brain, and Behavior team, Paris Brain Institute (France)" 
 ---
 
 Session: Social cognition and decision making across species
 Date & time: 17.06 - 11h30
 
-Website:
+Website: [https://www.liekehofmans.com/](https://www.liekehofmans.com/)
 
 #### Developmental differences in social information use under uncertainty
 
