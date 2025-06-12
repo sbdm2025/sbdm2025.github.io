@@ -2,8 +2,7 @@
 title: "Program"
 ---
 
-Please find below the schedule of each talk. 
-You may find more information about each speaker in the [Speakers](speakers) tab
+Please find below the schedule of each talk. You may find more information about each speaker and their talk in the [Speakers](speakers) tab or by clicking on their name in the program.
 
 ```{=html}
 <style>
