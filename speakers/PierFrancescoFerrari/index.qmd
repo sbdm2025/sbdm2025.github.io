@@ -7,7 +7,10 @@ description: "Social neuroscience and comparative development lab, Institut des 
 ---
 
 Session: Social cognition and decision making across species
-Date & time: TBA
-Title: TBA
+Date & time: 17.06 - 11h00
 
 Website: [http://www.isc.cnrs.fr/index.rvt?teamid=4&team=research](http://www.isc.cnrs.fr/index.rvt?teamid=4&team=research)
+
+#### The Lasting Impact of Psychosocial Deprivation on Adolescent Executive Functions and Prefrontal Cortex Development
+
+In this study conducted on rhesus macaques, we examined the impact of early psychosocial deprivation (ESD) on the maturation of prefrontal brain regions and circuits involved in emotion regulation and executive functioning during the adolescence period. Early social experiences, particularly interactions with caregivers, are fundamental for the healthy development of socio-cognitive abilities. When these experiences are absent or severely disrupted, as in the case of ESD, the consequences can be long-lasting and affect both emotional and cognitive domains. Our results indicate that early adversity interferes with the normal developmental trajectory of prefrontal networks, especially in their connectivity with limbic and striatal areas during adolescence. These alterations compromise the capacity for cognitive control over emotional responses, leading to increased emotional reactivity and anxiety, and reduced flexibility in task involving inhibitory control and behavioral change strategy. The affected individuals tend to rely more on habitual rather than goal-directed strategies, particularly in socially challenging situations. By using a non-human primate model, our work contributes to a better understanding of how early social environments shape the neurobiological foundations of social behavior and emotional regulation, with implications for the study of vulnerability to mental health disorders.

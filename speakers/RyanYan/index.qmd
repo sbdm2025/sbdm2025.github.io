@@ -1,0 +1,16 @@
+---
+title: "Ryan Yan"
+author: "SBDM2025"
+categories: ["Naturalistic & context-dependent decision-making"]
+image: https://pbs.twimg.com/profile_images/1530286956814471169/Ebufd67-_400x400.jpg
+description: "Department of Psychology, Stanford University (US)" 
+---
+
+Session: Naturalistic & context-dependent decision-making
+Date & time: 18.06 - 11h30
+
+Website: [https://bsky.app/profile/ryanypsych.bsky.social](https://bsky.app/profile/ryanypsych.bsky.social)
+
+#### Two-dimensional Reward Evaluation and Its Link to Anticipatory Anhedonia
+
+Anhedonia, the diminished ability to experience pleasure, is a hallmark of various psychiatric disorders and is often linked to reduced sensitivity to rewards. While previous studies have focused on unidimensional rewards (e.g., money), real-world rewards are typically multidimensional and require trade-offs across competing needs. To better capture this complexity, we developed a novel fruit-picking task where participants chose among fruits that fulfilled two needs, hydration and energy. Two fruits satisfied only one need, while a third provided moderate amounts of both. Participants had to integrate their current hydration and energy levels to identify the optimal choice. We hypothesized that anhedonia would impair this ability to integrate different reward dimensions. Against prediction, across five studies (Ns = 140, 169, 375, 180, and 192), higher self-reported anticipatory anhedonia was consistently associated with more accurate selection of the mixed-reward option, particularly when the discrepancy between two reward dimensions was small. This effect persisted even in task variants that removed sequential planning demands and when controlling for performance on a separate unidimensional bandit task. These findings suggest that anhedonia, though typically viewed as maladaptive, may in some contexts reflect enhanced sensitivity to unsatisfied needs and enhanced integration of competing reward dimensions.

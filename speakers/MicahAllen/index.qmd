@@ -7,7 +7,10 @@ description: "Computational Psychiatry, Institute of Clinical Medicine, Aarhus U
 ---
 
 Session: Brain-body interaction and decision making
-Date & time: TBA
-Title: TBA
+Date & time: 18.06 - 13h20
 
 Website: [https://www.the-ecg.org/](https://www.the-ecg.org/)
+
+#### Bridging Brain and Body: Computational and Pharmacological Insights into Interoception
+
+Interoception refers to our sense of the body's internal state, such as heartbeat, breathing, and digestion. Increasing evidence shows that this constant dialogue between the brain and body profoundly influences our emotions, moods, and everyday decisions. Disruptions in interoceptive awareness have emerged as key factors across various disorders, including depression, anxiety, and neurological conditions. In this talk, I will present novel computational and psychophysical methods developed by our lab, designed to precisely measure interoception across cardiac, respiratory, and gastric domains. I will illustrate how these methods help uncover brain-body interactions in common mental health conditions and functional neurological disorders. Lastly, I will share recent findings demonstrating that interoception can be therapeutically enhanced by pharmacologically targeting peripheral bodily signals, highlighting potential avenues for innovative treatments.

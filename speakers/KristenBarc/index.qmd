@@ -1,0 +1,17 @@
+---
+title: "Kristen Barc"
+author: "SBDM2025"
+categories: ["Comparative decision across agents"]
+image: images/place_holder.png
+description: "Paris Brain Institute & Centre de Recherche en Neurosciences de Lyon" 
+
+---
+
+Session: Comparative decision across agents
+Date & time: 16.06 - 12h30
+
+Website:
+
+#### The metacognitive control of decisions predicts whether and how mice override their default policy 
+
+Decisions permeate every aspect of our lives, but the amount of effort that we put into different decisions varies tremendously. Rather than processing all decision-relevant information, we often rely on fast habitual and/or intuitive decision policies, which can lead to irrational biases and errors. Yet, we don’t always follow the fast and negligent lead of habits or intuitions. So what determines how much time and effort we invest when making decisions? A possibility is that the amount of cognitive resources the brain allocates to a given task (in particular, a decision task) optimizes a cost-benefit tradeoff. Our working hypothesis is that decision confidence serves as the benefit term of this resource allocation problem, hence the “metacognitive” nature of decision control. Here, we provide behavioural evidence that mice regulate their allocation of cognitive resources according to a confidence/effort a tradeoff. The importance of this work is twofold. On the computational side of things, we show whether and how this eventually enables them to override their default/automatic policy. On the behavioural side of things, we validate all the ensuing model predictions, in the context of an experimental setup with high ecological validity.

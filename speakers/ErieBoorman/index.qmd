@@ -1,0 +1,17 @@
+---
+title: "Erie Boorman"
+author: "SBDM2025"
+categories: ["Temporal dynamics of decision making"]
+image: https://psychology.ucdavis.edu/sites/g/files/dgvnsk13771/files/styles/sf_profile/public/media/images/edboorman.png
+description: "Learning & Decision-making Lab, Departement of Psychology, UC Davis (US)" 
+
+---
+
+Session: Temporal dynamics of decision making
+Date & time: 17.06 - 16h30
+
+Website: [https://ldm.ucdavis.edu/](https://ldm.ucdavis.edu/)
+
+#### A grid-like representation for subjective value-based decision-making
+
+Delusions are defined as fixed beliefs that are resistant to contradictory evidence. Persecutory delusion (the belief that others are harmful) is a hallmark symptom of schizophrenia and is thought to stem from misinterpretations of social cues. However, contemporary neurocognitive models of delusions frequently neglect the social dimension. This project aimed to investigate the mechanisms leading to the emergence of delusion, in particular persecutory delusion, by combining experimental psychology and computational modeling. Ketamine was used as a pharmacological model of psychosis, as it transiently and safely induces early schizophrenia-like symptoms in healthy individuals. However, the effects of ketamine on social inference remain poorly understood. To address this gap, we conducted a randomized, crossover study in which healthy volunteers received either ketamine or a placebo. A novel cognitive task was employed to investigate how subjects infer intentions to others from ambiguous social cues (i.e., faces displaying varying degrees of smiling or hostile expressions) to guide their decisions. Using a Bayesian computational approach, we demonstrated that ketamine alters the inference of intentions from facial expressions. Beyond refining the use of ketamine as a model of psychosis, these findings provide new insights into the cognitive mechanisms underlying the emergence of persecutory delusion in schizophrenia.

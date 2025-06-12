@@ -1,0 +1,17 @@
+---
+title: "Lina Skora"
+author: "SBDM2025"
+categories: ["Brain-body interaction and decision making"]
+image: https://i1.rgstatic.net/ii/profile.image/1007356125130758-1617183824994_Q512/Lina-Skora-2.jpg
+description: "Biological Psychology of Decision Making, Institute for Experimental Psychology (Düsseldorf, Germany)"
+
+---
+
+Session: Brain-body interaction and decision making
+Date & time: 18.06 - 15h40
+
+Website: [https://linaskora.com/](https://linaskora.com/)
+
+#### The effect of vagal signal amplification with transcutaneous vagus nerve stimulation on perceptual decisions under threat
+
+Bodily information is increasingly recognised to influence perception and action, and might be involved in dynamically shaping perceptual decisions in line with situational demands. One example is during threat anticipation: a threat of electrical shock produces cardiac deceleration, and is linked to improved stimulus detection. However, evidence for a causal relationship between the afferent cardiac signal and perception has been difficult to obtain. Here, we investigated this by amplifying the afferent cardiac signal with transcutaneous auricular vagus nerve stimulation (taVNS). We applied short-burst, sham controlled taVNS to participants’ left cymba conchae while they performed a near-threshold perceptual decisions task (present/absent) under threat-of-shock versus safety. Heart rate was measured with an electrocardiogram, and was unaffected by taVNS. The behavioural results suggest that threat trials significantly decreased the decision criterion relative to safe trials, while significantly increasing the hit rate (proportion of correct detections), reflecting an increased tendency to report target presence under threat. There was no difference between the active and sham stimulation conditions on criterion, hit rate, or sensitivity (d’). Those early results suggest that stimulating the afferent cardiac-brain axis might not affect perceptual decisions under threat. We discuss alternative explanations and the suitability of taVNS as a modulatory tool.

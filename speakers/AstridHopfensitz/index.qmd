@@ -6,7 +6,10 @@ image: AstridHopfensitz.jpg
 ---
 
 Session: Social cognition and decision making across species
-Date & time: TBA
-Title: TBA
+Date & time: 17.06 - 09h40
 
 Website: [https://hopfensitz.weebly.com/](https://hopfensitz.weebly.com/)
+
+#### On the effects and usages of facial signals in situations requiring trust 
+
+Many human interactions are characterized by an interplay of evolved behaviors and strategic decisions of agents. This provides a rich context for researchers interested in dynamic interactions. In this talk, I will discuss situations where strangers meet and, for the duration of a one-shot interaction, need to decide if they are willing to trust or not the other. I will specifically focus on the non-verbal signals that are taken into account to make such decisions and the degree to which such signals are informative. Notably, beauty and friendly facial expressions (i.e. smiles) are taken as strong signals regarding the trustworthiness of others. Meanwhile, in most situations, such signals have no informative value. We will discuss the reasons for the persistence of human reliance on them and if, in turn, strategic agents exploit this bias in others.

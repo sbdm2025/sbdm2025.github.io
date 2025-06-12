@@ -7,7 +7,10 @@ description: "IMPACT, Lyon Neuroscience Research Center (Lyon, France)"
 ---
 
 Session: Comparative decision across agents
-Date & time: TBA
-Title: TBA
+Date & time: 16.06 - 11h10
 
 Website: [https://www.davidthura.com/](https://www.davidthura.com/)
+
+#### The coordination between decisions and movements during interactive behavior: insights from human and non-human primates
+
+A current and dynamic trend in cognitive science and neuroscience is to better understand how decisions and movements are coordinated to enable the emergence of interactive behaviors, adapted in terms of investment of time and energy resources. An influential theory proposes that the utility of behavior, i.e. the subjective valuation of the ratio between benefits and costs, jointly determines the speed of decisions and the vigor of movements (Shadmehr and Ahmed, 2020). For instance, if the prospect of obtaining rewards for moderate costs is high, then decisions will be rapid and movements vigorous (Thura, 2020). While investigating and describing some of the neural correlates of this mechanism in monkeys (Thura et al., 2022), we showed in the meantime that in humans, decision urgency and movement speed could also be unrelated and even controlled in opposite ways under specific circumstances (Reynaud et al., 2020; Saleri Lunazzi et al., 2021, 2023). This could potentially pose problems for inferring the neurophysiology of decision-making and action coordination in humans from monkey data, because there was no evidence that monkeys could also decouple their decisions and actions. By conducting another behavioral study in monkeys under conditions similar to those in which humans were tested, we recently showed that just like humans, monkeys are able to dissociate the control of their decisions and actions. Moreover, the data suggest that this decoupled control serves to optimize the utility of their behavior (Saleri and Thura, 2024). Together, our studies highlight a strong, flexible and adaptive coordination between decision-making and movement execution during interactive behavior of primates.

@@ -7,7 +7,10 @@ description: "Department of Neuroscience, Brown University (USA)"
 ---
 
 Session: Temporal dynamics of decision making
-Date & time: TBA
-Title: TBA
+Date & time: 17.06 - 14h40
 
 Website: [https://vivo.brown.edu/display/tdesroch](https://vivo.brown.edu/display/tdesroch)
+
+#### Parallel Cross-Species Dynamics in Lateral Prefrontal Cortex
+
+Sequential tasks are an integral component of the daily lives of humans and other species. These sequences are multifaceted such that they can contain a set of abstract tasks (e.g., when making a meal: cut vegetables, heat the pan) that are independent from the precise motor actions needed to carry them out, and can also include a series of the precise muscle contractions needed to produce a motor sequence (e.g., picking a fruit off a tree). Presumably, processes control at the abstract level and keep track or monitor progress throughout sequences. Despite this presumption, the vast majority of studies that have studied sequences have focused on motor actions (e.g., a series of joystick movements, eye movements, or finger taps) while neglecting the control and sequential monitoring processes that occur simultaneously. We have made progress in understanding the neural bases of nonmotor sequential tasks across human and nonhuman primates. Using fMRI and transcranial magnetic stimulation (TMS) in humans and awake fMRI and electrophysiology in nonhuman primates, we show that the lateral prefrontal cortex represents sequential information across sequence types and species. Further, these representations share a common dynamic, increasing activity across individual sequences (“ramping”). Current studies are focusing on investigating these dynamics during using fMRI- guided electrophysiological recordings. Together these studies provide a unique view of complex cognitive processes across species, step towards understanding functional homology, and provide insight into sequential processes during health and disorder.

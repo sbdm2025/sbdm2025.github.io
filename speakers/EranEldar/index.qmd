@@ -7,7 +7,11 @@ description: "Computational Cognition Lab, Hebrew University of Jerusalem (Israe
 ---
 
 Session: Naturalistic & context-dependent decision-making
-Date & time: TBA
-Title: TBA
+Date & time: 18.06 - 09h40
 
 Website: [https://sites.google.com/site/eldareran/](https://sites.google.com/site/eldareran/)
+
+#### Mood as a vehicle of reinforcement learning
+
+The science of learning and decision-making has largely evolved in isolation from the study of emotions and moods. Yet both fields, I will argue, investigate the same core mechanisms: the fundamental computations of reinforcement learning. By explicitly linking these computations to emotions and moods, we not only gain new leverage to explain real-world behavior but also refine our models to better reflect how humans actually learn and plan. I will illustrate these advances through a large-scale, intensive longitudinal study using a bespoke mobile platform with wearable EEG. The results reveal mood as a vehicle of reinforcement learning and enable mood prediction up to five days in advance. This framework opens new paths for understanding how reinforcement learning functions adaptively, or goes awry.
+

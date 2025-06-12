@@ -7,7 +7,11 @@ description: "Neurobiology of executive functions, Stem-cell & Brain Research In
 ---
 
 Session: Comparative decision across agents
-Date & time: TBA
-Title: TBA
+Date & time: 16.06 - 10h10
+
+#### The prefrontal operculum: a critical functional hub for the emergence of speech?
+Current theories fail to explain why the ability to control speech is unique to humans. Here we describe a unique feature of adult human neuroanatomy compared to chimpanzees that may provide an explanation of changes that occurred to enable the capacity for speech: the Prefrontal Frontal Operculum (PFO) region, which is located in the ventrolateral prefrontal cortex, adjacent and medial to the classical Broca’s area. We show that, in chimpanzees, individuals with the most human-like PFO, particularly in the left hemisphere, have greater oro-facial and vocal motor control abilities. We also show that, on the basis of Functional connectivity (FC) results in the human brain, PFO is subdivided in two regions (aPFO and pPFO), displaying strong interactions but distinct whole brain FC profiles with respectively the language and the cognitive control networks, and thus suggesting a critical role of PFO in the cognitive control of speech. Finally, FC fingerprint analyses in macaques revealed similarities with pPFO, but we found no macaque homologue of human aPFO. These discoveries, when combined with recent paleontological evidence, suggests that aPFO is a recently evolved feature of human cortical structure (perhaps limited to the genus Homo) that emerged in response to increasing selection for cognitive and motor functions evident in modern speech abilities.
+
 
 Website: [https://sbri.fr/public-profile/23/single-member/](https://sbri.fr/public-profile/23/single-member/)
+

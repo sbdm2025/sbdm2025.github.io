@@ -1,13 +1,16 @@
 ---
-title: "David Redish"
+title: "Julien Bastin"
 author: "SBDM2025"
 categories: ["Temporal dynamics of decision making"]
-image: https://med.umn.edu/sites/med.umn.edu/files/styles/bio_photo/public/web_profiles/2023-01/Redish%2C%20David.jpg
-description: "Redish lab, University of Minnesota (Minneapolis, US)" 
+image: https://neurosciences.univ-grenoble-alpes.fr/sites/default/files/styles/photo_user/public/pictures/2024-05/Julien_photo_travail.png
+description: "Brain, Behavior and Neuromodulation, University of Grenoble (Grenoble, France)" 
 ---
 
 Session: Temporal dynamics of decision making
-Date & time: TBA
-Title: TBA
+Date & time: 17.06 - 14h10
 
-Website: [https://redishlab.umn.edu/](https://redishlab.umn.edu/)
+Website: [https://neurosciences.univ-grenoble-alpes.fr/fr/recherche-au-gin/equipes-recherche/equipe-cerveau-comportement-et-neuromodulation](https://neurosciences.univ-grenoble-alpes.fr/fr/recherche-au-gin/equipes-recherche/equipe-cerveau-comportement-et-neuromodulation)
+
+#### Spontaneous anterior insula fluctuations bias preference-based decisions
+
+The field of decision-making has long sought to understand the origins of variability in human choices. One potential source of this variability is the brain’s ongoing spontaneous fluctuations, which influence behavior across various cognitive domains. In this talk, I will present recent intracerebral evidence in humans that reveals distinct roles of the ventromedial prefrontal cortex and the anterior insula in reinforcement learning and risky decision-making tasks. I will also show how direct electrical stimulation has helped uncover new functional subdivisions within these two brain regions. Finally, I will share recent findings from our lab demonstrating that streaming spontaneous broadband gamma activity through a cognitive brain-computer interface can bias binary choices—highlighting promising new directions for understanding the fundamental role of pre-stimulus neural activity in shaping our preferences.

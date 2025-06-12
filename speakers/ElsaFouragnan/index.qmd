@@ -7,7 +7,10 @@ description: "School of Psychology, University of Plymouth (UK)"
 ---
 
 Session: Causal manipulations in decision making
-Date & time: TBA
-Title: TBA
+Date & time: 16.06 - 17h00
 
 Website: [https://www.elsa-fouragnan.com/](https://www.elsa-fouragnan.com/)
+
+#### Improving decision making through ultrasound-induced neuroplasticity
+
+This talk will present recent evidence demonstrating that Transcranial Ultrasound Stimulation (TUS) can induce transient, targeted neuroplastic changes in the human brain, with implications for both mechanistic research and therapeutic development. I will highlight TUS’s precision in targeting deep brain structures, its value in probing neural circuits, and its emerging clinical potential in psychiatric disorders. Drawing on recent human studies; including investigations into decision-making and a novel clinical work in obsessive-compulsive disorder (OCD); I’ll present evidence of TUS’s effects on task-related neural changes, behaviour and symptoms demonstrating its promise as a transformative neuromodulation tool.

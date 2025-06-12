@@ -7,7 +7,10 @@ description: "Biological psychology of decision-making, Heinrich-Heine-Universit
 ---
 
 Session: Causal manipulations in decision making
-Date & time: TBA
-Title: TBA
+Date & time: 16.06 - 16h10
 
 Website: [https://www.psychologie.hhu.de/en/research-teams/biological-psychology-of-decision-making](https://www.psychologie.hhu.de/en/research-teams/biological-psychology-of-decision-making)
+
+#### Pharmacological modulation of reinforcement learning and decision making
+
+Neural circuit models of choice predict a key role for the balance between NMDA receptor-mediated slow recurrent excitation and GABAergic feedback inhibition. To date, systematic administration of pharmacological agents provides the only opportunity to causally manipulate synaptic transmission in healthy human volunteers. I will present a series of studies in which we administered drugs targeting NMDA and GABAA receptors to healthy humans and investigated their effects on both perceptual and reward-guided decision making, and on learning under both stable and non-stationary task contingencies. These results will be contrasted with insights gained from measuring natural variations in GABA and glutamate with MR spectroscopy. In addition, we reasoned that M1 muscarinic acetylcholine receptors might also play a key role in decision making, owing to their importance both in supporting NMDA-dependent ionic currents and in modulating the activity of GABAergic interneurons. Surprisingly, blocking M1 receptors did not affect reward-guided choice, but impaired learning under high levels of uncertainty. Where available, MEG data will be presented to show how the drugs affected task-related neural activity. Finally, a role for acetylcholine in cost-benefit decision making will be discussed and contrasted with the more established role of dopamine D2 receptors. I will conclude with some methodological considerations for psychopharmacological studies.

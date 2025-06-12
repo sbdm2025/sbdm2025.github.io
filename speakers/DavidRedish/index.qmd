@@ -1,13 +1,16 @@
 ---
-title: "Julien Bastin"
+title: "David Redish"
 author: "SBDM2025"
 categories: ["Temporal dynamics of decision making"]
-image: https://neurosciences.univ-grenoble-alpes.fr/sites/default/files/styles/photo_user/public/pictures/2024-05/Julien_photo_travail.png
-description: "Brain, Behavior and Neuromodulation, University of Grenoble (Grenoble, France)" 
+image: https://med.umn.edu/sites/med.umn.edu/files/styles/bio_photo/public/web_profiles/2023-01/Redish%2C%20David.jpg
+description: "Redish lab, University of Minnesota (Minneapolis, US)" 
 ---
 
 Session: Temporal dynamics of decision making
-Date & time: TBA
-Title: TBA
+Date & time: 17.06 - 16h00
 
-Website: [https://neurosciences.univ-grenoble-alpes.fr/fr/recherche-au-gin/equipes-recherche/equipe-cerveau-comportement-et-neuromodulation](https://neurosciences.univ-grenoble-alpes.fr/fr/recherche-au-gin/equipes-recherche/equipe-cerveau-comportement-et-neuromodulation)
+Website: [https://redishlab.umn.edu/](https://redishlab.umn.edu/)
+
+#### The neurophysiology of decision-making: multiple interacting decision systems separated computationally
+
+Decisions are fundamentally about taking information from the past (memory), combining it with information about the present (perception), and estimations of the future (goals, motivation) to take actions that achieve agentic goals.  One of the most important results of the last century is that how one represents information changes what one can do with it.  I will show that different representations imply different information processing pipelines, which I will identify as different decision systems.  I will show that these different information processing pipelines are identifiable in the temporal dynamics of neurophysiology, including specifically testable (and confirmed!) predictions.  If there is time, I will end with a short discussion of how the theoretical differences in decision-making processing can be used to create a real engineering praxis for computational psychiatry, neuroeconomics, and sociology.

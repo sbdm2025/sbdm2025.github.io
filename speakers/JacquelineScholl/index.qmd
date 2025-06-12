@@ -7,7 +7,10 @@ description: "PsyR2, Lyon Neuroscience Research Center (Lyon, France)"
 ---
 
 Session: Naturalistic & context-dependent decision-making
-Date & time: TBA
-Title: TBA
+Date & time: 18.06 - 09h10
 
 Website: [https://sites.google.com/view/jacqueline-scholl/team-and-collaborators?authuser=0](https://sites.google.com/view/jacqueline-scholl/team-and-collaborators?authuser=0)
+
+#### Emotions in self-organized behaviour
+
+Our emotions fluctuate as we go through our day in response to what we encounter – for example, seeing someone cough might make us feel worried or stressed about getting ill. These emotions in turn can help us to act appropriately in the situation – for example we might try to avoid the person or wash our hands. Here, we examined the role of emotions in shaping people’s behaviour across two naturalistic task, one capturing foraging under threat and one capturing goal pursuit. We capture emotions through self-reports, as well as using a novel method of facial emotion recognition. Emotional traits were captured through standard questionnaires (apathy, anhedonia, anxiety etc.) in large online samples and linked to task behaviour and emotions. Finally, with 7T FMRI, we examined the neural subcortical underpinnings of task relevant computational quantities.

@@ -7,7 +7,10 @@ description: "Subjectivity, Brain and Viscera, ENS-PSL (Paris, France)"
 ---
 
 Session: Brain-body interaction and decision making
-Date & time: TBA
-Title: TBA
+Date & time: 18.06 - 15h10
 
 Website: [https://sites.google.com/view/tallon-baudry-lab/home](https://sites.google.com/view/tallon-baudry-lab/home)
+
+#### Decisions and bodily signals
+
+In this talk, I will show how both perceptual and preference-based decision making depend on cardiac and gastric signals, in experimental situations that emotionally neutral and in the absence of physiological challenge. I propose, and test, the hypothesis that the interplay between decisions and bodily signals is related to the self - the subject of experience, the subject for whom outcomes matter.

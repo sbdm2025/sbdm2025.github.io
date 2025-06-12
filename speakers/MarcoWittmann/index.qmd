@@ -7,7 +7,10 @@ description: "Social Computational Neuroscience Lab, University College of Londo
 ---
 
 Session: Social cognition and decision making across species
-Date & time: TBA
-Title: TBA
+Date & time: 17.06 - 09h10
 
 Website: [https://www.wittmann-lab.com/](https://www.wittmann-lab.com/)
+
+#### Social basis functions
+
+Navigating social environments is a fundamental challenge for the brain. It is established that the brain solves this challenge, in part, by representing social information in an “agent-centric” manner; knowledge about others’ abilities or attitudes is “tagged” to individuals such as “oneself” or the “other” person with whom we are interacting. This intuitive approach has informed our understanding of dorsomedial prefrontal and anterior cingulate cortex (dmPFC and ACC), key nodes of the social brain. However, the patterns or combinations in which the individuals might interact with one another is as important as the identities of the individuals themselves. Using functional magnetic resonance imaging and a social group-decision making task, I show dmPFC and ACC represent the combinatorial possibilities for social interaction afforded by a given situation and that they do so in a compressed format resembling the basis functions employed in spatial, visual, and motor domains. Critically, basis functions predict specific choice patterns such as counterintuitive effects where decision-irrelevant players systematically influence choice. These findings suggest that medial prefrontal cortex compresses complex social information along the basis functions to enable both computational efficiency and behavioural flexibility.

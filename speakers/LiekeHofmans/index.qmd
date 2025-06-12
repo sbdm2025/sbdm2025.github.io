@@ -1,0 +1,14 @@
+---
+title: "Lieke Hofmans"
+author: "SBDM2025"
+categories: ["Social cognition and decision making across species"]
+---
+
+Session: Social cognition and decision making across species
+Date & time: 17.06 - 11h30
+
+Website:
+
+#### Developmental differences in social information use under uncertainty
+
+Adolescence is a period of social re-orientation, with studies suggesting that adolescents may be more sensitive to peer influence than other age groups. Understanding the dynamics of peer influence during adolescence is therefore essential. This study compared the cognitive and neural processes of social learning in adolescents and adults, focusing on how uncertainty affects social information use. Participants completed a perceptual decision-making task where they could revise their initial estimate after viewing a peer’s estimate. Uncertainty was manipulated by varying the amount of information provided before their decision and the peer’s reported confidence. Using model-free analyses and a Bayesian computational model, we found that both groups shared similar decision-making mechanisms, but adolescents were less sensitive to their own certainty and peer confidence, leading to reduced influence on social information use. fMRI revealed that adolescents showed a reduced neural response to peer confidence variations compared to adults, but exhibited a stronger initial response to variations in their own certainty. However, this heightened response diminished when personal and peer information were combined. These findings suggest ongoing neural development in adolescence may reduce metacognitive abilities and hinder the integration of precision signals, offering insights into how social information processing evolves with age.

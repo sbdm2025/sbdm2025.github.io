@@ -7,7 +7,10 @@ description: "Havenith & Schölvinck Lab, Ernst Struengmann Institute for Neuros
 ---
 
 Session: Comparative decision across agents
-Date & time: TBA
-Title: TBA
+Date & time: 16.06 - 10h40
 
 Website: [https://www.esi-frankfurt.de/research/havenith-scholvinck-lab/](https://www.esi-frankfurt.de/research/havenith-scholvinck-lab/)
+
+#### Catching cognition in the act - new ways to track naturalistic decision making across species
+
+How can we trace the mechanics of cognitive processing across species, even though its behavioural expression must necessarily differ? Classically, this aim has met several obstacles: The same cognitive process, such as decision making, is studied via vastly different behavioural paradigms across species, these paradigms rarely involve behaviours that naturally occur in the wild, and the resulting metrics are typically simplified, making it diffcult to track cognitive dynamics with precision. In this talk, we will show how our lab tackles these challenges by a) applying the exact same naturalistic and highly immersive VR foraging task in mice, monkeys and humans, and b) characterizing the resulting rich spontaneous decision processes in depth and trial by trial. With this approach, we show that facial expressions reflect highly similar cognitive state dynamics during perceptual decision making in mice and monkeys, that attentional states follow comparable patterns in mice, monkeys and humans, and that even altered states of consciousness may unfold in more similar ways across species than previously documented.

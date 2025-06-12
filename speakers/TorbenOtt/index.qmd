@@ -7,7 +7,10 @@ description: "Decision circuits, Bernstein Center for Computational Neuroscience
 ---
 
 Session: Temporal dynamics of decision making
-Date & time: TBA
-Title: TBA
+Date & time: 17.06 - 15h10
 
 Website: [https://torbenottlab.org/](https://torbenottlab.org/)
+
+#### Time is precious: Normative and neural principles of time investments across species
+
+Time is our scarcest resource. Allocating time optimally presents a universal challenge for all organisms because the future benefits of time investments are uncertain. In this talk, I will present a novel normative framework for assessing bounded optimality in time allocation, emphasizing the accuracy of future predictions, independent of subjective costs and benefits. I will show how we can apply this framework to investigate rational time investment across species using a post-decision time investment task. We found that mice, rats, and humans scaled their time investment with decision confidence, irrespective of subjective valuation, demonstrating bounded optimality in time allocation. We then turn the normative model into an elementary algorithm based on a drift-diffusion process, which implements optimal time investment strategies, providing a testbed for identifying its neural correlates. Single neurons in rat orbitofrontal cortex encode key components of this strategy, such as confidence and trial-by-trial time investment.  These results illuminate the computational and neural mechanisms governing rational time investment across species.

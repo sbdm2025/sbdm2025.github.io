@@ -7,7 +7,10 @@ description: "Decision Neuroscience, INSEAD (Fontainebleau, France)"
 ---
 
 Session: Brain-body interaction and decision making
-Date & time: TBA
-Title: TBA
+Date & time: 18.06 - 13h50
 
 Website: [https://www.insead.edu/faculty/hilke-plassmann?_ref=finder](https://www.insead.edu/faculty/hilke-plassmann?_ref=finder)
+
+#### More than just a gut feeling: Does the gut microbiome influence decision making - first evidence from a synbiotic intervention study
+
+In this talk, I provide first evidence that a 7-week synbiotic intervention improved different metabolic processes and through it participants’’ health. Interestingly, however, these changes were not accompanied by an improvement in participants’ decision making quality: Across three domains (social, financial, and dietary decision making), participants made less analytical decisions as compared to the placebo group after the intervention. 
