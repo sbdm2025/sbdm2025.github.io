@@ -97,7 +97,7 @@ h3 {
 |-----------|--------------------------------------------|---------------------------------------------|
 | **15:00** | **Session: Causal Manipulations in Decision Making** | *Chair: Mathias Pessiglione*         |
 | 15:10     | Dopamine transmission in the anterior insula shapes the neural coding of anxiety                                        | [Anna Beyeler](/speakers/AnnaBeyeler/index.qmd)                                |
-| 15:40     | Title (TBA)                                        | Charlie Wilson                              |
+| 15:40     | Motivational control is implemented by a cingulo-prefrontal network                                       | [Charlie Wilson](/speakers/CharlieWilson/index.qmd)                              |
 | 16:10     | Pharmacological modulation of reinforcement learning and decision making                                        | [Gerhard Jocham](/speakers/GerhardJocham/index.qmd)                              |
 | 16:40     | Coffee break + Posters                      |                                             |
 | 17:00     | Improving decision making through ultrasound-induced neuroplasticity                                        | [Elsa Fouragnan](/speakers/ElsaFouragnan/index.qmd)                              |

@@ -7,7 +7,12 @@ description: "Neurobiology of executive functions, Stem-cell & Brain Research In
 ---
 
 Session: Causal manipulations in decision making
-Date & time: TBA
-Title: TBA
+Date & time: 16.06 - 15h40
 
 Website: [https://sbri.fr/public-profile/105/single-member/](https://sbri.fr/public-profile/105/single-member/)
+
+#### Motivational control is implemented by a cingulo-prefrontal network
+
+Adaptive cognitive functions that can lead to optimal decisions are associated with interactions between the midcingulate cortex (MCC) and dorsolateral prefrontal cortex (dlPFC), two regions of the primate brain thought to implement executive functions at different timescales. The MCC-dlPFC interaction is proposed to play a role  in “short term” adaptation such as post-error adaptation which can be implemented trial to trial by (for example) post-error slowing.  Analyses of correlative neural dynamics in MCC and LPFC support such interactions, though it is unclear whether this is through direct MCC-dlPFC connections, or via indirect subcortical pathways. The MCC-dlPFC interaction could also contribute to “long term” adaptation. MCC neurons integrate outcome information over many trials, which could provide dlPFC with information to drive choices about when and how to engage in a task, or to make exploit/explore shifts during foraging. But beyond theoretical conjectures, it remains unclear how networks of prefrontal cortical regions generate these functions, and in particular the roles of specific interactions remain to be demonstrated. 
+
+I will present our line of work using network specific DREADDs in macaques to reveal the unique contribution of the direct neuronal connections between the midcingulate cortex (MCC) and the dorsolateral prefrontal cortex (dlPFC) to voluntary behaviour. Combining behavioural, neuroimaging and immunohistological tools, I will show that DREADD-mediated activation of feedback projections from MCC to dlPFC in macaques specifically leads to increased engagement in a foraging task, but does not alter animals’ trial-to-trial adaptive strategy as might be predicted from correlative data. I will conclude that a critical role for MCC-dlPFC pathway is in the temporally extended motivational control of behaviour rather than in rapid adaptation.
