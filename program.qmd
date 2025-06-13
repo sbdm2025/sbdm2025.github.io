@@ -4,6 +4,8 @@ title: "Program"
 
 Please find below the schedule of each talk. You may find more information about each speaker and their talk in the [Speakers](speakers) tab or by clicking on their name in the program.
 
+
+
 <style>
 table {
   width: 100%;
@@ -67,7 +69,6 @@ tbody tr td:nth-child(3) {
 }
 
 tbody tr td[colspan] {
-  background-color: #e6f2ff;
   font-weight: bold;
 }
 
@@ -77,6 +78,7 @@ h3 {
 
 
 </style>
+
 
 ### Day 1 – Monday – June 16th
 
@@ -104,7 +106,7 @@ h3 {
 | 17:00     | Improving decision making through ultrasound-induced neuroplasticity                                        | [Elsa Fouragnan](/speakers/ElsaFouragnan/index.qmd)                              |
 | 17:30     | A computational account of persecutory delusion using ketamine as a model of psychosis                            | [Etienne Pigeon](/speakers/EtiennePigeon/index.qmd)                            |
 | 17:45     | Discussion                                  |                                             |
-| **18:15** | Welcome cocktail (Palais Hirsh)            |                                             |
+| 18:15 | Welcome cocktail (Palais Hirsh)            |                                             |
 
 
 ### Day 2 – Tuesday – June 17th
