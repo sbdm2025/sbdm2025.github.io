@@ -104,7 +104,7 @@ h3 {
 | 17:00     | Improving decision making through ultrasound-induced neuroplasticity                                        | [Elsa Fouragnan](/speakers/ElsaFouragnan/index.qmd)                              |
 | 17:30     | A computational account of persecutory delusion using ketamine as a model of psychosis                            | [Etienne Pigeon](/speakers/EtiennePigeon/index.qmd)                            |
 | 17:45     | Discussion                                  |                                             |
-| **18:15** | End                                         |                                             |
+| **18:15** | Welcome cocktail (Palais Hirsh)            |                                             |
 
 
 ### Day 2 – Tuesday – June 17th
@@ -131,8 +131,8 @@ h3 {
 | 16:00     | The neurophysiology of decision-making: multiple interacting decision systems separated computationally                                        | [David Redish](/speakers/DavidRedish/index.qmd)                                |
 | 16:30     | A grid-like representation for subjective value-based decision-making                            | [Erie Boorman](/speakers/ErieBoorman/index.qmd)                            |
 | 17:00     | Discussion                                  |                                             |
-| 17:30     | End                                         |                                             |
-| Evening   | Gala Dinner                                 |                                             |
+| 17:30     | Student session (Palais Hirsh)                       |                                             |
+| 19:00   | Gala Dinner ([Cintra](https://restaurant-cintra.fr/?lang=en))                                |                                             |
 
 ### Day 3 – Wednesday – June 18th
 | Time      | Event                                      | Speaker(s)                                  |
